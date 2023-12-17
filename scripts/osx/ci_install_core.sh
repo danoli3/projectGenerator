@@ -46,7 +46,7 @@ else
 fi
 	
 echo "copying pg to oF dir"
-cp -rv projectGenerator/* openFrameworks/apps/projectGenerator/
+cp -rv projectGenerator/* openFrameworks/apps/
 
 
 cd ${of_root}

@@ -57,5 +57,6 @@ echo "ci install complete"
 ls
 
 cd ${CURRENT_DIR}
+cd ../../
 echo "copying pg to oF dir"
 cp -rv projectGenerator/* openFrameworks/apps/

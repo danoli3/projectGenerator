@@ -60,4 +60,4 @@ cd ../
 
 echo "copying pg to oF dir"
 pwd
-cp -rv projectGenerator/projectGenerator/* openFrameworks/apps/
+cp -rv projectGenerator/projectGenerator/* openFrameworks/apps/projectGenerator

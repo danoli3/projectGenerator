@@ -45,10 +45,6 @@ else
 	ls
 fi
 	
-echo "copying pg to oF dir"
-cp -rv projectGenerator/* openFrameworks/apps/
-
-
 cd ${of_root}
 if [ -d "libs/glfw" ]; then
 	echo 'libs installed, using them'
@@ -59,3 +55,7 @@ fi
 
 echo "ci install complete"
 ls
+
+cd ${CURRENT_DIR}
+echo "copying pg to oF dir"
+cp -rv projectGenerator/* openFrameworks/apps/

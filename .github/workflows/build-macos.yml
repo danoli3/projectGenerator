@@ -39,19 +39,14 @@ jobs:
             echo "release=bleeding" >> $GITHUB_ENV
             echo "prerelease=true" >> $GITHUB_ENV
           fi
-      # - name: Build CMDLINE
-      #   run: ./scripts/osx/build_cmdline.sh
-      # - name: Build frontend
-      #   run: ./scripts/osx/build_frontend.sh
-      - name: Setup CI setup environment
-        run: ./scripts/osx/ci_install_core.sh
       - name: Build PG macOS GUI and command line
         run: |
           echo "Current directory: (should be projectGenerator)"
           pwd
           echo "Directory contents:"
           ls
-
+          echo "Setup CI setup environment / checkout oF "
+          ./scripts/osx/ci_install_core.sh
           cd ../
           echo "Current directory after moving up: (should be runner)"
           pwd

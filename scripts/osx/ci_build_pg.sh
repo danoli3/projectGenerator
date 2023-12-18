@@ -40,9 +40,19 @@ package_app(){
 
 		PLATFORM=$1
 		# Copy commandLine into electron .app
-		cd ${pg_root}
-		cp commandLine/bin/projectGenerator projectGenerator-$PLATFORM/projectGenerator.app/Contents/Resources/app/app/projectGenerator 2> /dev/null
-
+		cd ${PG_DIR}
+		echo "Current directory: (should be projectGenerator)"
+		pwd
+		echo "Directory contents:"
+		ls
+		echo "-------------"
+		#echo "copy cmdline PG to "
+		#cp commandLine/bin/projectGenerator projectGenerator-$PLATFORM/projectGenerator.app/Contents/Resources/app/app/projectGenerator 2> /dev/null
+		cd ${PG_DIR}
+		pwd
+		echo "Directory contents:"
+		ls
+		echo "-------------"
 		sed -i -e "s/osx/$PLATFORM/g" projectGenerator-$PLATFORM/projectGenerator.app/Contents/Resources/app/settings.json
 
 		# Sign app
@@ -182,26 +192,38 @@ import_certificate
 echo "build_frontend"
 ${CURRENT_DIR}/build_frontend.sh
 
-if [ -d "${pg_root}/projectGenerator-osx" ]; then
-	rm -rf ${pg_root}/projectGenerator-osx
-fi
-mv dist/mac ${pg_root}/projectGenerator-osx
+echo "Current directory: (should be projectGenerator)"
+pwd
+echo "Directory contents:"
+ls
 
+if [ -d "${PG_DIR}/projectGenerator-osx" ]; then
+	rm -rf ${PG_DIR}/projectGenerator-osx
+fi
+
+cd ${PG_DIR}
+echo "Current directory: (should be projectGenerator/frontend)"
+pwd
+echo "Directory contents:"
+ls
+echo "-------------"
+mv frontend/dist/mac-universal ${PG_DIR}/projectGenerator-osx
+
+echo "-------------"
 echo "package_app osx"
 package_app osx
 
-cd ${pg_root}/frontend
 
-echo "package_app ios"
-npm run build:macos > /dev/null
+# echo "package_app ios"
+# npm run build:macos > /dev/null
 
-if [ -d "${pg_root}/projectGenerator-ios" ]; then
-	rm -rf ${pg_root}/projectGenerator-ios
-fi
-mv dist/mac ${pg_root}/projectGenerator-ios
-echo "package_app ios"
-package_app ios
+# if [ -d "${pg_root}/projectGenerator-ios" ]; then
+# 	rm -rf ${pg_root}/projectGenerator-ios
+# fi
+# mv dist/mac ${pg_root}/projectGenerator-ios
+# echo "package_app ios"
+# package_app ios
 
-rm -rf scripts/id_rsa 2> /dev/null
-rm -rf scripts/*.p12 2> /dev/null
+# rm -rf scripts/id_rsa 2> /dev/null
+# rm -rf scripts/*.p12 2> /dev/null
 

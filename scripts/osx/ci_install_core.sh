@@ -19,25 +19,35 @@ echo "CURRENT_DIR:  ${CURRENT_DIR}"
 echo "SCRIPT_DIR:  ${SCRIPT_DIR}"
 echo "PG_DIR:  ${PG_DIR}"
 echo "FRONTEND_DIR:  ${FRONTEND_DIR}"
-echo "CMD_DIR:  ${CMD_DIR}"
-echo "====== OF_DIR: ${OF_DIR}"
+echo "CMD_DIR:  ${CMDLINE_DIR}"
+
+echo "SCRIPT dir:"
+pwd
+
+echo "cd ../../../"
+cd ../../../
+
+OF_ROOT=${PWD}/openFrameworks
+
+echo "====== OF_DIR: ${OF_ROOT}"
+
+echo "Current directory:"
+pwd
+echo "Directory ../ contents:"
+ls
 
 
-cd ../../
-of_root=${PWD}/openFrameworks
 pg_root=${PWD}/openFrameworks/apps/projectGenerator
 pwd
 echo "ci setup - ${PWD}"
 ls
-if [ -d "${of_root}/.git" ]; then
+if [ -d "${OF_ROOT}/.git" ]; then
 	echo 'OF already cloned, using it'
-	cd ${of_root}
+	cd ${OF_ROOT}
 	git pull
-	# git submodule init
-	# git submodule update
-	# git submodule update
+	git submodule init
+	git submodule update
 	cd ..
-	# Control will enter here if $DIRECTORY exists.
 else
 	echo "cloning of"
 	git clone --depth=1 https://github.com/openframeworks/openFrameworks
@@ -45,7 +55,13 @@ else
 	ls
 fi
 	
-cd ${of_root}
+cd ${OF_ROOT}
+
+echo "Current directory:"
+pwd
+echo "Directory ../ contents:"
+ls
+
 if [ -d "libs/glfw" ]; then
 	echo 'libs installed, using them'
 else
@@ -53,10 +69,16 @@ else
 	scripts/osx/download_libs.sh
 fi
 
+
 echo "ci install complete"
-ls
+
+echo "Current directory:"
 pwd
+
 cd ../
+echo "Directory ../ contents:"
+pwd
+ls
 
 echo "copying pg to oF dir"
 pwd

@@ -48,11 +48,17 @@ jobs:
           echo "Setup CI setup environment / checkout oF "
           ./scripts/osx/ci_install_core.sh
       
-          echo "Current directory after moving up: (should be projectGenerator)"
+          echo "Current directory after moving up: (should be projectGenerator/projectGenerator)"
           pwd
-          echo "Directory contents:"
-          ls
 
+          cd ../
+          echo "Current directory after moving up: (should be projectGenerator/)"
+          echo "------------------"
+          pwd
+          ls
+          echo "Current directory after moving up: (should be projectGenerator/)"
+          pwd
+          echo "------------------"
           if [ -f "openFrameworks/apps/projectGenerator/scripts/osx/ci_build_pg.sh" ]; then
             echo "ci_build_pg.sh exists, running script..."
             openFrameworks/apps/projectGenerator/scripts/osx/ci_build_pg.sh
@@ -66,6 +72,7 @@ jobs:
             else
               echo "Failed to change directory to openFrameworks/apps/projectGenerator"
             fi
+            exit 1
           fi
         env:
           DEVELOPER_DIR: "/Applications/Xcode_15.0.1.app/Contents/Developer"

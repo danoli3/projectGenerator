@@ -89,9 +89,6 @@ mkdir -p openFrameworks/apps/projectGenerator
 rsync -av --exclude='openFrameworks/' projectGenerator openFrameworks/apps/projectGenerator
 echo "------------------"
 
-cd openFrameworks/apps/projectGenerator
-ls 
-
 
 
 

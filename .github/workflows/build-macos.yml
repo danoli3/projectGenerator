@@ -47,31 +47,30 @@ jobs:
         run: ./scripts/osx/ci_install_core.sh
       - name: Build PG macOS GUI and command line
         run: |
-          echo "Current directory:"
+          echo "Current directory: (should be projectGenerator)"
           pwd
           echo "Directory contents:"
           ls
 
           cd ../
-          
-          echo "Current ../ directory:"
+          echo "Current directory after moving up: (should be runner)"
           pwd
-          echo "Directory ../ contents:"
+          echo "Directory contents:"
           ls
-          
-          if [ -f "./openFrameworks/apps/projectGenerator/scripts/osx/ci_build_pg.sh" ]; then
+
+          if [ -f "openFrameworks/apps/projectGenerator/scripts/osx/ci_build_pg.sh" ]; then
             echo "ci_build_pg.sh exists, running script..."
-            ./openFrameworks/apps/projectGenerator/scripts/osx/ci_build_pg.sh
+            openFrameworks/apps/projectGenerator/scripts/osx/ci_build_pg.sh
           else
-            echo "ci_build_pg.sh does not exist, skipping script execution."
-            cd openFrameworks/apps/projectGenerator
-             echo "Current Git branch:"
-             git rev-parse --abbrev-ref HEAD
-             echo "Latest commit hash:"
-             git rev-parse HEAD
-             cd /scripts
-             pwd
-             ls
+            echo "ci_build_pg.sh does not exist, checking Git status..."
+            if cd openFrameworks/apps/projectGenerator; then
+              echo "Current Git branch in projectGenerator:"
+              git rev-parse --abbrev-ref HEAD
+              echo "Latest commit hash in projectGenerator:"
+              git rev-parse HEAD
+            else
+              echo "Failed to change directory to openFrameworks/apps/projectGenerator"
+            fi
           fi
         env:
           DEVELOPER_DIR: "/Applications/Xcode_15.0.1.app/Contents/Developer"

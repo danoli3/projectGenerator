@@ -45,7 +45,7 @@ if [ -d "${OF_ROOT}/.git" ]; then
 	cd ${OF_ROOT}
 	git pull
 	git submodule init
-	git submodule update
+	git submodule update --recursive
 	cd ..
 else
 	echo "cloning of"
@@ -69,18 +69,29 @@ else
 fi
 
 
-echo "ci install complete"
+echo "ci install complete ---"
 
-echo "Current directory:"
+echo "Current directory:  ---"
 pwd
 
+echo "Directory ../ contents:  ---"
 cd ../
-echo "Directory ../ contents:"
 pwd
 ls
+echo "------------------"
 
 echo "copying pg to oF dir"
 pwd
+ls
+echo "------------------"
 mkdir -p openFrameworks/apps/projectGenerator
-rsync -av --exclude='openFrameworks/' ./projectGenerator openFrameworks/apps/projectGenerator
+
+rsync -av --exclude='openFrameworks/' projectGenerator openFrameworks/apps/projectGenerator
+echo "------------------"
+
+cd openFrameworks/apps/projectGenerator
+ls 
+
+
+
 

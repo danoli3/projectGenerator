@@ -24,16 +24,13 @@ echo "CMD_DIR:  ${CMDLINE_DIR}"
 echo "SCRIPT dir:"
 pwd
 
-echo "cd ../../"
-cd ../../
-
 OF_ROOT=${PWD}/openFrameworks
 
 echo "====== OF_DIR: ${OF_ROOT}"
 
 echo "Current directory:"
 pwd
-echo "Directory ../../ contents:"
+echo "Directory contents:"
 ls
 
 
@@ -82,4 +79,5 @@ ls
 
 echo "copying pg to oF dir"
 pwd
-cp -rv projectGenerator/projectGenerator/* openFrameworks/apps/projectGenerator
+mkdir -p projectGenerator/openFrameworks/apps/projectGenerator
+cp -rv projectGenerator/projectGenerator/* projectGenerator/openFrameworks/apps/projectGenerator

@@ -47,8 +47,8 @@ jobs:
           ls
           echo "Setup CI setup environment / checkout oF "
           ./scripts/osx/ci_install_core.sh
-          cd ../
-          echo "Current directory after moving up: (should be runner)"
+      
+          echo "Current directory after moving up: (should be projectGenerator)"
           pwd
           echo "Directory contents:"
           ls
@@ -87,5 +87,5 @@ jobs:
           release: ${{ env.release }}
           prerelease: ${{ env.prerelease }}
           replace: false
-          files: ../openFrameworks/apps/projectGenerator/frontend/dist/projectGenerator-osx.zip
+          files: openFrameworks/apps/projectGenerator/frontend/dist/projectGenerator-osx.zip
 

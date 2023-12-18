@@ -24,6 +24,8 @@ echo "CMD_DIR:  ${CMDLINE_DIR}"
 echo "SCRIPT dir:"
 pwd
 
+cd ../
+
 OF_ROOT=${PWD}/openFrameworks
 
 echo "====== OF_DIR: ${OF_ROOT}"
@@ -79,5 +81,6 @@ ls
 
 echo "copying pg to oF dir"
 pwd
-mkdir -p projectGenerator/openFrameworks/apps/projectGenerator
-cp -rv projectGenerator/projectGenerator/* projectGenerator/openFrameworks/apps/projectGenerator
+mkdir -p openFrameworks/apps/projectGenerator
+rsync -av --exclude='openFrameworks/' ./projectGenerator openFrameworks/apps/projectGenerator
+

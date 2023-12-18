@@ -86,7 +86,8 @@ ls
 echo "------------------"
 mkdir -p openFrameworks/apps/projectGenerator
 
-rsync -av --exclude='.git/' projectGenerator/projectGenerator/ openFrameworks/apps/projectGenerator/
+rsync -av --exclude='.git/' projectGenerator/ openFrameworks/apps/projectGenerator/
+
 echo "------------------"
 
 

@@ -36,7 +36,7 @@ echoDots(){
 }
 
 package_app(){
-	if [[ "${GITHUB_REF##*/}" == "master" &&  -z "${GITHUB_HEAD_REF}" ]] ; then
+	if [[ ("${GITHUB_REF##*/}" == "master" || "${GITHUB_REF##*/}" == "bleeding") && -z "${GITHUB_HEAD_REF}" ]] ; then
 
 		PLATFORM=$1
 		# Copy commandLine into electron .app
@@ -67,7 +67,8 @@ package_app(){
 		# need to upload zip of just app to apple for notarizing
 		zip --symlinks -r -q projectGenerator-$PLATFORM/projectGenerator-$PLATFORM.zip projectGenerator-$PLATFORM/projectGenerator.app
 		xcrun altool --notarize-app --primary-bundle-id "com.electron.projectgenerator" --username "${GA_APPLE_USERNAME}" -p "${GA_APPLE_PASS}" --asc-provider "${GA_NOTARIZE_PROVIDER}" --file projectGenerator-$PLATFORM/projectGenerator-$PLATFORM.zip
-
+	else
+		echo "package_app not on master/bleeding so will not package app"	
 	fi
 }
 
@@ -83,8 +84,9 @@ sign_and_upload(){
 	if [[ -z "${GA_CI_SECRET}" ]] ; then
 		echo " Not on main repo skipping sign and upload ";
 	else
-		if [[ "${TRAVIS_REPO_SLUG}/${TRAVIS_BRANCH}" == "openframeworks/projectGenerator/master" && "$TRAVIS_PULL_REQUEST" == "false" ]] || [[ "${GITHUB_REF##*/}" == "master" &&  -z "${GITHUB_HEAD_REF}" ]] ; then
-			# Sign app
+		if [[ ("${TRAVIS_REPO_SLUG}/${TRAVIS_BRANCH}" == "openframeworks/projectGenerator/master" || "${TRAVIS_REPO_SLUG}/${TRAVIS_BRANCH}" == "openframeworks/projectGenerator/bleeding") && "$TRAVIS_PULL_REQUEST" == "false" ]] || 
+   			[[ ("${GITHUB_REF##*/}" == "master" || "${GITHUB_REF##*/}" == "bleeding") && -z "${GITHUB_HEAD_REF}" ]] ; then
+    		# Sign app
 			echo "Signing electron .app"
 			cd ${pg_root}
 			xattr -cr projectGenerator-$PLATFORM/projectGenerator.app
@@ -124,7 +126,7 @@ import_certificate(){
 
 	echo "import_certificate"
 
-	if [[ "${GITHUB_REF##*/}" == "master" && -z "${GITHUB_HEAD_REF}" && -n "${CERTIFICATE_OSX_APPLICATION}" ]]; then
+	if [[ ("${GITHUB_REF##*/}" == "master" || "${GITHUB_REF##*/}" == "bleeding") && -z "${GITHUB_HEAD_REF}" && -n "${CERTIFICATE_OSX_APPLICATION}" ]]; then
 		echo "Decoding signing certificates"
 
 		KEY_CHAIN=build.keychain
@@ -155,27 +157,6 @@ import_certificate(){
 
 }
 
-import_certificate_travis(){
-	echo "${TRAVIS_REPO_SLUG}/${TRAVIS_BRANCH}";
-	if [ "${TRAVIS_REPO_SLUG}/${TRAVIS_BRANCH}" = "openframeworks/projectGenerator/master" ] && [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
-		echo "Decoding signing certificates"
-		cd ${pg_root}/scripts
-		openssl aes-256-cbc -K $encrypted_b485a78f2982_key -iv $encrypted_b485a78f2982_iv -in developer_ID.p12.enc -out developer_ID.p12 -d
-		echo "Creating keychain"
-		security create-keychain -p mysecretpassword build.keychain
-		security -v list-keychains -s build.keychain "$HOME/Library/Keychains/login.keychain"
-		echo "Setting keychain as default"
-		security default-keychain -s build.keychain
-		echo "Unlocking keychain"
-		security unlock-keychain -p mysecretpassword build.keychain
-		security set-keychain-settings -t 3600 -u build.keychain
-		echo "Importing signing certificates"
-		sudo security import developer_ID.p12 -k build.keychain -P $CERT_PWD -T /usr/bin/codesign
-		# security set-key-partition-list -S apple-tool:,apple: -s -k mysecretpassword build.keychain
-		# security find-identity -v
-	fi
-}
-
 echo "build_cmdline.sh"
 # Compile commandline tool
 ${CURRENT_DIR}/build_cmdline.sh
@@ -202,7 +183,7 @@ if [ -d "${PG_DIR}/projectGenerator-osx" ]; then
 fi
 
 cd ${PG_DIR}
-echo "Current directory: (should be projectGenerator/frontend)"
+echo "Current directory: (should be apps/projectGenerator)"
 pwd
 echo "Directory contents:"
 ls
@@ -224,6 +205,7 @@ package_app osx
 # echo "package_app ios"
 # package_app ios
 
-# rm -rf scripts/id_rsa 2> /dev/null
-# rm -rf scripts/*.p12 2> /dev/null
+echo "for security remove keys maybe imported"
+rm -rf scripts/id_rsa 2> /dev/null
+rm -rf scripts/*.p12 2> /dev/null
 

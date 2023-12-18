@@ -47,7 +47,18 @@ jobs:
         run: ./scripts/osx/ci_install_core.sh
       - name: Build PG macOS GUI and command line
         run: |
+          echo "Current directory:"
+          pwd
+          echo "Directory contents:"
+          ls
+
           cd ../
+          
+          echo "Current ../ directory:"
+          pwd
+          echo "Directory ../ contents:"
+          ls
+          
           if [ -f "./openFrameworks/apps/projectGenerator/scripts/osx/ci_build_pg.sh" ]; then
             echo "ci_build_pg.sh exists, running script..."
             ./openFrameworks/apps/projectGenerator/scripts/osx/ci_build_pg.sh

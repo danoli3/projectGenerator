@@ -26,10 +26,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 16
-      - name: Setup xcode 
-        run: |
-         sudo xcode-select -s /Library/Developer/CommandLineTools
-         /usr/bin/xcrun --sdk macosx -show-sdk-version
       - name: Setup
         run: ./scripts/osx/setup_environment.sh
       - name: Determine Release

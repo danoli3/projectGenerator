@@ -24,8 +24,8 @@ echo "CMD_DIR:  ${CMDLINE_DIR}"
 echo "SCRIPT dir:"
 pwd
 
-echo "cd ../../../"
-cd ../../../
+echo "cd ../../"
+cd ../../
 
 OF_ROOT=${PWD}/openFrameworks
 
@@ -33,7 +33,7 @@ echo "====== OF_DIR: ${OF_ROOT}"
 
 echo "Current directory:"
 pwd
-echo "Directory ../ contents:"
+echo "Directory ../../ contents:"
 ls
 
 

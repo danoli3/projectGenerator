@@ -27,7 +27,7 @@ jobs:
         with:
           node-version: 16
       - name: Setup xcode 
-        - run: |
+        run: |
          sudo xcode-select -s /Library/Developer/CommandLineTools
          /usr/bin/xcrun --sdk macosx -show-sdk-version
       - name: Setup

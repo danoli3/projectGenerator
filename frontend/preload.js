@@ -22,12 +22,13 @@ contextBridge.exposeInMainWorld('ipcWrapper', {
     },
     receive: (channel, func) => {
         ipcRenderer.on(channel, (event, ...args) => func(...args));
-    }
+    },
   openExternal: (url) => ipcRenderer.sendSync('openExternal', url),
   showItemInFolder: (p) => ipcRenderer.sendSync('showItemInFolder', p),
 });
 
-require(path.join(__dirname, 'index.js'));
-require(path.join(__dirname, 'static/js/jquery.dragbetter.js'));
-require(path.join(__dirname, 'static/js/jquery.min.js'));
-require(path.join(__dirname, 'app.js'));
+// Include additional scripts
+// require(path.join(__dirname, 'index.js'));
+// require(path.join(__dirname, 'static/js/jquery.dragbetter.js'));
+// require(path.join(__dirname, 'static/js/jquery.min.js'));
+// require(path.join(__dirname, 'app.js'));

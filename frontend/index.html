@@ -5,6 +5,7 @@
 		<title>openFrameworks Project Generator</title>
 		<link rel="stylesheet" href="static/css/semantic.css">
 		<link rel="stylesheet" href="static/css/index.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style>
 		body {
 			background-color: #ddd;
@@ -407,10 +408,9 @@
 
                 <script>
                 window.nodeRequire = require;
-                // delete window.require;
-                // delete window.exports;
-                // delete window.module;
-
+				delete window.require;
+				delete window.exports;
+				delete window.module;
 
                 </script>
 

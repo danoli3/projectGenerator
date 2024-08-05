@@ -13,6 +13,7 @@ const {
     Menu,
     crashReporter,
     shell,
+    session
 } = require('electron');
 
 //---------------------------------------------------------
@@ -271,6 +272,8 @@ if (!path.isAbsolute(defaultOfPath)) {
     settings["defaultOfPath"] = defaultOfPath || "";
 }
 
+
+
 // now, let's look for a folder called mySketch, and keep counting until we find one that doesn't exist
 const startingProject = getStartingProjectName();
 
@@ -311,21 +314,27 @@ function toLetters(num) {
     return pow ? toLetters(pow) + out : out;
 }
 
+
+
 //-------------------------------------------------------- window
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 app.on('ready', () => {
     // Create the browser window.
     mainWindow = new BrowserWindow({
-        width: 600,
-        height: 800,
+        width: 800,
+        height: 900,
         resizable: true, // TODO: fix to false, true for debug
         frame: false,
         webPreferences: {
-            //preload: path.join(__dirname, 'preload.js'),
+            webSecurity: true,
             nodeIntegration: true,
+            "nodeIntegrationInWorker": 1,
             contextIsolation: false,
+            preload: path.join(app.getAppPath(), 'preload.js'),
+
         }
+
     });
 
     // and load the index.html of the app.
@@ -440,6 +449,39 @@ app.on('ready', () => {
     // @ts-ignore
     const menuV = Menu.buildFromTemplate(menuTemplate); // TODO: correct this
     Menu.setApplicationMenu(menuV);
+
+    // session.setPermissionRequestHandler((webContents, permission, callback) => {
+    //     if (webContents.getURL() !== 'https:' && permission === 'openExternal') {
+    //         return callback(false)
+    //     } else {
+    //         return callback(true)
+    //     }
+    // })
+    // session.defaultSession.webRequest.onHeadersReceived((details, callback) => {
+    //   callback({
+    //     responseHeaders: {
+    //       ...details.responseHeaders,
+    //       'Content-Security-Policy': ['default-src \'none\'']
+    //     }
+    //   })
+    // })
+
+
+    session.fromPartition('some-partition')
+      .setPermissionRequestHandler((webContents, permission, callback) => {
+        const parsedUrl = new URL(webContents.getURL())
+
+        if (permission === 'notifications') {
+          // Approves the permissions request
+          callback(true)
+        }
+
+        // Verify URL
+        if (parsedUrl.protocol !== 'https:') {
+          // Denies the permissions request
+          return callback(false)
+        }
+    })
 });
 
 /**

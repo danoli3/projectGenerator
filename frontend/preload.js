@@ -20,6 +20,17 @@ contextBridge.exposeInMainWorld('ipcWrapper', {
   fs: {
     existsSync: (p) => ipcRenderer.sendSync('fs', ['existsSync', [p]]),
   },
+  readFile: (filePath) => {
+        return fs.readFileSync(filePath, 'utf8');
+    },
+    receive: (channel, func) => {
+        ipcRenderer.on(channel, (event, ...args) => func(...args));
+    }
   openExternal: (url) => ipcRenderer.sendSync('openExternal', url),
   showItemInFolder: (p) => ipcRenderer.sendSync('showItemInFolder', p),
 });
+
+require(path.join(__dirname, 'index.js'));
+require(path.join(__dirname, 'static/js/jquery.dragbetter.js'));
+require(path.join(__dirname, 'static/js/jquery.min.js'));
+require(path.join(__dirname, 'app.js'));

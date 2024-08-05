@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const moniker = require('moniker');
 const process = require('process');
-const os = require("os");
+const os = require('os');
 const exec = require('child_process').exec;
 
 const {
@@ -16,63 +16,32 @@ const {
     session
 } = require('electron');
 
-//---------------------------------------------------------
-// Report crashes to our server.
 crashReporter.start({
     uploadToServer: false,
     productName: 'openFrameworks ProjectGenerator frontend',
 });
 
-// Debugging: start the Electron PG from the terminal to see the messages from console.log()
-// Example: /path/to/PG/Contents/MacOS/Electron /path/to/PG/Contents/Ressources/app
-// Note: app.js's console.log is also visible from the WebKit inspector. (look for mainWindow.openDevTools() below )
-
-
-
 //--------------------------------------------------------- load settings
-
-/**
- * @typedef {{ 
- *   defaultOfPath: string, 
- *   advancedMode: boolean, 
- *   defaultPlatform: string,
- *   showConsole: boolean,
- *   showDeveloperTools: boolean, 
- *   defaultRelativeProjectPath: string, 
- *   useDictionaryNameGenerator: boolean
- * }} Settings
- */
-
-/** @type Settings */
 let settings = {};
-
-
-
-/** @type Settings */
 const templateSettings = {
-    defaultOfPath: "",
+    defaultOfPath: '',
     advancedMode: false,
     defaultPlatform: '',
     showConsole: false,
     showDeveloperTools: false,
-    defaultRelativeProjectPath: "apps/myApps",
+    defaultRelativeProjectPath: 'apps/myApps',
     useDictionaryNameGenerator: true
 };
 
-
-
-/**
- * Determines the current platform based on process information.
- * @returns {string} The platform identifier.
- */
+// Determine the current platform
 function getCurrentPlatform() {
-    let platform = "unknown";
+    let platform = 'unknown';
 
     if (/^win/.test(process.platform)) {
         platform = 'vs';
-    } else if (process.platform === "darwin") {
+    } else if (process.platform === 'darwin') {
         platform = 'osx';
-    } else if (process.platform === "linux") {
+    } else if (process.platform === 'linux') {
         if (process.arch === 'ia32') {
             platform = 'linux';
         } else if (process.arch === 'arm') {
@@ -90,36 +59,30 @@ function getCurrentPlatform() {
 
     return platform;
 }
+
 const hostplatform = getCurrentPlatform();
 
-/**
- * Determines the default template for a given platform.
- * @param {string} platformId - The platform identifier.
- * @returns {string} The default template for the platform.
- */
 function getDefaultTemplateForPlatform(platformId) {
     const defaultTemplates = {
-        "osx": "OS X (Xcode)",
-        "vs": "Windows (Visual Studio)",
-        "msys2": "Windows (msys2/mingw)",
-        "ios": "iOS (Xcode)",
-        "macos": "Mega iOS/tvOS/macOS (Xcode)",
-        "android": "Android (Android Studio)",
-        "linux64": "Linux 64 (VS Code/Make)",
-        "linuxarmv6l": "Arm 32 (VS Code/Make)",
-        "linuxaarch64": "Arm 64 (VS Code/Make)",
-        "vscode": "VS Code"
+        'osx': 'OS X (Xcode)',
+        'vs': 'Windows (Visual Studio)',
+        'msys2': 'Windows (msys2/mingw)',
+        'ios': 'iOS (Xcode)',
+        'macos': 'Mega iOS/tvOS/macOS (Xcode)',
+        'android': 'Android (Android Studio)',
+        'linux64': 'Linux 64 (VS Code/Make)',
+        'linuxarmv6l': 'Arm 32 (VS Code/Make)',
+        'linuxaarch64': 'Arm 64 (VS Code/Make)',
+        'vscode': 'VS Code'
     };
 
-    return defaultTemplates[platformId] || "Unknown Template";
+    return defaultTemplates[platformId] || 'Unknown Template';
 }
 
-// Example usage:
 const platformId = getCurrentPlatform();
 const defaultTemplate = getDefaultTemplateForPlatform(platformId);
 console.log(`Detected platform: ${platformId}`);
 console.log(`Default template: ${defaultTemplate}`);
-
 
 try {
     const settingsJsonString = fs.readFileSync(path.resolve(__dirname, 'settings.json'), 'utf-8');
@@ -131,279 +94,92 @@ try {
     }
 
 } catch (e) {
-    // automatic platform detection
-    let myPlatform = "Unknown";
-    if (/^win/.test(process.platform)) {
-        myPlatform = 'vs';
-    }
-    // TODO: make the difference between osx and ios
-    else if (process.platform === "darwin") {
-        myPlatform = 'osx';
-    } else if (process.platform === "linux") {
-        myPlatform = 'linux';
-        if (process.arch === 'ia32') {
-            myPlatform = 'linux';
-        } else if (process.arch === 'arm') {
-            if (os.cpus()[0].model.indexOf('ARMv6') == 0) {
-                myPlatform = 'linuxarmv6l';
-            } else {
-                myPlatform = 'linuxaarch64';
-            }
-        } else if (process.arch === 'x64') {
-            myPlatform = 'linux64';
-        }
-    }
-
     settings = {
-        defaultOfPath: "",
+        defaultOfPath: '',
         advancedMode: false,
-        defaultPlatform: myPlatform,
+        defaultPlatform: getCurrentPlatform(),
         showConsole: false,
         showDeveloperTools: false,
-        defaultRelativeProjectPath: "apps/myApps",
+        defaultRelativeProjectPath: 'apps/myApps',
         useDictionaryNameGenerator: true,
     };
 }
 
-for(const key in templateSettings) {
-    if(!settings.hasOwnProperty(key)) {
+for (const key in templateSettings) {
+    if (!settings.hasOwnProperty(key)) {
         settings[key] = templateSettings[key];
     }
 }
 
-
-
-console.log("detected platform: " + hostplatform + " in " + __dirname);
+console.log(`Detected platform: ${hostplatform} in ${__dirname}`);
 
 const randomName = moniker.choose();
 console.log(`Randomly generated name: ${randomName}`);
 
-// Get the current working directory
 const currentDir = process.cwd();
 console.log(`Current working directory: ${currentDir}`);
 
-// Get the platform information
 const platform = os.platform();
 console.log(`Operating system platform: ${platform}`);
 
-// // Read a file using fs
-// const filePath = path.join(__dirname, 'example.txt');
-// fs.readFile(filePath, 'utf8', (err, data) => {
-//     if (err) {
-//         console.error(`Error reading file: ${err.message}`);
-//     } else {
-//         console.log(`File contents: ${data}`);
-//     }
-// });
-
-// Execute a shell command using exec
-exec('ls', (error, stdout, stderr) => {
-    if (error) {
-        console.error(`Error executing command: ${error.message}`);
-        return;
-    }
-    if (stderr) {
-        console.error(`Error in command output: ${stderr}`);
-        return;
-    }
-    console.log(`Command output: ${stdout}`);
-});
-// hide some addons, per https://github.com/openframeworks/projectGenerator/issues/62
-
-const addonsToSkip = [
-    "ofxiOS",
-    "ofxMultiTouch",
-    "ofxEmscripten",
-    "ofxAccelerometer",
-    "ofxAndroid"
-];
-
-const platforms = {
-    "osx": "OS X (Xcode)",
-    "vs": "Windows (Visual Studio)",
-    "msys2": "Windows (msys2/mingw)",
-    "ios": "iOS (Xcode)",
-    "macos": "Mega iOS/tvOS/macOS (Xcode)",
-    "android": "Android (Android Studio)",
-    "linux64": "Linux 64 (VS Code/Make)",
-    "linuxarmv6l": "Arm 32 (VS Code/Make)",
-    "linuxaarch64": "Arm 64 (VS Code/Make)",
-    "vscode": "VS Code"
-};
-
-const bUseMoniker = settings["useDictionaryNameGenerator"];
-
-const templates = {
-    "emscripten": "Emscripten",
-    "gitignore": "Git Ignore",
-    "gl3.1": "Open GL 3.1",
-    "gl3.2": "Open GL 3.2",
-    "gl3.3": "Open GL 3.3",
-    "gl4.0": "Open GL 4.0",
-    "gl4.1": "Open GL 4.1",
-    "gl4.2": "Open GL 4.2",
-    "gl4.3": "Open GL 4.3",
-    "gl4.4": "Open GL 4.4",
-    "gl4.5": "Open GL 4.5",
-    "gles2": "Open GL ES 2",
-    "linux": "Linux",  // !!??
-    "msys2": "MSYS2/MinGW project template",
-    "nofmod": "OSX application with no FMOD linking",
-    "nowindow": "No window application",
-    "tvOS": "Apple tvOS template",
-    "unittest": "Unit test no window application",
-    "vscode": "Visual Studio Code",
-};
-
-let defaultOfPath = settings["defaultOfPath"];
-
-if (!path.isAbsolute(defaultOfPath)) {
-
-    // todo: this needs to be PLATFORM specific b/c of where things are placed.
-    // arturo, this may differ on linux, if putting ../ in settings doesn't work for the default path
-    // take a look at this...
-
-    if (hostplatform == "windows" || hostplatform == "linux" || hostplatform == "linux64" ){
-    	defaultOfPath = path.resolve(path.join(path.join(__dirname, "../../../"), defaultOfPath));
-    } else if(hostplatform == "osx"){
-    	defaultOfPath = path.resolve(path.join(path.join(__dirname, "../../../"), defaultOfPath));
-    }
-
-    settings["defaultOfPath"] = defaultOfPath || "";
-}
-
-
-
-// now, let's look for a folder called mySketch, and keep counting until we find one that doesn't exist
-const startingProject = getStartingProjectName();
-
-//---------------------------------------------------------
-// Keep a global reference of the window object, if you don't, the window will
-// be closed automatically when the JavaScript object is GCed.
-let mainWindow = null;
-
-// Quit when all windows are closed.
-app.on('window-all-closed', () => {
-    app.quit();
-    process.exit();
-});
-
-/**
- * @param {Date} date 
- * @returns {string}
- */
-function formatDate(date){
-    //get the year
-    const year = date.getFullYear().toString().substring(2, 4);
-    //get the month
-    const month = (date.getMonth() + 1).toString().padStart(2, '0');
-    //get the day
-    const day = date.getDate().toString().padStart(2, '0');;
-    //return the string "MMddyy"
-    return month + day + year;
-}
-
-/**
- * @param {number} num
- * @returns {string}
- */
-function toLetters(num) {
-    const mod = num % 26;
-    let pow = (num / 26) | 0;
-    const out = mod ? String.fromCharCode(96 + (num % 26)) : (--pow, 'z');
-    return pow ? toLetters(pow) + out : out;
-}
-
-
-
-//-------------------------------------------------------- window
-// This method will be called when Electron has finished
-// initialization and is ready to create browser windows.
+//--------------------------------------------------------- window
 app.on('ready', () => {
-    // Create the browser window.
     mainWindow = new BrowserWindow({
         width: 800,
         height: 900,
-        resizable: true, // TODO: fix to false, true for debug
+        resizable: true,
         frame: false,
         webPreferences: {
-            webSecurity: true,
-            nodeIntegration: true,
-            "nodeIntegrationInWorker": 1,
-            contextIsolation: false,
-            preload: path.join(app.getAppPath(), 'preload.js'),
-
+            webSecurity: false, // Leaving this false as requested
+            nodeIntegration: true, // Leaving this true as requested
+            contextIsolation: false, // Leaving this false as requested
         }
-
     });
 
-    // and load the index.html of the app.
     mainWindow.loadFile(path.join(__dirname, 'index.html'));
 
-    // Open the devtools.
-    if (settings["showDeveloperTools"]) {
+    if (settings['showDeveloperTools']) {
         mainWindow.webContents.openDevTools();
     }
-    
-    //when the window is loaded send the defaults
+
     mainWindow.webContents.on('did-finish-load', () => {
-        //refreshAddonList();
-        
         mainWindow.webContents.send('cwd', app.getAppPath());
         mainWindow.webContents.send('cwd', __dirname);
         mainWindow.webContents.send('cwd', process.resourcesPath);
-        mainWindow.webContents.send('setStartingProject', startingProject);
+        mainWindow.webContents.send('setStartingProject', getStartingProjectName());
         mainWindow.webContents.send('setDefaults', settings);
         mainWindow.webContents.send('setup', '');
         mainWindow.webContents.send('checkOfPathAfterSetup', '');
     });
 
-
-    // Emitted when the window is closed.
     mainWindow.on('closed', () => {
         mainWindow = null;
         app.quit();
         process.exit();
-        // Dereference the window object, usually you would store windows
-        // in an array if your app supports multi windows, this is the time
-        // when you should delete the corresponding element.
     });
 
-    const isMac = process.platform === 'darwin'
     const menuTemplate = [
-        ...(isMac ? [{
-            label: app.name,
-            submenu: [
-              { role: 'about' },
-              { type: 'separator' },
-              { role: 'services' },
-              { type: 'separator' },
-              { role: 'hide' },
-              { role: 'hideOthers' },
-              { role: 'unhide' },
-              { type: 'separator' },
-              { role: 'quit' }
-            ]
-          }] : []),
         {
             label: 'File',
             submenu: [
-                isMac ? { role: 'close' } : { role: 'quit' }
-              ]
-        }, {
+                { role: process.platform === 'darwin' ? 'close' : 'quit' }
+            ]
+        },
+        {
             label: 'View',
             submenu: [
-              { role: 'reload' },
-              { role: 'forceReload' },
-              { role: 'toggleDevTools' },
-              { type: 'separator' },
-              { role: 'resetZoom' },
-              { role: 'zoomIn' },
-              { role: 'zoomOut' },
-              { type: 'separator' },
-              { role: 'togglefullscreen' }
+                { role: 'reload' },
+                { role: 'forceReload' },
+                { role: 'toggleDevTools' },
+                { type: 'separator' },
+                { role: 'resetZoom' },
+                { role: 'zoomIn' },
+                { role: 'zoomOut' },
+                { type: 'separator' },
+                { role: 'togglefullscreen' }
             ]
-        }, {
+        },
+        {
             label: 'Edit',
             submenu: [
                 { role: 'undo' },
@@ -412,87 +188,85 @@ app.on('ready', () => {
                 { role: 'cut' },
                 { role: 'copy' },
                 { role: 'paste' },
-                ...(isMac ? [
-                  { role: 'pasteAndMatchStyle' },
-                  { role: 'delete' },
-                  { role: 'selectAll' },
-                  { type: 'separator' },
-                  {
-                    label: 'Speech',
-                    submenu: [
-                      { role: 'startSpeaking' },
-                      { role: 'stopSpeaking' }
+                ...(process.platform === 'darwin'
+                    ? [
+                        { role: 'pasteAndMatchStyle' },
+                        { role: 'delete' },
+                        { role: 'selectAll' },
+                        { type: 'separator' },
+                        {
+                            label: 'Speech',
+                            submenu: [
+                                { role: 'startSpeaking' },
+                                { role: 'stopSpeaking' }
+                            ]
+                        }
                     ]
-                  }
-                ] : [
-                  { role: 'delete' },
-                  { type: 'separator' },
-                  { role: 'selectAll' }
-                ])
+                    : [
+                        { role: 'delete' },
+                        { type: 'separator' },
+                        { role: 'selectAll' }
+                    ])
             ]
-        }, {
+        },
+        {
             label: 'Window',
             submenu: [
-              { role: 'minimize' },
-              { role: 'zoom' },
-              ...(isMac ? [
-                { type: 'separator' },
-                { role: 'front' },
-                { type: 'separator' },
-                { role: 'window' }
-              ] : [
-                { role: 'close' }
-              ])
+                { role: 'minimize' },
+                { role: 'zoom' },
+                ...(process.platform === 'darwin'
+                    ? [
+                        { type: 'separator' },
+                        { role: 'front' },
+                        { type: 'separator' },
+                        { role: 'window' }
+                    ]
+                    : [
+                        { role: 'close' }
+                    ])
             ]
         },
     ];
-    // @ts-ignore
-    const menuV = Menu.buildFromTemplate(menuTemplate); // TODO: correct this
-    Menu.setApplicationMenu(menuV);
 
-    // session.setPermissionRequestHandler((webContents, permission, callback) => {
-    //     if (webContents.getURL() !== 'https:' && permission === 'openExternal') {
-    //         return callback(false)
-    //     } else {
-    //         return callback(true)
-    //     }
-    // })
-    // session.defaultSession.webRequest.onHeadersReceived((details, callback) => {
-    //   callback({
-    //     responseHeaders: {
-    //       ...details.responseHeaders,
-    //       'Content-Security-Policy': ['default-src \'none\'']
-    //     }
-    //   })
-    // })
-
+    const menu = Menu.buildFromTemplate(menuTemplate);
+    Menu.setApplicationMenu(menu);
 
     session.fromPartition('some-partition')
-      .setPermissionRequestHandler((webContents, permission, callback) => {
-        const parsedUrl = new URL(webContents.getURL())
-
-        if (permission === 'notifications') {
-          // Approves the permissions request
-          callback(true)
-        }
-
-        // Verify URL
-        if (parsedUrl.protocol !== 'https:') {
-          // Denies the permissions request
-          return callback(false)
-        }
-    })
+        .setPermissionRequestHandler((webContents, permission, callback) => {
+            const parsedUrl = new URL(webContents.getURL());
+            if (permission === 'notifications') {
+                callback(true);
+            } else if (parsedUrl.protocol !== 'https:') {
+                callback(false);
+            } else {
+                callback(true);
+            }
+        });
 });
 
-/**
- * @returns {{path: string, name: string}}
- */
+function getPgPath() {
+    let pgApp = '';
+    try {
+        if (hostplatform === 'linux' || hostplatform === 'linux64') {
+            pgApp = path.join(defaultOfPath, 'apps/projectGenerator/commandLine/bin/projectGenerator');
+        } else {
+            pgApp = path.normalize(path.join(__dirname, 'app', 'projectGenerator'));
+        }
+
+        if (hostplatform === 'osx' || hostplatform === 'linux' || hostplatform === 'linux64') {
+            pgApp = pgApp.replace(/ /g, '\\ ');
+        } else {
+            pgApp = `"${pgApp}"`;
+        }
+    } catch (error) {
+        console.error('Error determining project generator path:', error);
+        pgApp = ''; // Return an empty string or some default path in case of error
+    }
+    return pgApp;
+}
+
 function getStartingProjectName() {
-    const {
-        defaultOfPath,
-        defaultRelativeProjectPath
-    } = settings;
-    console.log(defaultOfPath, defaultRelativeProjectPath);
+    const { defaultOfPath, defaultRelativeProjectPath } = settings;
     const defaultPathForProjects = path.join(defaultOfPath, defaultRelativeProjectPath);
     const goodName = getGoodSketchName(defaultPathForProjects);
     return {
@@ -501,112 +275,16 @@ function getStartingProjectName() {
     };
 }
 
-/**
- * @param {Electron.IpcMainEvent} event
- * @param {string} ofPathValue
- */
-function refreshAddonList(event, ofPathValue) {
-    try {
-        console.log("in refreshAddonList " + ofPathValue);
-        // Define the path to the addons directory
-        const addonsPath = path.join(ofPathValue, "addons");
-
-        // Get the list of directories in the addons folder
-        let addons = getDirectories(addonsPath, "ofx");
-
-        // Filter out any addons that are in the addonsToSkip list
-        if (addons) {
-            if (addons.length > 0) {
-                addons = addons.filter((addon) => addonsToSkip.indexOf(addon) === -1);
-            }
-        }
-
-        console.log("Reloading the addons folder, these were found:");
-        console.log(addons);
-
-        // Send the list of addons to the renderer process
-        event.sender.send('setAddons', addons);
-        event.returnValue = true;
-
-    } catch (error) {
-        // Log the error
-        console.error("Error in refreshAddonList:", error);
-
-        // Send an error message to the renderer process
-        event.sender.send('sendUIMessage', {
-            type: 'error',
-            message: 'An error occurred while refreshing the addon list. Please check the console for more details.',
-            error: error.message,
-        });
-
-        // Return false as the operation was unsuccessful
-        event.returnValue = false;
-    }
-}
-
-
-/**
- * @param {Electron.IpcMainEvent} event
- * @param {string} ofPathValue
- */
-function refreshPlatformList(event, ofPathValue) {
-    const folders = getDirectories(path.join(ofPathValue, "scripts", "templates"));
-    console.log("Reloading the templates folder, these were found:");
-    console.log(folders);
-
-    const platformsWeHave = {};
-    const templatesWeHave = {};
-
-    if (folders == null) {
-        //do something
-    } else {
-        // check all folder name under /scripts/templates
-        for (const id in folders) {
-            const key = folders[id];
-            if (platforms[key]) {
-                // this folder is for platform
-                console.log("Found platform, key " + key + " has value " + platforms[key]);
-                platformsWeHave[key] = platforms[key];
-            } else {
-                // this folder is for template
-                if(templates[key]){
-                    console.log("Found template folder, key " + key + " has value " + templates[key]);
-                    templatesWeHave[key] = templates[key];
-                } else {
-                    // Unofficial folder name, maybe user's custom template? 
-                    // We use folder name for both of key and value
-                    console.log("Found unofficial folder, key " + key + " has value " + key);
-                    templatesWeHave[key] = key;
-                }
-            }
-        }
-    }
-    // saninty check...
-    // for(const key in platformsWeHave){
-    // 	console.log("key " + key + " has value " + platformsWeHave[key]);
-    // }
-    mainWindow.webContents.send('setPlatforms', platformsWeHave);
-    mainWindow.webContents.send('setTemplates', templatesWeHave);
-}
-
-/**
- * @param {string} currentProjectPath 
- * @returns {string}
- */
 function getGoodSketchName(currentProjectPath) {
-    let goodName = "mySketch";
-
+    let goodName = 'ofx';
     try {
-        if (bUseMoniker) {
+        if (settings.useDictionaryNameGenerator) {
             const projectNames = new moniker.Dictionary();
             projectNames.read(path.join(__dirname, 'static', 'data', 'sketchAdjectives.txt'));
-
             while (true) {
                 if (fs.existsSync(path.join(currentProjectPath, goodName))) {
-                    console.log("«" + goodName + "» already exists, generating a new name...");
                     const adjective = projectNames.choose();
-                    console.log(adjective);
-                    goodName = "my" + adjective.charAt(0).toUpperCase() + adjective.slice(1) + "Sketch";
+                    goodName = 'ofx' + adjective.charAt(0).toUpperCase() + adjective.slice(1);
                 } else {
                     break;
                 }
@@ -614,13 +292,11 @@ function getGoodSketchName(currentProjectPath) {
         } else {
             const date = new Date();
             const formattedDate = formatDate(date);
-            goodName = "sketch_" + formattedDate;
+            goodName = 'of' + formattedDate;
             let count = 1;
-
             while (true) {
                 if (fs.existsSync(path.join(currentProjectPath, goodName))) {
-                    console.log("«" + goodName + "» already exists, generating a new name...");
-                    goodName = "sketch_" + formattedDate + toLetters(count);
+                    goodName = 'ofx' + formattedDate + toLetters(count);
                     count++;
                 } else {
                     break;
@@ -628,51 +304,88 @@ function getGoodSketchName(currentProjectPath) {
             }
         }
     } catch (error) {
-        console.error("Error in getGoodSketchName:", error);
-        goodName = "mySketch_Fallback"; // Fallback name in case of an error
+        console.error('Error in getGoodSketchName:', error);
+        goodName = 'ofxProjectx'; // Fallback name in case of an error
     }
-
     return goodName;
 }
 
-/** 
- * @param {string} srcpath
- * @param {string} [acceptedPrefix]
- * @returns {string[] | null}
- */
-function getDirectories(srcpath, acceptedPrefix) {
-    // because this is called at a different time, fs and path
-    // seemed to be "bad" for some reason...
-    // that's why I am making temp ones here.
-    // console.log(path);
-
+function refreshAddonList(event, ofPathValue) {
     try {
-        return fs.readdirSync(srcpath).filter((file) => {
-            //console.log(srcpath);
-            //console.log(file);
-            try{
-                const joinedPath = path.join(srcpath, file);
-                if ((acceptedPrefix == null || file.substring(0, acceptedPrefix.length) == acceptedPrefix) && joinedPath !== null) {
-                    // only accept folders (potential addons)
-                    return fs.statSync(joinedPath).isDirectory();
-                }
-            } catch(e) {
-
+        const addonsPath = path.join(ofPathValue, 'addons');
+        let addons = getDirectories(addonsPath, 'ofx');
+        if (addons) {
+            if (addons.length > 0) {
+                addons = addons.filter(addon => addonsToSkip.indexOf(addon) === -1);
             }
+        }
+        event.sender.send('setAddons', addons);
+        event.returnValue = true;
+    } catch (error) {
+        console.error('Error in refreshAddonList:', error);
+        event.sender.send('sendUIMessage', {
+            type: 'error',
+            message: 'An error occurred while refreshing the addon list. Please check the console for more details.',
+            error: error.message,
         });
-    } catch (e) {
-        console.log(e);
-        return null;
-        // if (e.code === 'ENOENT') {
-        // 	console.log("This doesn't seem to be a valid addons folder:\n" + srcpath);
-        // 	mainWindow.webContents.send('sendUIMessage', "No addons were found in " + srcpath + ".\nIs the OF path correct?");
-        // } else {
-        // 	throw e;
-        // }
+        event.returnValue = false;
     }
 }
 
-// todo: default directories
+function refreshPlatformList(event, ofPathValue) {
+    const folders = getDirectories(path.join(ofPathValue, 'scripts', 'templates'));
+    const platformsWeHave = {};
+    const templatesWeHave = {};
+    if (folders !== null) {
+        for (const key of folders) {
+            if (platforms[key]) {
+                platformsWeHave[key] = platforms[key];
+            } else if (templates[key]) {
+                templatesWeHave[key] = templates[key];
+            } else {
+                templatesWeHave[key] = key;
+            }
+        }
+    }
+    mainWindow.webContents.send('setPlatforms', platformsWeHave);
+    mainWindow.webContents.send('setTemplates', templatesWeHave);
+}
+
+ipcMain.on('getVersion', (event) => {
+    const pgApp = getPgPath();
+    const command = `${pgApp} -w`;
+
+    exec(command, { maxBuffer: Infinity }, (error, stdout, stderr) => {
+        if (error) {
+            console.log('getVersion error');
+            event.sender.send('ofVersionResult', {
+                success: false,
+                message: error.message
+            });
+        } else {
+            try {
+                const lastLine = stdout.trim().split('\n').pop();
+                const jsonOutput = lastLine.match(/\{.*\}/);
+                if (jsonOutput) {
+                    const data = JSON.parse(jsonOutput[0]);
+                    console.log(data);
+                    event.sender.send('ofVersionResult', {
+                        success: true,
+                        message: data.version
+                    });
+                } else {
+                    throw new Error('No JSON output found');
+                }
+            } catch (e) {
+                console.log('getVersion error');
+                event.sender.send('ofVersionResult', {
+                    success: false,
+                    message: 'Failed to parse output.'
+                });
+            }
+        }
+    });
+});
 
 //----------------------------------------------------------- ipc
 

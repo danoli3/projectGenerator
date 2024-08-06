@@ -1,8 +1,14 @@
 //nodeRequire is used instead of require due to clash with node and jquery
 //see section - I can not use jQuery/RequireJS/Meteor/AngularJS in Electron : https://www.electronjs.org/docs/latest/faq/
-const { ipcRenderer } = nodeRequire('electron');
-path = nodeRequire('path');
-fs = nodeRequire('fs');
+// const { contextBridge, ipcRenderer } = nodeRequire('electron');
+// const path = nodeRequire('path');
+// const fs = nodeRequire('fs'); 
+
+const { contextBridge } = window.contextBridge;
+const { MessageChannelMain } = window.MessageChannelMain;
+const { ipcRenderer} = window.ipcRenderer;
+const { path } = window.path;
+const { fs } = window.fs;
 
 let platforms;
 let templates;

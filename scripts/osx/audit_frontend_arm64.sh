@@ -76,6 +76,10 @@ fi
 echo "====== "
 cd "${PG_DIR}/frontend"
 pwd 
+
+# npm init electron-app@latest my-new-app -- --template=vite
+
+# cd  my-new-app
 echo "NPM audit project"
 npm audit fix
 

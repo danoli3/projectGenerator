@@ -1,0 +1,2331 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"projec",
+				"projectGenerator"
+			],
+			[
+				"PL",
+				"PLATFORM_LDFLAGS"
+			],
+			[
+				"min",
+				"min_package"
+			],
+			[
+				"artifa",
+				"artifact"
+			],
+			[
+				"XCF",
+				"xcframework"
+			],
+			[
+				"echo",
+				"echoSuccess"
+			],
+			[
+				"OUT",
+				"OUTPUT"
+			],
+			[
+				"is_a",
+				"is_array()"
+			],
+			[
+				"b",
+				"background-color"
+			],
+			[
+				"pixm",
+				"pixman-1"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 13778,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					6,
+					1,
+					"paste",
+					null,
+					"AQAAAGM6AAAAAAAAZzoAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAYzoAAAAAAABjOgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					39,
+					1,
+					"cut",
+					null,
+					"AQAAAKUAAAAAAAAApQAAAAAAAAAzAAAAPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJzdGF0aWMvY3NzL2luZGV4LmNzcyI+",
+					"AQAAAAAAAAABAAAA2AAAAAAAAAClAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					42,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AgAAAGkAAAAAAAAAagAAAAAAAAAAAAAAagAAAAAAAABsAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAaQAAAAAAAABpAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					43,
+					1,
+					"paste",
+					null,
+					"AQAAAGwAAAAAAAAAnwAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAbAAAAAAAAABsAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					46,
+					3,
+					"left_delete",
+					null,
+					"AwAAANoAAAAAAAAA2gAAAAAAAAABAAAACdkAAAAAAAAA2QAAAAAAAAABAAAACdgAAAAAAAAA2AAAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAA2wAAAAAAAADbAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					104,
+					4,
+					"left_delete",
+					null,
+					"BAAAAGY6AAAAAAAAZjoAAAAAAAABAAAAL2U6AAAAAAAAZToAAAAAAAABAAAAY2Q6AAAAAAAAZDoAAAAAAAABAAAAcmM6AAAAAAAAYzoAAAAAAAABAAAAcw",
+					"AQAAAAAAAAABAAAAZzoAAAAAAABnOgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					113,
+					1,
+					"cut",
+					null,
+					"AQAAAP0BAAAAAAAA/QEAAAAAAAAGBQAAYm9keSB7CgkJCWJhY2tncm91bmQtY29sb3I6ICNkZGQ7CgkJCS13ZWJraXQtdXNlci1zZWxlY3Q6IG5vbmU7CgkJCXVzZXItc2VsZWN0OiBub25lOwoJCX0KCQkvKiBlbmFibGUgc29tZSB0ZXh0IHRvIGJlIHNlbGVjdGFibGUgKi8KCQkuc2VsZWN0YWJsZSwgLnNlbGVjdGFibGUgKiB7CgkJCS13ZWJraXQtdXNlci1zZWxlY3Q6IHRleHQ7CgkJCXVzZXItc2VsZWN0OiB0ZXh0OwoJCX0KCgkJLmRyYWdnYWJsZSB7CgkJCS13ZWJraXQtYXBwLXJlZ2lvbjogZHJhZzsKCQl9CgoJCS51bmRyYWdnYWJsZSB7CgkJCS13ZWJraXQtYXBwLXJlZ2lvbjogbm8tZHJhZyAhaW1wb3J0YW50OwoJCX0KCgkJLm1lbnVJdGVtIHsKCQkJLXdlYmtpdC1hcHAtcmVnaW9uOiBuby1kcmFnICFpbXBvcnRhbnQ7CgkJCWJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiAwLjBlbSAhaW1wb3J0YW50OwoJCQlib3JkZXItdG9wLWxlZnQtcmFkaXVzOiAwLjBlbSAhaW1wb3J0YW50OwoJCX0KCgkJI2FkZG9uc0xpc3QgewoJCQltYXgtaGVpZ2h0OiAxOGVtICFpbXBvcnRhbnQ7CgkJfQoJCSNhZGRvbnNEcm9wZG93biAuc2l6ZXIgewoJCQlkaXNwbGF5OiBub25lOwoJCX0KCgoJCS51aS5kaW1tZXIgPiAuY29udGVudCB7CgkJCS13ZWJraXQtdXNlci1zZWxlY3Q6IG5vbmUgIWltcG9ydGFudDsKCQkJdXNlci1zZWxlY3Q6IG5vbmUgIWltcG9ydGFudDsKCQl9CgoJCSN1aU1vZGFsIHsKCQkJd29yZC13cmFwOiBicmVhay13b3JkOwoJCX0KCgkJLm1vbm9zcGFjZXsKCQkJd29yZC13cmFwOiBicmVhay13b3JkICFpbXBvcnRhbnQ7CgkJfQoKCQkudG9wQmFyewoJCQliYWNrZ3JvdW5kLWltYWdlOiB1cmwoInN0YXRpYy9pbWcvdG9wYmFyLnBuZyIpOwoJCX0KCgkJLmZpeGVkRWxlbWVudCB7CgkJCXBvc2l0aW9uOiBmaXhlZDsKICAJCQl6LWluZGV4OiAxMDE7CiAgCQkJbWFyZ2luOiAwZW07CiAgCQkJd2lkdGg6IDEwMCU7CgkJfQoKCQkjZnVsbENvbnNvbGVPdXRwdXQgdGV4dGFyZWEgewoJCQlib3JkZXI6MHB4OwoJCQliYWNrZ3JvdW5kLWNvbG9yOiAjMzMzOwoJCQl3aWR0aDoxMDAlOwoJCQltaW4taGVpZ2h0OjEwZW07CgkJCWNvbG9yOiNkZmRmZGY7CgkJCWZvbnQtZmFtaWx5OkNvbnNvbGFzLE1vbmFjbyxMdWNpZGEgQ29uc29sZSxMaWJlcmF0aW9uIE1vbm8sRGVqYVZ1IFNhbnMgTW9ubyxCaXRzdHJlYW0gVmVyYSBTYW5zIE1vbm8sQ291cmllciBOZXcsIG1vbm9zcGFjZTsKCQkJZm9udC1zaXplOiA5cHg7CgkJCXdoaXRlLXNwYWNlOiBwcmU7CiAJCQl3b3JkLXdyYXA6IGJyZWFrLXdvcmQ7CgkJfQo",
+					"AQAAAAAAAAABAAAA/QEAAAAAAAADBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					131,
+					1,
+					"cut",
+					null,
+					"AQAAADABAAAAAAAAMAEAAAAAAABqAAAAd2luZG93Lm5vZGVSZXF1aXJlID0gcmVxdWlyZTsKCQkJZGVsZXRlIHdpbmRvdy5yZXF1aXJlOwoJCQlkZWxldGUgd2luZG93LmV4cG9ydHM7CgkJCWRlbGV0ZSB3aW5kb3cubW9kdWxlOw",
+					"AQAAAAAAAAABAAAAMAEAAAAAAACaAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					134,
+					1,
+					"insert",
+					{
+						"characters": ".min"
+					},
+					"BAAAANIAAAAAAAAA0wAAAAAAAAAAAAAA0wAAAAAAAADUAAAAAAAAAAAAAADUAAAAAAAAANUAAAAAAAAAAAAAANUAAAAAAAAA1gAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA0gAAAAAAAADSAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					141,
+					1,
+					"cut",
+					null,
+					"AQAAAKIAAAAAAAAAogAAAAAAAAA6AAAAPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJzdGF0aWMvY3NzL3NlbWFudGljLm1pbi5jc3MiPg",
+					"AQAAAAAAAAABAAAA3AAAAAAAAACiAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					144,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AgAAAGkAAAAAAAAAagAAAAAAAAAAAAAAagAAAAAAAABsAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAaQAAAAAAAABpAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					145,
+					1,
+					"paste",
+					null,
+					"AQAAAGwAAAAAAAAApgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAbAAAAAAAAABsAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					148,
+					3,
+					"left_delete",
+					null,
+					"AwAAAN4AAAAAAAAA3gAAAAAAAAABAAAACd0AAAAAAAAA3QAAAAAAAAABAAAACdwAAAAAAAAA3AAAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAA3wAAAAAAAADfAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					162,
+					1,
+					"paste",
+					null,
+					"AgAAACgBAAAAAAAAbgEAAAAAAAAAAAAAbgEAAAAAAABuAQAAAAAAABkAAAA8c2NyaXB0PgoJCQkKCQkJPC9zY3JpcHQ+",
+					"AQAAAAAAAAABAAAAQQEAAAAAAAAoAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					165,
+					2,
+					"left_delete",
+					null,
+					"AgAAAFcBAAAAAAAAVwEAAAAAAAAMAAAAcXVlcnkubWluLmpzVgEAAAAAAABWAQAAAAAAAAEAAABq",
+					"AQAAAAAAAAABAAAAVwEAAAAAAABjAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					166,
+					1,
+					"insert",
+					{
+						"characters": "index.static"
+					},
+					"DAAAAFYBAAAAAAAAVwEAAAAAAAAAAAAAVwEAAAAAAABYAQAAAAAAAAAAAABYAQAAAAAAAFkBAAAAAAAAAAAAAFkBAAAAAAAAWgEAAAAAAAAAAAAAWgEAAAAAAABbAQAAAAAAAAAAAABbAQAAAAAAAFwBAAAAAAAAAAAAAFwBAAAAAAAAXQEAAAAAAAAAAAAAXQEAAAAAAABeAQAAAAAAAAAAAABeAQAAAAAAAF8BAAAAAAAAAAAAAF8BAAAAAAAAYAEAAAAAAAAAAAAAYAEAAAAAAABhAQAAAAAAAAAAAABhAQAAAAAAAGIBAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAVgEAAAAAAABWAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					167,
+					1,
+					"insert",
+					{
+						"characters": ".js"
+					},
+					"AwAAAGIBAAAAAAAAYwEAAAAAAAAAAAAAYwEAAAAAAABkAQAAAAAAAAAAAABkAQAAAAAAAGUBAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAYgEAAAAAAABiAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					177,
+					2,
+					"left_delete",
+					null,
+					"AgAAALoBAAAAAAAAugEAAAAAAAAXAAAACQk8c3R5bGU+CgkJCgkJPC9zdHlsZT65AQAAAAAAALkBAAAAAAAAAQAAAAo",
+					"AQAAAAAAAAABAAAA0QEAAAAAAAC6AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					202,
+					1,
+					"paste",
+					null,
+					"AgAAACEAAAAAAAAAOgAAAAAAAAAAAAAAOgAAAAAAAAA6AAAAAAAAABYAAAA8bWV0YSBjaGFyc2V0PSJ1dGYtOCI+",
+					"AQAAAAAAAAABAAAAIQAAAAAAAAA3AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					205,
+					1,
+					"left_delete",
+					null,
+					"AQAAACEAAAAAAAAAIQAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAIgAAAAAAAAAiAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "static/css/index.css",
+			"settings":
+			{
+				"buffer_size": 3835,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					17,
+					1,
+					"insert",
+					{
+						"characters": "st"
+					},
+					"AgAAAJ0DAAAAAAAAngMAAAAAAAAAAAAAngMAAAAAAACfAwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAnQMAAAAAAACdAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					18,
+					1,
+					"left_delete",
+					null,
+					"AQAAAJ4DAAAAAAAAngMAAAAAAAABAAAAdA",
+					"AQAAAAAAAAABAAAAnwMAAAAAAACfAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					19,
+					1,
+					"insert",
+					{
+						"characters": "rc/"
+					},
+					"AwAAAJ4DAAAAAAAAnwMAAAAAAAAAAAAAnwMAAAAAAACgAwAAAAAAAAAAAACgAwAAAAAAAKEDAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAngMAAAAAAACeAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					40,
+					1,
+					"insert",
+					{
+						"characters": "./../"
+					},
+					"BQAAAJ0DAAAAAAAAngMAAAAAAAAAAAAAngMAAAAAAACfAwAAAAAAAAAAAACfAwAAAAAAAKADAAAAAAAAAAAAAKADAAAAAAAAoQMAAAAAAAAAAAAAoQMAAAAAAACiAwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAnQMAAAAAAACdAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					45,
+					1,
+					"left_delete",
+					null,
+					"AQAAAKIDAAAAAAAAogMAAAAAAAADAAAAc3Jj",
+					"AQAAAAAAAAABAAAAogMAAAAAAAClAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					47,
+					1,
+					"left_delete",
+					null,
+					"AQAAAKIDAAAAAAAAogMAAAAAAAABAAAALw",
+					"AQAAAAAAAAABAAAAowMAAAAAAACjAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					52,
+					1,
+					"left_delete",
+					null,
+					"AQAAAKIDAAAAAAAAogMAAAAAAAAGAAAAc3RhdGlj",
+					"AQAAAAAAAAABAAAAogMAAAAAAACoAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					54,
+					1,
+					"left_delete",
+					null,
+					"AQAAAKIDAAAAAAAAogMAAAAAAAABAAAALw",
+					"AQAAAAAAAAABAAAAowMAAAAAAACjAwAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "static/css/semantic.css",
+			"settings":
+			{
+				"buffer_size": 752081,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+			]
+		},
+		{
+			"file": "main.js",
+			"settings":
+			{
+				"buffer_size": 50822,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					19,
+					1,
+					"toggle_comment",
+					{
+						"block": false
+					},
+					"AQAAAHMnAAAAAAAAdicAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAuScAAAAAAAC5JwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					54,
+					1,
+					"toggle_comment",
+					{
+						"block": false
+					},
+					"AQAAAMAnAAAAAAAAwycAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAwScAAAAAAADBJwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					75,
+					1,
+					"paste",
+					null,
+					"AgAAAMIoAAAAAAAAzCgAAAAAAAAAAAAAzCgAAAAAAADMKAAAAAAAAAcAAAB3ZWJ2aWV3",
+					"AQAAAAAAAAABAAAAwigAAAAAAADJKAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					82,
+					1,
+					"toggle_comment",
+					{
+						"block": false
+					},
+					"AwAAADIpAAAAAAAANSkAAAAAAAAAAAAAAykAAAAAAAAGKQAAAAAAAAAAAADCKAAAAAAAAMUoAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAANSkAAAAAAADCKAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					102,
+					1,
+					"insert",
+					{
+						"characters": "true"
+					},
+					"BQAAAM8FAAAAAAAA0AUAAAAAAAAAAAAA0AUAAAAAAADQBQAAAAAAAAUAAABmYWxzZdAFAAAAAAAA0QUAAAAAAAAAAAAA0QUAAAAAAADSBQAAAAAAAAAAAADSBQAAAAAAANMFAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAzwUAAAAAAADUBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					112,
+					1,
+					"insert",
+					{
+						"characters": "true"
+					},
+					"BQAAAJ0SAAAAAAAAnhIAAAAAAAAAAAAAnhIAAAAAAACeEgAAAAAAAAUAAABmYWxzZZ4SAAAAAAAAnxIAAAAAAAAAAAAAnxIAAAAAAACgEgAAAAAAAAAAAACgEgAAAAAAAKESAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAnRIAAAAAAACiEgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					143,
+					1,
+					"paste",
+					null,
+					"AQAAAEYnAAAAAAAASycAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAARicAAAAAAABGJwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					144,
+					1,
+					"left_delete",
+					null,
+					"AQAAAEonAAAAAAAASicAAAAAAAABAAAALw",
+					"AQAAAAAAAAABAAAASycAAAAAAABLJwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					153,
+					3,
+					"left_delete",
+					null,
+					"AwAAAE0nAAAAAAAATScAAAAAAAABAAAAL0wnAAAAAAAATCcAAAAAAAABAAAAc0snAAAAAAAASycAAAAAAAABAAAAag",
+					"AQAAAAAAAAABAAAATicAAAAAAABOJwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					163,
+					1,
+					"insert",
+					{
+						"characters": "\n\n\n"
+					},
+					"AwAAAKsAAAAAAAAArAAAAAAAAAAAAAAArAAAAAAAAACtAAAAAAAAAAAAAACtAAAAAAAAAK4AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAqwAAAAAAAACrAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					165,
+					1,
+					"paste",
+					null,
+					"AQAAAK0AAAAAAAAADwEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAArQAAAAAAAACtAAAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					203,
+					2,
+					"left_delete",
+					null,
+					"AgAAADAAAAAAAAAAMAAAAAAAAAAMAAAAICAgIGlwY01haW4sLwAAAAAAAAAvAAAAAAAAAAEAAAAK",
+					"AQAAAAAAAAABAAAAPAAAAAAAAAAwAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					206,
+					2,
+					"left_delete",
+					null,
+					"AgAAAAgAAAAAAAAACAAAAAAAAAAIAAAAICAgIGFwcCwHAAAAAAAAAAcAAAAAAAAAAQAAAAo",
+					"AQAAAAAAAAABAAAAEAAAAAAAAAAIAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					213,
+					2,
+					"left_delete",
+					null,
+					"AgAAAAwAAAAAAAAADAAAAAAAAAANAAAAQnJvd3NlcldpbmRvdwgAAAAAAAAACAAAAAAAAAAEAAAAICAgIA",
+					"AQAAAAAAAAABAAAADAAAAAAAAAAZAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					216,
+					2,
+					"left_delete",
+					null,
+					"AgAAAAgAAAAAAAAACAAAAAAAAAABAAAALAcAAAAAAAAABwAAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAACQAAAAAAAAAJAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					239,
+					1,
+					"toggle_comment",
+					{
+						"block": false
+					},
+					"AQAAAAIBAAAAAAAABQEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAHwEAAAAAAAAfAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					244,
+					1,
+					"left_delete",
+					null,
+					"AQAAAOYAAAAAAAAA5gAAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAA5wAAAAAAAADnAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "static/js/index.static.js",
+			"settings":
+			{
+				"buffer_size": 133,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					5,
+					1,
+					"paste",
+					null,
+					"AQAAAA8AAAAAAAAAeQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADwAAAAAAAAAPAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					8,
+					1,
+					"paste",
+					null,
+					"AgAAAAAAAAAAAAAAagAAAAAAAAAAAAAAagAAAAAAAABqAAAAAAAAAHkAAABzZW1hbnRpYy5taW4uanN3aW5kb3cubm9kZVJlcXVpcmUgPSByZXF1aXJlOwoJCQlkZWxldGUgd2luZG93LnJlcXVpcmU7CgkJCWRlbGV0ZSB3aW5kb3cuZXhwb3J0czsKCQkJZGVsZXRlIHdpbmRvdy5tb2R1bGU7",
+					"AQAAAAAAAAABAAAAeQAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					11,
+					3,
+					"unindent",
+					null,
+					"CQAAAB4AAAAAAAAAHgAAAAAAAAABAAAACTcAAAAAAAAANwAAAAAAAAABAAAACVAAAAAAAAAAUAAAAAAAAAABAAAACR4AAAAAAAAAHgAAAAAAAAABAAAACTYAAAAAAAAANgAAAAAAAAABAAAACU4AAAAAAAAATgAAAAAAAAABAAAACR4AAAAAAAAAHgAAAAAAAAABAAAACTUAAAAAAAAANQAAAAAAAAABAAAACUwAAAAAAAAATAAAAAAAAAABAAAACQ",
+					"AQAAAAAAAAABAAAAagAAAAAAAAAhAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					13,
+					1,
+					"insert",
+					{
+						"characters": "\n//"
+					},
+					"AwAAAGEAAAAAAAAAYgAAAAAAAAAAAAAAYgAAAAAAAABjAAAAAAAAAAAAAABjAAAAAAAAAGQAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAYQAAAAAAAABhAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					14,
+					1,
+					"insert",
+					{
+						"characters": " used"
+					},
+					"BQAAAGQAAAAAAAAAZQAAAAAAAAAAAAAAZQAAAAAAAABmAAAAAAAAAAAAAABmAAAAAAAAAGcAAAAAAAAAAAAAAGcAAAAAAAAAaAAAAAAAAAAAAAAAaAAAAAAAAABpAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAZAAAAAAAAABkAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					15,
+					1,
+					"insert",
+					{
+						"characters": " for"
+					},
+					"BAAAAGkAAAAAAAAAagAAAAAAAAAAAAAAagAAAAAAAABrAAAAAAAAAAAAAABrAAAAAAAAAGwAAAAAAAAAAAAAAGwAAAAAAAAAbQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAaQAAAAAAAABpAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					16,
+					1,
+					"insert",
+					{
+						"characters": " fdixi"
+					},
+					"BgAAAG0AAAAAAAAAbgAAAAAAAAAAAAAAbgAAAAAAAABvAAAAAAAAAAAAAABvAAAAAAAAAHAAAAAAAAAAAAAAAHAAAAAAAAAAcQAAAAAAAAAAAAAAcQAAAAAAAAByAAAAAAAAAAAAAAByAAAAAAAAAHMAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAbQAAAAAAAABtAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					17,
+					4,
+					"left_delete",
+					null,
+					"BAAAAHIAAAAAAAAAcgAAAAAAAAABAAAAaXEAAAAAAAAAcQAAAAAAAAABAAAAeHAAAAAAAAAAcAAAAAAAAAABAAAAaW8AAAAAAAAAbwAAAAAAAAABAAAAZA",
+					"AQAAAAAAAAABAAAAcwAAAAAAAABzAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					18,
+					1,
+					"insert",
+					{
+						"characters": "xing"
+					},
+					"BAAAAG8AAAAAAAAAcAAAAAAAAAAAAAAAcAAAAAAAAABxAAAAAAAAAAAAAABxAAAAAAAAAHIAAAAAAAAAAAAAAHIAAAAAAAAAcwAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAbwAAAAAAAABvAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					19,
+					1,
+					"insert",
+					{
+						"characters": " e"
+					},
+					"AgAAAHMAAAAAAAAAdAAAAAAAAAAAAAAAdAAAAAAAAAB1AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAcwAAAAAAAABzAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					20,
+					6,
+					"left_delete",
+					null,
+					"BgAAAHQAAAAAAAAAdAAAAAAAAAABAAAAZXMAAAAAAAAAcwAAAAAAAAABAAAAIHIAAAAAAAAAcgAAAAAAAAABAAAAZ3EAAAAAAAAAcQAAAAAAAAABAAAAbnAAAAAAAAAAcAAAAAAAAAABAAAAaW8AAAAAAAAAbwAAAAAAAAABAAAAeA",
+					"AQAAAAAAAAABAAAAdQAAAAAAAAB1AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					21,
+					1,
+					"insert",
+					{
+						"characters": "xing"
+					},
+					"BAAAAG8AAAAAAAAAcAAAAAAAAAAAAAAAcAAAAAAAAABxAAAAAAAAAAAAAABxAAAAAAAAAHIAAAAAAAAAAAAAAHIAAAAAAAAAcwAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAbwAAAAAAAABvAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					22,
+					1,
+					"insert",
+					{
+						"characters": " e"
+					},
+					"AgAAAHMAAAAAAAAAdAAAAAAAAAAAAAAAdAAAAAAAAAB1AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAcwAAAAAAAABzAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					23,
+					6,
+					"left_delete",
+					null,
+					"BgAAAHQAAAAAAAAAdAAAAAAAAAABAAAAZXMAAAAAAAAAcwAAAAAAAAABAAAAIHIAAAAAAAAAcgAAAAAAAAABAAAAZ3EAAAAAAAAAcQAAAAAAAAABAAAAbnAAAAAAAAAAcAAAAAAAAAABAAAAaW8AAAAAAAAAbwAAAAAAAAABAAAAeA",
+					"AQAAAAAAAAABAAAAdQAAAAAAAAB1AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					24,
+					1,
+					"insert",
+					{
+						"characters": "ixing"
+					},
+					"BQAAAG8AAAAAAAAAcAAAAAAAAAAAAAAAcAAAAAAAAABxAAAAAAAAAAAAAABxAAAAAAAAAHIAAAAAAAAAAAAAAHIAAAAAAAAAcwAAAAAAAAAAAAAAcwAAAAAAAAB0AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAbwAAAAAAAABvAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					25,
+					1,
+					"insert",
+					{
+						"characters": " elecyro"
+					},
+					"CAAAAHQAAAAAAAAAdQAAAAAAAAAAAAAAdQAAAAAAAAB2AAAAAAAAAAAAAAB2AAAAAAAAAHcAAAAAAAAAAAAAAHcAAAAAAAAAeAAAAAAAAAAAAAAAeAAAAAAAAAB5AAAAAAAAAAAAAAB5AAAAAAAAAHoAAAAAAAAAAAAAAHoAAAAAAAAAewAAAAAAAAAAAAAAewAAAAAAAAB8AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAdAAAAAAAAAB0AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					26,
+					3,
+					"left_delete",
+					null,
+					"AwAAAHsAAAAAAAAAewAAAAAAAAABAAAAb3oAAAAAAAAAegAAAAAAAAABAAAAcnkAAAAAAAAAeQAAAAAAAAABAAAAeQ",
+					"AQAAAAAAAAABAAAAfAAAAAAAAAB8AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					27,
+					1,
+					"insert",
+					{
+						"characters": "tron"
+					},
+					"BAAAAHkAAAAAAAAAegAAAAAAAAAAAAAAegAAAAAAAAB7AAAAAAAAAAAAAAB7AAAAAAAAAHwAAAAAAAAAAAAAAHwAAAAAAAAAfQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAeQAAAAAAAAB5AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					28,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAH0AAAAAAAAAfgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAfQAAAAAAAAB9AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					32,
+					1,
+					"insert",
+					{
+						"characters": "windii"
+					},
+					"BgAAABUAAAAAAAAAFgAAAAAAAAAAAAAAFgAAAAAAAAAXAAAAAAAAAAAAAAAXAAAAAAAAABgAAAAAAAAAAAAAABgAAAAAAAAAGQAAAAAAAAAAAAAAGQAAAAAAAAAaAAAAAAAAAAAAAAAaAAAAAAAAABsAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAFQAAAAAAAAAVAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					33,
+					2,
+					"left_delete",
+					null,
+					"AgAAABoAAAAAAAAAGgAAAAAAAAABAAAAaRkAAAAAAAAAGQAAAAAAAAABAAAAaQ",
+					"AQAAAAAAAAABAAAAGwAAAAAAAAAbAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					34,
+					1,
+					"insert",
+					{
+						"characters": "ow."
+					},
+					"AwAAABkAAAAAAAAAGgAAAAAAAAAAAAAAGgAAAAAAAAAbAAAAAAAAAAAAAAAbAAAAAAAAABwAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAGQAAAAAAAAAZAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"contents": "//nodeRequire is used instead of require due to clash with node and jquery\n//see section - I can not use jQuery/RequireJS/Meteor/AngularJS in Electron : https://www.electronjs.org/docs/latest/faq/\n// const { contextBridge, ipcRenderer } = nodeRequire('electron');\n// const path = nodeRequire('path');\n// const fs = nodeRequire('fs'); \n\nconst { contextBridge, MessageChannelMain, ipcRenderer, path, fs } = window\n\nconst { contextBridge, MessageChannelMain, ipcRenderer, path, fs } = window\n\nlet platforms;\nlet templates;\n\n// var platforms = {\n//     \"osx\": \"OS X (Xcode)\",\n//     \"vs\": \"Windows (Visual Studio)\",\n//     \"ios\": \"iOS (Xcode)\",\n//     \"linux\": \"Linux 32-bit (Code::Blocks)\",\n//     \"linux64\": \"Linux 64-bit (Code::Blocks)\",\n//     \"linuxarmv6l\": \"Linux ARMv6 (Makefiles)\",\n//     \"linuxarmv7l\": \"Linux ARMv7 (Makefiles)\"\n// };\n\nlet defaultSettings;\nlet addonsInstalled;\nlet isOfPathGood = false;\nlet isFirstTimeSierra = false;\nlet bVerbose = false;\nlet localAddons = [];\n\nlet numAddedSrcPaths = 1;\n\n//-----------------------------------------------------------------------------------\n// IPC\n//-----------------------------------------------------------------------------------\n\n//-------------------------------------------\nipcRenderer.on('setOfPath', (event, arg) => {\n    setOFPath(arg);\n});\n\nipcRenderer.on('cwd', (event, arg) => {\n    console.log(arg);\n});\n\nipcRenderer.on('setUpdatePath', (event, arg) => {\n    /** @type {HTMLInputElement} */\n    const elem = document.getElementById(\"updateMultiplePath\");\n    elem.value = arg;\n    $(\"#updateMultiplePath\").change();\n});\n\nfunction typeText(element, text, speed = 50) {\n    let index = 0;\n    element.textContent = '';\n\n    function type() {\n        if (index < text.length) {\n            element.textContent += text.charAt(index);\n            index++;\n            setTimeout(type, speed);\n        }\n    }\n\n    type();\n}\n\nfunction typeTextJ($element, text, speed = 50) {\n    let index = 0;\n    $element.text(''); // Clear previous text\n\n    function type() {\n        if (index < text.length) {\n            $element.text($element.text() + text.charAt(index));\n            index++;\n            setTimeout(type, speed);\n        }\n    }\n    type();\n}\n\nipcRenderer.on('isUpdateMultiplePathOk', (event, arg) => {\n    if (arg == true){\n        $(\"#updateMultipleWrongMessage\").hide();\n        $(\"#updateMultipleButton\").removeClass(\"disabled\");\n    } else {\n        $(\"#updateMultipleWrongMessage\").show();\n        $(\"#updateMultipleButton\").addClass(\"disabled\");\n    }\n});\n\n//-------------------------------------------\nipcRenderer.on('setup', (event, arg) => {\n    setup();\n});\n\n//-----------------------------------------\n// this is called from main when defaults are loaded in:\nipcRenderer.on('setDefaults', (event, arg) => {\n    defaultSettings = arg;\n    setOFPath(defaultSettings.defaultOfPath);\n    enableAdvancedMode(defaultSettings.advancedMode);\n\n});\n\n//-------------------------------------------\nipcRenderer.on('setStartingProject', (event, arg) =>  {\n    $(\"#projectPath\").val(arg.path);\n    $(\"#projectName\").val(arg.name);\n});\n\n//-------------------------------------------\nipcRenderer.on('setProjectPath', (event, arg) => {\n    $(\"#projectPath\").val(arg);\n    //defaultSettings['lastUsedProjectPath'] = arg;\n    //saveDefaultSettings();\n    $(\"#projectName\").trigger('change'); // checks if we need to be in update or generate mode\n});\n\n//-------------------------------------------\nipcRenderer.on('setSourceExtraPath', (event, [arg, index]) => { // TODO:\n    checkAddSourcePath(index);\n    $(\"#sourceExtra-\" + index).val(arg);\n});\n\n//-------------------------------------------\nipcRenderer.on('setGenerateMode', (event, arg) => {\n    switchGenerateMode(arg);\n});\n\n//-------------------------------------------\nipcRenderer.on('importProjectSettings', (event, settings) => {\n    $(\"#projectPath\").val(settings.projectPath);\n    $(\"#projectName\").val(settings.projectName).trigger('change'); // change triggers addon scanning\n});\n\n//-------------------------------------------\nipcRenderer.on('setAddons', (event, arg) => {\n    console.log(\"got set addons:\", arg);\n\n    addonsInstalled = arg;\n\n    const select = document.getElementById(\"addonsList\");\n    select.innerHTML = \"\";\n\n    if (addonsInstalled !== null && addonsInstalled.length > 0) {\n        // add:\n        for(let i = 0; i < addonsInstalled.length; i++) {\n            $('<div/>', {\n                \"class\": 'item',\n                \"data-value\": addonsInstalled[i]\n            }).html(addonsInstalled[i]).appendTo(select);\n        }\n\n        //$(\"#ofPathSierraMessage\").hide();\n        $(\"#ofPathWrongMessage\").hide();\n        isOfPathGood = true;\n    } else {\n        if(isFirstTimeSierra) {\n            $(\"#ofPathSierraMessage\").show();\n        } else {\n            $(\"#ofPathWrongMessage\").show();\n        }\n        isOfPathGood = false;\n        $('#settingsMenuButton').click();\n\n        // bounce to settings\n        //$('.main .ui').tab('change tab', 'settings')\n    }\n\n\n    $('#addonsDropdown')\n        .dropdown({\n            allowAdditions: false,\n            fullTextSearch: 'exact',\n            match: \"text\"\n        });\n});\n\n\nipcRenderer.on('setPlatforms', (event, arg) => {\n\n    console.log(\"got set platforms\");\n    console.log(arg);\n\n    platforms = arg;\n\n    \n    let select = $(\"#platformList\");\n    select.empty();\n    for (const i in platforms) {\n        $('<div/>', {\n            \"class\": 'item',\n            \"data-value\": i\n        }).html(platforms[i]).appendTo(select);\n    }\n\n    // start the platform drop down.\n    $('#platformsDropdown')\n        .dropdown({\n            allowAdditions: false\n        });\n\n    // set the platform to default\n    $('#platformsDropdown').dropdown('set exactly', defaultSettings.defaultPlatform);\n\n    select = $(\"#platformListMulti\");\n    for (const i in platforms) {\n        $('<div/>', {\n            \"class\": 'item',\n            \"data-value\": i\n        }).html(platforms[i]).appendTo(select);\n    }\n\n    // start the platform drop down.\n    $('#platformsDropdownMulti')\n        .dropdown({\n            allowAdditions: false\n        });\n\n    // // set the platform to default\n    $('#platformsDropdownMulti').dropdown('set exactly', defaultSettings.defaultPlatform);\n});\n\n\nipcRenderer.on('setTemplates', (event, arg) => {\n    console.log(\"----------------\");\n    console.log(\"got set templates\");\n    console.log(arg);\n\n    templates = arg;\n\n    let select = $(\"#templateList\");\n    for (const i in templates) {\n        console.log(i);\n        $('<div/>', {\n            \"class\": 'item',\n            \"data-value\": i\n        }).html(templates[i]).appendTo(select);\n    }\n\n    console.log(select);\n\n    // start the template drop down.\n    $('#templatesDropdown')\n        .dropdown({\n            allowAdditions: false,\n            fullTextSearch: 'exact',\n            match: \"text\",\n            maxSelections: 1\n        });\n\n    // // set the template to default\n    //$('#templatesDropdown').dropdown('set exactly', defaultSettings['defaultTemplate']);\n\n    // Multi\n    select = $(\"#templateListMulti\");\n    for (const i in templates) {\n        $('<div/>', {\n            \"class\": 'item',\n            \"data-value\": i\n        }).html(templates[i]).appendTo(select);        \n    }\n\n    // start the platform drop down.\n    $('#templatesDropdownMulti')\n        .dropdown({\n            allowAdditions: false,\n            maxSelections: 1\n        });\n\n    // // set the template to default\n    //$('#templatesDropdownMulti').dropdown('set exactly', defaultSettings['defaultTemplate']);\n});\n\n\nipcRenderer.on('enableTemplate', (event, arg) => {\n\n    console.log('enableTemplate');\n    const items = arg.bMulti === false\n                ? $('#templatesDropdown .menu .item')\n                : $('#templatesDropdownMulti .menu .item');\n\n    // enable all first\n    for (let i = 0; i < items.length; i++) {\n        const item = $(items[i]);\n        item.removeClass(\"disabled\");\n    }\n\n    for (const template of arg.invalidTemplateList) {\n        for (let i = 0; i < items.length; i++) {\n            const item = $(items[i]);\n            if (item.attr('data-value') === template) {\n                item.addClass(\"disabled\");\n            }\n        }\n    }\n});\n\n//-------------------------------------------\n// select the list of addons and notify if some aren't installed\nipcRenderer.on('selectAddons', (event, arg) => {\n    // todo : DEAL WITH LOCAL ADDONS HERE....\n\n    const addonsAlreadyPicked = $(\"#addonsDropdown\").val().split(',');\n\n    console.log(addonsAlreadyPicked);\n    console.log(arg);\n    console.log(addonsInstalled);\n\n    const neededAddons = [];\n    localAddons = [];\n\n    //haystack.indexOf(needle) >= 0\n\n    for (let i = 0; i < arg.length; i++) {\n        arg[i] = arg[i].trim();\n        // first, check if it's already picked, then do nothing\n        if (addonsAlreadyPicked.indexOf(arg[i]) >= 0){\n            console.log(\"already picked\"); // alread picked\n        } else {\n            // if not picked, check if have it and try to pick it\n            if (addonsInstalled.indexOf(arg[i]) >= 0){\n                $('#addonsDropdown').dropdown('set selected', arg[i]);\n            } else {\n                const neededAddonPathRel = path.resolve($(\"#projectPath\").val(), $(\"#projectName\").val(), arg[i]);\n                console.log(neededAddonPathRel);\n                if (fs.existsSync(neededAddonPathRel)\n                    || fs.existsSync(neededAddons[i]))\n                {\n                    localAddons.push(arg[i]);\n                } else {\n                    neededAddons.push(arg[i]);\n                }\n            }\n        }\n    }\n\n\n    if (neededAddons.length > 0) {\n        console.log(\"missing addons\");\n        // $(\"#generate-mode-section\").addClass(\"has-missing-addons\");\n        $('#missingAddonList').empty();\n        $('#missingAddonList').append(\"<b>\" + neededAddons.join(\", \") + \"</b>\");\n        $(\"#missingAddonMessage\").show();\n        $(\"#adons-refresh-icon\").show();\n\n    } else {\n        $(\"#adons-refresh-icon\").hide();\n        $(\"#missingAddonMessage\").hide();\n\n        // $(\"#generate-mode-section\").removeClass(\"has-missing-addons\");\n    }\n\n    if (localAddons.length > 0){\n        // $(\"#generate-mode-section\").addClass(\"has-missing-addons\");\n        $('#localAddonList').empty();\n        $('#localAddonList').append(\"<b>\" + localAddons.join(\", \") + \"</b>\");\n        $(\"#localAddonMessage\").show();\n        //$(\"#adons-refresh-icon\").show();\n    } else {\n        $(\"#localAddonMessage\").hide();\n    }\n\n    // <div class=\"ui red message\" id=\"missingAddonMessage\" style=\"display: none\">\n    //     <p>\n    //         <div class=\"header\">\n    //             Missing addons\n    //         </div>\n    //     </p>\n    //     <p>you are attempting to update a project that is missing the following addons</p>\n    //     <p><div id=\"missingAddonList\"></div></p>\n    //     <p>please download the missing addons and put them in your addons folder, then relaunch the project generator.</p>\n    //     <p>if you choose to update this project without these addons, you may overwrite the settings on the project.</p>\n    // </div>\n});\n\n//-------------------------------------------\n// allow main to send UI messages\nipcRenderer.on('sendUIMessage', (event, arg) => {\n    // check if it has \"success\" message:\n    displayModal(arg);\n});\n\n//-------------------------------------------\nipcRenderer.on('consoleMessage', (event, msg) => {\n    consoleMessage(msg);\n});\n\n//-------------------------------------------\nipcRenderer.on('generateCompleted', (event, isSuccessful) => {\n    if (isSuccessful === true) {\n        // We want to switch to update mode now\n        $(\"#projectName\").trigger('change');\n    }\n});\n\n//-------------------------------------------\nipcRenderer.on('updateCompleted', (event, isSuccessful) => {\n    if (isSuccessful === true) {\n        // eventual callback after update completed\n    }\n});\n\nipcRenderer.on('setRandomisedSketchName', (event, newName) => {\n    $(\"#projectName\").val(newName);\n});\n\n\n//-----------------------------------------------------------------------------------\n// functions\n//-----------------------------------------------------------------------------------\n\n\n//----------------------------------------\n/**\n * @param {string} ofPathValue \n */\nfunction setOFPath(ofPathValue) {\n    // get the element:\n    /** @type {HTMLInputElement} */\n    const ofPathElem = document.getElementById(\"ofPath\");\n\n    const $element = $('#ofPath');\n    const text = ofPathValue;\n\n    if (ofPathValue != null && !path.isAbsolute(ofPathValue)) {\n        // if we are relative, don't do anything...\n\n        ofPathElem.value = ofPathValue;\n    } else {\n        // else check settings for how we want this path.... make relative if we need to:\n        if (defaultSettings.useRelativePath === true) {\n            const relativePath = path.normalize(path.relative(path.resolve(__dirname), ofPathValue)) + \"/\";\n            ofPathElem.value = relativePath;\n        } else {\n            ofPathElem.value = ofPathValue;\n        }\n    }\n\n    \n\n    $(\"#ofPath\").trigger('change');\n\n    typeTextJ($element, text, 150);\n}\n\nfunction disableButtonTemporarily(button) {\n    button.prop('disabled', true); // Disable the button\n    setTimeout(() => {\n        button.prop('disabled', false); // Enable the button after 400ms\n    }, 400);\n}\n\n\nfunction setPGVersion(ofPathValue) {\n    // get the element:\n    /** @type {HTMLInputElement} */\n    const ofPathElem = document.getElementById(\"versionDisplay\");\n\n    if (ofPathValue != null) {\n        ofPathElem.value = ofPathValue;\n    }\n\n    typeText(ofPathElem, ofPathElem.value, 100);\n\n}\n\nfunction setPGPlatform(ofPathValue) {\n    // get the element:\n    /** @type {HTMLInputElement} */\n    const ofPathElem = document.getElementById(\"platformDisplay\");\n\n    if (ofPathValue != null) {\n        ofPathElem.value = ofPathValue;\n    }\n\n    typeText(ofPathElem, ofPathElem.value, 50);\n\n    \n}\n\n//----------------------------------------\nfunction setup() {\n    jQuery.fn.extend({\n        oneTimeTooltip: function (msg) {\n            return this.each(function () {\n                $(this).popup({\n                    content: msg,\n                    position: 'bottom center',\n                    on: 'manual',\n                    onVisible: function (e) {\n                        // hide on focus / change / onShow (for dropdowns)\n                        $(e).one('focus change click', function () { $(this).popup('hide'); });\n                        console.log($(e).children('input'));\n                    }\n                }).popup('show')\n            });\n        }\n    });\n\n\n    $(document).ready(() => {\n        try {\n            const {\n                release,\n                platform\n            } = ipcRenderer.sendSync('getOSInfo');\n            const os_major_pos = release.indexOf(\".\");\n            const os_major = release.slice(0, os_major_pos);\n            const isSierra = (platform === 'darwin' || platform=== 'osx' );\n\n            const ofpath = document.getElementById(\"ofPath\").value;\n            console.log(\"platform is \" + platform + \" isSierra is \" + isSierra + \" ofpath is \" + ofpath  )\n    \n            if(isSierra) {\n                try {\n                    const runningOnVar = (ofpath.length >= 8 && ofpath.substring(0,8) === '/private');\n                    isFirstTimeSierra = runningOnVar;\n                } catch(e) {\n                    isFirstTimeSierra = false;\n                }\n            }\n        } catch(e) {\n            isFirstTimeSierra = false;\n        }\n        getOFPath();\n                getOFPlatform();\n                getOFVersion();\n\n        if (document.querySelector('.ui.tab[data-tab=\"settings\"]').classList.contains('active')) {\n                getOFPath();\n                getOFPlatform();\n                getOFVersion();\n            }\n\n            // Event listener for tab change\n            document.querySelectorAll('.menu .item').forEach(item => {\n                item.addEventListener('click', (e) => {\n                const tab = e.target.getAttribute('data-tab');\n                if (tab === 'settings') {\n                getOFPath();\n                getOFPlatform();\n                getOFVersion();\n                }\n            });\n        });\n\n\n       \n        $('#ofPathButton').click(() => {\n            disableButtonTemporarily($(\"#commandButton\"));\n            getOFPath();\n        });\n        \n        $('#commandButton').click(() => {\n            disableButtonTemporarily($(\"#commandButton\"));\n            const customArg = $('#commandInput').val();\n            customArg = customArg.replace(/[`$&|<>]/g, '\\\\$&');\n            ipcRenderer.send('command', customArg);\n        });\n       \n        console.log(\"App is translocated: \" + isFirstTimeSierra);\n \n        $('.main.menu .item').tab({\n            history: false\n        });\n\n        $(\"#createMenuButon\").tab({\n            'onVisible':() => {\n                if (isOfPathGood !== true){\n                    $('#settingsMenuButton').click();\n                     $('#ofPathError').modal({\n                        onHide: () => {\n                             $('#settingsMenuButton').click();\n                        }\n                    }).modal(\"show\");\n               }\n            }\n        });\n\n        $(\"#updateMenuButton\").tab({\n            'onVisible':() => {\n                if (isOfPathGood !== true) {\n                    $('#settingsMenuButton').click();\n                     $('#ofPathError').modal({\n                        onHide: () => {\n                             $('#settingsMenuButton').click();\n                        }\n                    }).modal(\"show\");\n               }\n            }\n        });\n\n        $(\"#settingsMenuButton\").tab({\n            'onVisible': () => {\n                console.log(\"settings!! \");\n                $('#createMenuButon').removeClass('active');\n                $('#updateMenuButton').removeClass('active');\n                $('#settingsMenuButton').addClass('active');\n        }\n        });\n\n        // $('.main.menu .item').filter('.updateMultiMenuOption').tab({\n        //     'onVisible':function(){\n        //         alert(\"wh\");\n        //         // if (isOfPathGood !== true){\n        //         //     $('.main .ui').tab('change tab', 'settings')\n        //         // }\n        //     }\n        // });\n\n        // bind external URLs (load it in default browser; not within Electron)\n        $('*[data-toggle=\"external_target\"]').click((e) => {\n            e.preventDefault();\n            ipcRenderer.send('openExternal', $(e.currentTarget).prop('href'));\n        });\n\n        $(\"#projectPath\").on('change', () => {\n        \tif($(\"#projectPath\").is(\":focus\") === true) {\n                 return; \n            }\n\n            $(\"#projectName\").trigger('change'); // checks the project on the new location\n        });\n        $(\"#projectPath\").on('focusout', () => {\n        \t$(\"#projectPath\").trigger('change');\n        });\n\n        $(\"#projectName\").on('change', () => {\n        \tif( $(\"#projectName\").is(\":focus\") === true ){ return; }\n\n            // fix \"non alpha numeric characters here\" as we did in the old PG\n            const currentStr = $(\"#projectName\").val();\n            const stripped = currentStr.replace(/[&\\/\\\\#,+()$~%.'\":*?<>{}]/g, '_');\n            $(\"#projectName\").val(stripped)\n\n        \tconst project = {\n                projectName: $(\"#projectName\").val(),\n                projectPath: $(\"#projectPath\").val()\n            };\n\n        \t// check if project exists\n        \tipcRenderer.send('isOFProjectFolder', project);\n\n            // update link to local project files\n            $(\"#revealProjectFiles\").prop('href', 'file:///' + path.join(project.projectPath, project.projectName).replace(/^\\//, '') );\n        }).trigger('change');\n        $('#revealProjectFiles').click(() => {\n            ipcRenderer.send('showItemInFolder', $('#revealProjectFiles').prop('href'));\n        });\n\n        $(\"#projectName\").on('focusout', () => {\n        \t$(\"#projectName\").trigger('change');\n        });\n\n        $(\"#updateMultiplePath\").on('change', () => {\n            ipcRenderer.send('checkMultiUpdatePath', $(\"#updateMultiplePath\").val());\n        });\n\n        $(\"#advancedOptions\").checkbox();\n        $(\"#advancedOptions\").on(\"change\", () => {\n            if ($(\"#advancedOptions\").filter(\":checked\").length > 0) {\n                enableAdvancedMode(true);\n            } else {\n                enableAdvancedMode(false);\n            }\n        });\n\n         $(\"#IDEButton\").on(\"click\", () => {\n            disableButtonTemporarily($(\"#IDEButton\"));\n            launchInIDE();\n        });\n\n        $(\"#mainIDEButton\").on(\"click\", () => {\n            disableButtonTemporarily($(\"#mainIDEButton\"));\n            launchInIDE();\n        });\n\n        $(\"#mainFolderButton\").on(\"click\", () => {\n            disableButtonTemporarily($(\"#mainFolderButton\"));\n            launchFolder();\n        });\n\n        $(\"#FolderButton\").on(\"click\", () => {\n            disableButtonTemporarily($(\"#FolderButton\"));\n            launchFolder();\n        });\n\n         $(\"#verboseOption\").checkbox();\n         $(\"#verboseOption\").on(\"change\", () => {\n            if ($(\"#verboseOption\").filter(\":checked\").length > 0) {\n                 defaultSettings.verboseOutput = true;\n                 bVerbose = true;\n                 saveDefaultSettings();\n            } else {\n                 defaultSettings.verboseOutput = false;\n                 bVerbose = false;\n                 saveDefaultSettings();\n            }\n        });\n\n        $(\"#ofPath\").on(\"change\", () => {\n            const ofpath = $(\"#ofPath\").val();\n            defaultSettings.defaultOfPath = ofpath;\n            console.log(\"ofPath val \" + ofpath);\n            if(isFirstTimeSierra) {\n                //ipcRenderer.sendSync('firstTimeSierra', \"xattr -r -d com.apple.quarantine \" + ofpath + \"/projectGenerator-osx/projectGenerator.app\");\n                //$(\"#projectPath\").val(ofpath + \"/apps/myApps\").trigger('change');\n                if( isFirstTimeSierra ){\n                    $(\"#ofPathSierraMessage\").show();\n                    $('#settingsMenuButton').click();\n                }\n            }else{\n                saveDefaultSettings();\n                $(\"#projectPath\").val(ofpath + \"/apps/myApps\").trigger('change');\n                console.log(\"requesting addons\");\n                // trigger reload addons from the new OF path\n                ipcRenderer.send('refreshAddonList', $(\"#ofPath\").val());\n                ipcRenderer.send('refreshPlatformList', $(\"#ofPath\").val());\n            }\n        });\n\n\n        if (defaultSettings.advancedMode === true){\n        \t$(\"#advancedOptions\").attr('Checked','Checked');\n        }\n\n        if (defaultSettings.verboseOutput === true){\n            $('#verboseOption').attr('Checked','Checked');\n            bVerbose = true;\n        }\n\n        // updates ofPath when the field is manually changed\n        $(\"#ofPath\").on('blur', (e) => {\n            const ofpath = $(\"#ofPath\").val();\n            setOFPath(ofpath);\n            if(isFirstTimeSierra) {\n                //$(\"#projectPath\").val(ofpath + \"/apps/myApps\").trigger('change');\n            }\n        }).on('keypress', (e) => {\n            if(e.which == 13){\n                e.preventDefault();\n                $(\"#ofPath\").blur();\n            }\n        });\n    \n        /* Stuff for the console setting (removed from UI) */\n        $(\"#consoleToggle\").on(\"change\", function () {\n            enableConsole( $(this).is(':checked') );\n        });\n        // enable console? (hiddens setting)\n        if(defaultSettings['showConsole']){ $(\"body\").addClass('enableConsole'); }\n        $(\"#showConsole\").on('click', function(){ $('body').addClass('showConsole'); });\n        $(\"#hideConsole\").on('click', function(){ $('body').removeClass('showConsole'); });\n\n        // initialise the overall-use modal\n        $(\"#uiModal\").modal({\n            'show': false\n        });\n\n        $(\"#fileDropModal\").modal({\n            'show': false,\n            onHide: () => {\n                $('body').removeClass('incomingFile');\n            },\n            onShow: () => {\n                $('body').addClass('incomingFile');\n            }\n        });\n\n\n        // show default platform in GUI\n        $(\"#defaultPlatform\").html(defaultSettings.defaultPlatform);\n        //$(\"#defaultTemplate\").html(defaultSettings['defaultTemplate']);\n\n        // Enable tooltips\n        //$(\"[data-toggle='tooltip']\").tooltip();\n\n        // add current menu element in body tag for CSS styling\n        // $('a[data-toggle=\"tab\"]').on('shown.bs.tab', function (e) {\n        //  \t\t$('body').removeClass('page-create_update page-settings page-advanced').addClass( 'page-' + $(e.target).attr(\"href\").replace('#', '') );\n        // });\n\n\n        // setup the multi update list as well.\n\n        $(\"#ofPath\").change();\n\n        // enable tool tips\n        $('.tooltip').popup();\n\n        // Open file drop zone\n        $(window).on('dragbetterenter', openDragInputModal);\n        $(window).on('dragenter', openDragInputModal);\n\n        // Close file drop zone\n        $(window).on('dragbetterleave', closeDragInputModal );\n        $(window).on('mouseleave', closeDragInputModal );\n\n        // prevent dropping anywhere (dropping files loads their URL, unloading the PG)\n        // note: weirdly, dragover is also needed\n        $(window).on('drop dragover', blockDragEvent );\n        //$(window).on('dragleave', blockDragEvent);\n\n        $(\"#dropZoneOverlay\").on('drop', onDropFile).on('dragend', closeDragInputModal);\n\n        // this allows to close the drop zone if it ever stays open due to a bug.\n        $(\"#dropZoneOverlay\").on('click', closeDragInputModal);\n        $(window).on('keypress', (e) => {\n            if( e.which === 27 ){ // esc key\n                e.stopPropagation();\n                e.preventDefault();\n                closeDragInputModal( e );\n            } \n        });\n\n        // listen for drag events\n        // note: dragover is needed because dragleave is called pretty randomly\n        $(\"#dropZoneUpdate\")\n            .on('dragenter dragover drop', onDragUpdateFile)\n            .on('dragleave', (e) => {\n                $(\"#dropZoneUpdate\").removeClass(\"accept deny\");\n            });\n\n\n        // reflesh template dropdown list depends on selected platforms\n        $(\"#platformsDropdown\").on('change', () => {\n            const selectedPlatforms = $(\"#platformsDropdown input\").val();\n            const selectedPlatformArray = selectedPlatforms.trim().split(',');\n            let arg = {\n                ofPath: $(\"#ofPath\").val(),\n                selectedPlatforms: selectedPlatformArray,\n                bMulti: false\n            }\n            console.log(arg);\n            ipcRenderer.send('refreshTemplateList', arg);\n        })\n        $(\"#platformsDropdownMulti\").on('change', () => {\n            const selectedPlatforms = $(\"#platformsDropdownMulti input\").val();\n            const selectedPlatformArray = selectedPlatforms.trim().split(',');\n            let arg = {\n                ofPath: $(\"#ofPath\").val(),\n                selectedPlatforms: selectedPlatformArray,\n                bMulti: true\n            }\n            ipcRenderer.send('refreshTemplateList', arg);\n        })\n\n    });\n}\n\nfunction blockDragEvent(e){\n    //console.log('blockDragEvent via '+e.type + ' on '+ e.target.nodeName + '#' + e.target.id);\n\n    // open drop overlay if not already open\n    if( !$('body').hasClass('incomingFile') ){\n        $(window).triggerHandler('dragbetterenter');\n    }\n\n    e.stopPropagation();\n    e.preventDefault();\n    return false;\n};\n\nfunction acceptDraggedFiles( e ){\n     // handle file\n    const files = e.originalEvent.dataTransfer.files;\n    const types = e.originalEvent.dataTransfer.types;\n\n    // this first check filters out most files\n    if(files && files.length == 1 && files[0].type == \"\" && types[0] == \"Files\"){\n        // this folder check is more relayable\n        const file = e.originalEvent.dataTransfer.items[0].webkitGetAsEntry();\n        if(file.isDirectory) {\n            return true;\n        }\n    }\n    return false;\n}\n\nfunction onDragUpdateFile( e ){\n    e.stopPropagation();\n    e.preventDefault();\n    //console.log('onDragUpdateFile via '+e.type + ' on '+ e.target.nodeName + '#' + e.target.id);\n\n    if( !$('body').hasClass('incomingFile') ){\n        return false;\n    }\n\n   if( acceptDraggedFiles( e ) ){\n        $(\"#dropZone\").addClass(\"accept\").removeClass(\"deny\");\n        return true;\n    }\n    // files are rejected\n    else {\n        $(\"#dropZone\").addClass(\"deny\").removeClass(\"accept\");\n    }\n    return false;\n}\n\nfunction onDropFile( e ){\n    e.stopPropagation();\n    e.preventDefault();\n\n   if( acceptDraggedFiles( e ) ){\n        $(\"#dropZone\").addClass(\"accept\").removeClass(\"deny\");\n\n        if( $('body').hasClass('advanced') && false ){ // todo: if (tab multiple is open)\n            // do batch import\n\n            $(\"updateMenuButton\").triggerHandler('click');\n        }\n        else {\n            const files = e.originalEvent.dataTransfer.files;\n            // import single project folder\n            $(\"#projectName\").val( files[0].name );\n            const projectFullPath = files[0].path;\n            const projectParentPath = path.normalize(projectFullPath + '/..');\n            $(\"#projectPath\").val( projectParentPath ).triggerHandler('change');\n\n            $(\"createMenuButon\").triggerHandler('click');\n        }\n        closeDragInputModal(e);\n        return true;\n    }\n    // files are rejected\n    else {\n        $(\"#dropZone\").addClass(\"deny\").removeClass(\"accept\");\n\n        displayModal(\n            `The file you dropped is not compatible for importing.<br>\n            To import an OpenFrameworks project, drag & drop the whole project folder.`\n        );\n    }\n    return false;\n}\n\nfunction closeDragInputModal(e){\n    e.stopPropagation();\n    e.preventDefault();\n\n    //console.log('closeDragInputModal via '+e.type + ' on '+ e.target.nodeName + '#' + e.target.id);\n\n    // Prevent closing the modal while still fading in\n    // if( $(\"#fileDropModal\").filter('.ui.modal:not(.fade.in)').length===0 ){\n    //     return;\n    // }\n\n    $(\"#fileDropModal\").modal('hide');\n    $(\"#dropZone\").removeClass(\"accept deny\");\n\n    return false;\n}\n\nfunction openDragInputModal(e){\n    e.stopPropagation();\n    e.preventDefault();\n\n    //console.log('openDragInputModal via '+e.type + ' on '+ e.target.nodeName + '#' + e.target.id);\n\n    if( !$('body').hasClass('incomingFile') ){\n        $(\"#fileDropModal\").modal('show');\n    }\n\n    // check filetype when entering droppable zone\n    if( e.type === 'dragenter' ){\n        onDragUpdateFile(e);\n    }\n\n    return false;\n}\n\n//----------------------------------------\nfunction saveDefaultSettings() {\n    if(!defaultSettings) return;\n    if(isFirstTimeSierra) return;\n\n    const defaultSettingsJsonString = JSON.stringify(defaultSettings, null, '\\t');\n    const result = ipcRenderer.sendSync('saveDefaultSettings', defaultSettingsJsonString);\n    console.log(result);\n}\n\n//----------------------------------------\nfunction generate() {\n    // let's get all the info:\n    const platformValueArray = getPlatformList();\n\n    const templatePicked = $(\"#templatesDropdown .active\");\n    const templateValueArray = [];\n    for (let i = 0; i < templatePicked.length; i++){\n        templateValueArray.push($(templatePicked[i]).attr(\"data-value\"));\n    }\n\n    const addonsPicked = $(\"#addonsDropdown  .active\");\n    const addonValueArray = [];\n\n    for(let i = 0; i < addonsPicked.length; i++) {\n        addonValueArray.push($(addonsPicked[i]).attr(\"data-value\"));\n    }\n\n    // add any local addons\n    for(let i = 0; i < localAddons.length; i++) {\n        addonValueArray.push(localAddons[i]);\n    }\n\n    // extra source locations\n    const srcExtraArr = [];\n    for(let i = 0; i < numAddedSrcPaths; i++) {\n        const srcExtra = $(\"#sourceExtra-\" + i).val();\n        if( srcExtra != '' ){\n            srcExtraArr.push(srcExtra);\n        }\n    }\n    const srcExtraList = srcExtraArr.join(',');\n\n    const lengthOfPlatforms = platformValueArray.length;\n\n    const gen = {\n        projectName: $(\"#projectName\").val(),\n        projectPath: $(\"#projectPath\").val(),\n        sourcePath: srcExtraList,\n        platformList: platformValueArray,\n        templateList: templateValueArray,\n        addonList: addonValueArray,  //$(\"#addonsDropdown\").val();\n        ofPath: $(\"#ofPath\").val(),\n        verbose: bVerbose\n    };\n\n    // console.log(gen);\n    if (gen.projectName === '') {\n        $(\"#projectName\").oneTimeTooltip(\"Please name your sketch first.\");\n    } else if (gen.projectPath === '') {\n        $(\"#projectPath\").oneTimeTooltip(\"Your project path is empty...\");\n    } else if (gen.platformList == null || lengthOfPlatforms == 0) {\n        $(\"#platformsDropdown\").oneTimeTooltip(\"Please select a platform first.\");\n    } else {\n        ipcRenderer.send('generate', gen);\n    }\n}\n\n\n//----------------------------------------\nfunction updateRecursive() {\n    // get the path and the platform list\n    // platformsDropdownMulti\n\n    const platformsPicked = $(\"#platformsDropdownMulti  .active\");\n    const platformValueArray = [];\n    for (let i = 0; i < platformsPicked.length; i++){\n        platformValueArray.push($(platformsPicked[i]).attr(\"data-value\"));\n    }\n\n    const templatePicked = $(\"#templatesDropdownMulti .active\");\n    const templateValueArray = [];\n    for (let i = 0; i < templatePicked.length; i++){\n        templateValueArray.push($(templatePicked[i]).attr(\"data-value\"));\n    }\n\n    const gen = {\n        updatePath: $(\"#updateMultiplePath\").val(),\n        platformList: platformValueArray,\n        templateList: templateValueArray,\n        updateRecursive: true,\n        ofPath: $(\"#ofPath\").val(),\n        verbose: bVerbose\n    };\n\n    if (gen.updatePath === '') {\n        displayModal(\"Please set update path\");\n    } else if (platformValueArray.length === 0) {\n        displayModal(\"Please select a platform first.\");\n    } else {\n        ipcRenderer.send('update', gen);\n    }\n}\n\n//----------------------------------------\n/**\n * \n * @param {'createMode' | 'updateMode'} mode \n */\nfunction switchGenerateMode(mode) {\n    // mode can be 'createMode' or 'updateMode'\n\n    // switch to update mode\n    if (mode == 'updateMode') {\n        $(\"#generateButton\").hide();\n        $(\"#updateButton\").show();\n        $(\"#mainIDEButton\").show();\n        $(\"#mainFolderButton\").show();\n        $(\"#folderButton\").show();\n        $(\"#missingAddonMessage\").hide();\n        $(\"#localAddonMessage\").hide();\n        $(\"#nameRandomiser\").hide();\n        $(\"#revealProjectFiles\").show();\n        $(\"#adons-refresh-icon\").hide();\n        if(!defaultSettings.advancedMode){\n            $(\"#consoleContainer\").hide();\n        }\n        $(\"#extraContainer\").hide();\n\n        console.log('Switching GenerateMode to Update...');\n\n        clearAddonSelection();\n        clearExtraSourceList();\n    }\n    // [default]: switch to createMode (generate new projects)\n    else {\n        // if previously in update mode, deselect Addons\n        if( $(\"#updateButton\").is(\":visible\") ){\n            clearAddonSelection();\n            clearExtraSourceList();\n        }\n\n        $(\"#generateButton\").show();\n        $(\"#updateButton\").hide();\n        $(\"#mainIDEButton\").hide();\n        $(\"#mainFolderButton\").hide();\n        $(\"#folderButton\").show();\n        $(\"#missingAddonMessage\").hide();\n        $(\"#localAddonMessage\").hide();\n        $(\"#nameRandomiser\").show();\n        $(\"#revealProjectFiles\").hide();\n        $(\"#adons-refresh-icon\").hide();\n        if(!defaultSettings.advancedMode){\n            $(\"#consoleContainer\").hide();\n        }\n        $(\"#extraContainer\").hide();\n\n        console.log('Switching GenerateMode to Create...');\n    }\n}\n\n//----------------------------------------\nfunction clearAddonSelection() {\n    $('#addonsDropdown').dropdown('clear');\n}\n\n//----------------------------------------\nfunction enableAdvancedMode(isAdvanced) {\n    if (isAdvanced) {\n        $('#platformsDropdown').removeClass(\"disabled\");\n        $(\"body\").addClass('advanced');\n        $('a.updateMultiMenuOption').show();\n        $('#sourceExtraSection').show();\n        $('#templateSection').show();\n        $('#templateSectionMulti').show();\n         $('#commandInput').show();\n        $('#commandButton').show();\n        $('#ofPathButton').show();\n\n\n    } else {\n        $('#platformsDropdown').removeClass(\"disabled\");\n        $('#platformsDropdown').dropdown('set exactly', defaultSettings.defaultPlatform);\n        $('#sourceExtraSection').hide();\n//        $('#templateSection').hide();\n//        $('#templateSectionMulti').hide();\n//        $('#templateDropdown').dropdown('set exactly', '');\n//        $('#templateDropdownMulti').dropdown('set exactly', '');\n        $('#templateSection').show();\n        $('#templateSectionMulti').show();\n\n        $('#commandInput').hide();\n        $('#commandButton').hide();\n        $('#ofPathButton').hide();\n        $(\"body\").removeClass('advanced');\n        $('a.updateMultiMenuOption').hide();\n    }\n    enableConsole(isAdvanced);\n    defaultSettings.advancedMode = isAdvanced;\n    saveDefaultSettings();\n    //$(\"#advancedToggle\").prop('checked', defaultSettings['advancedMode'] );\n}\n\n/* Stuff for the console setting (removed from UI) */\n\nfunction enableConsole( showConsole ){\n\tif( showConsole ) {\n\t\t// this has to be in body for CSS reasons\n\t\t$(\"body\").addClass('showConsole');\n\t}\n\telse {\n\t\t$(\"body\").removeClass('showConsole');\n\t}\n\tdefaultSettings['showConsole'] = showConsole;\n\tsaveDefaultSettings();\n    $(\"#consoleContainer\").show();\n\t$(\"#consoleToggle\").prop('checked', defaultSettings['showConsole'] );\n}\n\n//----------------------------------------\nfunction getPlatformList() {\n    const platformsPicked = $(\"#platformsDropdown  .active\");\n    const platformValueArray = [];\n    for (let i = 0; i < platformsPicked.length; i++){\n        platformValueArray.push($(platformsPicked[i]).attr(\"data-value\"));\n    }\n    return platformValueArray;\n}\n\nfunction openFolder() {\n    const platformsPicked = $(\"#platformsDropdown  .active\");\n    const platformValueArray = [];\n    for (let i = 0; i < platformsPicked.length; i++){\n        platformValueArray.push($(platformsPicked[i]).attr(\"data-value\"));\n    }\n    return platformValueArray;\n}\n\n//----------------------------------------\nfunction displayModal(message) {\n    $(\"#uiModal .content\")\n        .html(message)\n        .find('*[data-toggle=\"external_target\"]')\n        .click((e) => {\n            e.preventDefault();\n            ipcRenderer.send('openExternal', $(e.currentTarget).prop(\"href\") );\n        });\n\n    if (message.indexOf(\"Success!\") > -1){\n        $(\"#IDEButton\").show();\n        $(\"#FolderButton\").show();\n    } else {\n        $(\"#IDEButton\").hide();\n        $(\"#FolderButton\").show();\n    }\n\n    $(\"#uiModal\").modal('show');\n}\n\n//----------------------------------------\nfunction consoleMessage(orig_message) {\n    const message = (orig_message + '').replace(/([^>\\r\\n]?)(\\r\\n|\\n\\r|\\r|\\n)/g, '$1' + \"<br>\\n\" + '$2'); // nl2br\n    $(\"#console\").append($(\"<p>\").html(message));\n    $(\"#consoleContainer\").scrollTop($('#console').offset().top); // scrolls console to bottom\n}\n\n//-----------------------------------------------------------------------------------\n// Button calls\n//-----------------------------------------------------------------------------------\n\nfunction quit(){\n    ipcRenderer.send('quit', '');\n}\nfunction browseOfPath() {\n    ipcRenderer.send('pickOfPath', ''); // current path could go here (but the OS also remembers the last used folder)\n}\n\nfunction browseProjectPath() {\n    let projectPath = $(\"#projectPath\").val();\n    if (projectPath === ''){\n        projectPath = $(\"#ofPath\").val();\n    }\n    ipcRenderer.send('pickProjectPath', projectPath); // current path could go here\n}\n\nfunction clearExtraSourceList(){\n    $(\"#sourceExtraSection\").empty();\n    $(\"#sourceExtraSection\").append(\"<label>Additional source folders:</label>\");\n    \n    checkAddSourcePath(-1);\n    numAddedSrcPaths = 1;\n}\n\nfunction checkAddSourcePath(index){\n    //if we don't have another field below us - add one\n    const nextFieldId = '#sourceExtra-' + (index + 1);\n    if( $(nextFieldId).length == 0 ) {\n        const nextIndex = index + 1;\n        const extrafield = `<div class=\"field\">\n           <div class=\"ui icon input fluid\">\n               <input type=\"text\" placeholder=\"Extra source path...\" id=\"sourceExtra-${nextIndex}\"> \\\n               <i class=\"search link icon\" onclick=\"browseSourcePath(${nextIndex})\"></i> \\\n           </div>\n        </div>`;\n\n        $(\"#sourceExtraSection\").append(extrafield);\n        numAddedSrcPaths++;\n    }\n}\n\nfunction browseSourcePath(index) {\n    const ofPath = $(\"#ofPath\").val();\n    ipcRenderer.send('pickSourcePath', [ ofPath, index ]); // current path could go here\n}\n\n\nfunction browseImportProject() {\n    let projectPath = $(\"#projectPath\").val();\n    if (projectPath === ''){\n        projectPath = $(\"#ofPath\").val();\n    }\n    ipcRenderer.send('pickProjectImport', projectPath);\n}\n\nfunction getUpdatePath() {\n    let updateMultiplePath = $(\"#updateMultiplePath\").val();\n    if (updateMultiplePath === ''){\n        updateMultiplePath = $(\"#ofPath\").val();\n    }\n\n    ipcRenderer.send('pickUpdatePath', updateMultiplePath); // current path could go here\n}\n\nfunction rescanAddons() {\n    ipcRenderer.sendSync('refreshAddonList', $(\"#ofPath\").val());\n\n    const projectInfo = {\n        'projectName': $(\"#projectName\").val(),\n        'projectPath': $(\"#projectPath\").val(),\n    };\n    ipcRenderer.send('isOFProjectFolder', projectInfo);     // <- this forces addon reload\n}\n\nfunction getRandomSketchName(){\n    const projectPath = $(\"#projectPath\").val();\n    if (projectPath === '') {\n        $(\"#projectPath\").oneTimeTooltip('Please specify a path first...');\n    }\n    else {\n        const result = ipcRenderer.sendSync('getRandomSketchName', projectPath);\n        const {\n            randomisedSketchName,\n            generateMode\n        } = result;\n        $(\"#projectName\").val(randomisedSketchName);\n        switchGenerateMode(generateMode);\n    }\n}\n\nfunction launchInIDE(){\n    const platform = getPlatformList()[0];\n\n    const project = {\n        'projectName': $(\"#projectName\").val(),\n        'projectPath': $(\"#projectPath\").val(),\n        'platform': platform,\n        'ofPath': $(\"#ofPath\").val()\n    };\n\n    ipcRenderer.send('launchProjectinIDE', project );\n}\n\nfunction launchFolder(){\n    const platform = getPlatformList()[0];\n\n    const project = {\n        'projectName': $(\"#projectName\").val(),\n        'projectPath': $(\"#projectPath\").val()\n    };\n\n    ipcRenderer.send('launchFolder', project );\n}\n\nfunction getOFVersion() {\n    console.log('getOFVersion:sending');\n    ipcRenderer.send('getVersion');\n}\n\nfunction getOFPlatform() {\n    let platform = '';\n    if (navigator.platform.indexOf('Win') > -1) {\n        platform = 'Windows';\n    } else if (navigator.platform.indexOf('Mac') > -1) {\n        platform = 'macOS';\n    } else if (navigator.platform.indexOf('Linux') > -1) {\n        platform = 'Linux';\n    }\n    document.getElementById('platformDisplay').textContent = platform;\n    console.log('getOFPlatform:sending');\n    ipcRenderer.send('getHostType');\n}\n\nfunction getOFPath() {\n    console.log('getOFPath:sending');\n    ipcRenderer.send('getOFPath');\n}\n\n\nipcRenderer.on('commandResult', (event, result) => {\n    if (result.success) {\n        console.log('Command executed successfully:', result.message);\n    } else {\n        console.error('Command execution failed:', result.message);\n    }\n});\n\n\nipcRenderer.on('ofPathResult', (event, result) => {\n    if (result.success) {\n        console.log('ofPath:', result.message);\n        document.getElementById('ofPath').textContent = result.message;\n        setOFPath(result.message);\n        $(\"updateMenuButton\").triggerHandler('click');\n    } else {\n        console.error('ofPath: failed:', result.message);\n    }\n});\n\nipcRenderer.on('ofPlatformResult', (event, result) => {\n    if (result.success) {\n        console.log('ofPlatform:', result.message);\n        document.getElementById('platformDisplay').textContent = result.message;\n        setPGPlatform(result.message);\n        $(\"updateMenuButton\").triggerHandler('click');\n    } else {\n        console.error('ofPath: failed:', result.message);\n    }\n});\n\nipcRenderer.on('ofVersionResult', (event, result) => {\n    if (result.success) {\n        console.log('ofVersionResult:', result.message);\n        document.getElementById('versionDisplay').textContent = result.message;\n        setPGVersion(result.message);\n        $(\"updateMenuButton\").triggerHandler('click');\n    } else {\n        console.error('ofPath: failed:', result.message);\n    }\n});\n",
+			"file": "app.js",
+			"file_size": 44855,
+			"file_write_time": 133673922095721869,
+			"redo_stack":
+			[
+				[
+					139,
+					1,
+					"paste",
+					null,
+					"AQAAAJsBAAAAAAAAmwEAAAAAAAAKAQAAY29udGV4dEJyaWRnZS5leHBvc2VJbk1haW5Xb3JsZCgndmVyc2lvbnMnLCB7CiAgbm9kZTogKCkgPT4gcHJvY2Vzcy52ZXJzaW9ucy5ub2RlLAogIGNocm9tZTogKCkgPT4gcHJvY2Vzcy52ZXJzaW9ucy5jaHJvbWUsCiAgZWxlY3Ryb246ICgpID0+IHByb2Nlc3MudmVyc2lvbnMuZWxlY3Ryb24sCiAgcGluZzogKCkgPT4gaXBjUmVuZGVyZXIuaW52b2tlKCdwaW5nJykKICAvLyB3ZSBjYW4gYWxzbyBleHBvc2UgdmFyaWFibGVzLCBub3QganVzdCBmdW5jdGlvbnMKfSk",
+					"AQAAAAAAAAABAAAApQIAAAAAAAClAgAAAAAAAAAAAAAAAPC/"
+				]
+			],
+			"settings":
+			{
+				"buffer_size": 44932,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					5,
+					1,
+					"insert",
+					{
+						"characters": "\n\n"
+					},
+					"AgAAAE4BAAAAAAAATwEAAAAAAAAAAAAATwEAAAAAAABQAQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAATgEAAAAAAABOAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					6,
+					1,
+					"paste",
+					null,
+					"AQAAAFABAAAAAAAAbgEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAUAEAAAAAAABQAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					18,
+					1,
+					"paste",
+					null,
+					"AQAAAFgBAAAAAAAAZQEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAWAEAAAAAAABYAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					19,
+					1,
+					"insert",
+					{
+						"characters": ","
+					},
+					"AQAAAGUBAAAAAAAAZgEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAZQEAAAAAAABlAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					20,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAGYBAAAAAAAAZwEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAZgEAAAAAAABmAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					21,
+					1,
+					"paste",
+					null,
+					"AQAAAGcBAAAAAAAAeQEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAZwEAAAAAAABnAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					22,
+					1,
+					"insert",
+					{
+						"characters": ","
+					},
+					"AQAAAHkBAAAAAAAAegEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAeQEAAAAAAAB5AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					24,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAHoBAAAAAAAAewEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAegEAAAAAAAB6AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					44,
+					1,
+					"insert",
+					{
+						"characters": ","
+					},
+					"AQAAAIYBAAAAAAAAhwEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAhgEAAAAAAACGAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					45,
+					1,
+					"insert",
+					{
+						"characters": " payj"
+					},
+					"BQAAAIcBAAAAAAAAiAEAAAAAAAAAAAAAiAEAAAAAAACJAQAAAAAAAAAAAACJAQAAAAAAAIoBAAAAAAAAAAAAAIoBAAAAAAAAiwEAAAAAAAAAAAAAiwEAAAAAAACMAQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAhwEAAAAAAACHAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					46,
+					2,
+					"left_delete",
+					null,
+					"AgAAAIsBAAAAAAAAiwEAAAAAAAABAAAAaooBAAAAAAAAigEAAAAAAAABAAAAeQ",
+					"AQAAAAAAAAABAAAAjAEAAAAAAACMAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					47,
+					1,
+					"insert",
+					{
+						"characters": "th,"
+					},
+					"AwAAAIoBAAAAAAAAiwEAAAAAAAAAAAAAiwEAAAAAAACMAQAAAAAAAAAAAACMAQAAAAAAAI0BAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAigEAAAAAAACKAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					48,
+					1,
+					"insert",
+					{
+						"characters": " fs"
+					},
+					"AwAAAI0BAAAAAAAAjgEAAAAAAAAAAAAAjgEAAAAAAACPAQAAAAAAAAAAAACPAQAAAAAAAJABAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAjQEAAAAAAACNAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					122,
+					1,
+					"insert",
+					{
+						"characters": "\n\n"
+					},
+					"AgAAAJsBAAAAAAAAnAEAAAAAAAAAAAAAnAEAAAAAAACdAQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAmwEAAAAAAACbAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					123,
+					1,
+					"paste",
+					null,
+					"AQAAAJ0BAAAAAAAA6AEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAnQEAAAAAAACdAQAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/.clang-format",
+			"settings":
+			{
+				"buffer_size": 6628,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					8,
+					1,
+					"left_delete",
+					null,
+					"AQAAAPsWAAAAAAAA+xYAAAAAAAABAAAANA",
+					"AQAAAAAAAAABAAAA+xYAAAAAAAD8FgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					9,
+					1,
+					"insert",
+					{
+						"characters": "2"
+					},
+					"AQAAAPsWAAAAAAAA/BYAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA+xYAAAAAAAD7FgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					27,
+					1,
+					"paste",
+					null,
+					"AgAAAAAAAAAAAAAA5BkAAAAAAAAAAAAA5BkAAAAAAADkGQAAAAAAALQXAAAtLS0KTGFuZ3VhZ2U6ICAgICAgICBDcHAKIyBCYXNlZE9uU3R5bGU6ICBXZWJLaXQKQWNjZXNzTW9kaWZpZXJPZmZzZXQ6IC00CkFsaWduQWZ0ZXJPcGVuQnJhY2tldDogRG9udEFsaWduCkFsaWduQXJyYXlPZlN0cnVjdHVyZXM6IE5vbmUKQWxpZ25Db25zZWN1dGl2ZUFzc2lnbm1lbnRzOgogIEVuYWJsZWQ6ICAgICAgICAgZmFsc2UKICBBY3Jvc3NFbXB0eUxpbmVzOiBmYWxzZQogIEFjcm9zc0NvbW1lbnRzOiAgZmFsc2UKICBBbGlnbkNvbXBvdW5kOiAgIGZhbHNlCiAgUGFkT3BlcmF0b3JzOiAgICB0cnVlCkFsaWduQ29uc2VjdXRpdmVCaXRGaWVsZHM6CiAgRW5hYmxlZDogICAgICAgICBmYWxzZQogIEFjcm9zc0VtcHR5TGluZXM6IGZhbHNlCiAgQWNyb3NzQ29tbWVudHM6ICBmYWxzZQogIEFsaWduQ29tcG91bmQ6ICAgZmFsc2UKICBQYWRPcGVyYXRvcnM6ICAgIGZhbHNlCkFsaWduQ29uc2VjdXRpdmVEZWNsYXJhdGlvbnM6CiAgRW5hYmxlZDogICAgICAgICBmYWxzZQogIEFjcm9zc0VtcHR5TGluZXM6IGZhbHNlCiAgQWNyb3NzQ29tbWVudHM6ICBmYWxzZQogIEFsaWduQ29tcG91bmQ6ICAgZmFsc2UKICBQYWRPcGVyYXRvcnM6ICAgIGZhbHNlCkFsaWduQ29uc2VjdXRpdmVNYWNyb3M6CiAgRW5hYmxlZDogICAgICAgICBmYWxzZQogIEFjcm9zc0VtcHR5TGluZXM6IGZhbHNlCiAgQWNyb3NzQ29tbWVudHM6ICBmYWxzZQogIEFsaWduQ29tcG91bmQ6ICAgZmFsc2UKICBQYWRPcGVyYXRvcnM6ICAgIGZhbHNlCkFsaWduRXNjYXBlZE5ld2xpbmVzOiBSaWdodApBbGlnbk9wZXJhbmRzOiAgIERvbnRBbGlnbgpBbGlnblRyYWlsaW5nQ29tbWVudHM6IGZhbHNlCkFsbG93QWxsQXJndW1lbnRzT25OZXh0TGluZTogdHJ1ZQpBbGxvd0FsbFBhcmFtZXRlcnNPZkRlY2xhcmF0aW9uT25OZXh0TGluZTogdHJ1ZQpBbGxvd1Nob3J0RW51bXNPbkFTaW5nbGVMaW5lOiB0cnVlCkFsbG93U2hvcnRCbG9ja3NPbkFTaW5nbGVMaW5lOiBFbXB0eQpBbGxvd1Nob3J0Q2FzZUxhYmVsc09uQVNpbmdsZUxpbmU6IGZhbHNlCkFsbG93U2hvcnRGdW5jdGlvbnNPbkFTaW5nbGVMaW5lOiBBbGwKQWxsb3dTaG9ydExhbWJkYXNPbkFTaW5nbGVMaW5lOiBBbGwKQWxsb3dTaG9ydElmU3RhdGVtZW50c09uQVNpbmdsZUxpbmU6IFdpdGhvdXRFbHNlCkFsbG93U2hvcnRMb29wc09uQVNpbmdsZUxpbmU6IGZhbHNlCkFsd2F5c0JyZWFrQWZ0ZXJEZWZpbml0aW9uUmV0dXJuVHlwZTogTm9uZQpBbHdheXNCcmVha0FmdGVyUmV0dXJuVHlwZTogTm9uZQpBbHdheXNCcmVha0JlZm9yZU11bHRpbGluZVN0cmluZ3M6IGZhbHNlCkFsd2F5c0JyZWFrVGVtcGxhdGVEZWNsYXJhdGlvbnM6IE11bHRpTGluZQpBdHRyaWJ1dGVNYWNyb3M6CiAgLSBfX2NhcGFiaWxpdHkKQmluUGFja0FyZ3VtZW50czogdHJ1ZQpCaW5QYWNrUGFyYW1ldGVyczogdHJ1ZQpCcmFjZVdyYXBwaW5nOgogIEFmdGVyQ2FzZUxhYmVsOiAgZmFsc2UKICBBZnRlckNsYXNzOiAgICAgIGZhbHNlCiAgQWZ0ZXJDb250cm9sU3RhdGVtZW50OiBOZXZlcgogIEFmdGVyRW51bTogICAgICAgZmFsc2UKICBBZnRlckZ1bmN0aW9uOiAgIGZhbHNlCiAgQWZ0ZXJOYW1lc3BhY2U6ICBmYWxzZQogIEFmdGVyT2JqQ0RlY2xhcmF0aW9uOiBmYWxzZQogIEFmdGVyU3RydWN0OiAgICAgZmFsc2UKICBBZnRlclVuaW9uOiAgICAgIGZhbHNlCiAgQWZ0ZXJFeHRlcm5CbG9jazogZmFsc2UKICBCZWZvcmVDYXRjaDogICAgIGZhbHNlCiAgQmVmb3JlRWxzZTogICAgICBmYWxzZQogIEJlZm9yZUxhbWJkYUJvZHk6IGZhbHNlCiAgQmVmb3JlV2hpbGU6ICAgICBmYWxzZQogIEluZGVudEJyYWNlczogICAgZmFsc2UKICBTcGxpdEVtcHR5RnVuY3Rpb246IHRydWUKICBTcGxpdEVtcHR5UmVjb3JkOiB0cnVlCiAgU3BsaXRFbXB0eU5hbWVzcGFjZTogdHJ1ZQpCcmVha0JlZm9yZUJpbmFyeU9wZXJhdG9yczogQWxsCkJyZWFrQmVmb3JlQ29uY2VwdERlY2xhcmF0aW9uczogQWx3YXlzCkJyZWFrQmVmb3JlQnJhY2VzOiBDdXN0b20KQnJlYWtCZWZvcmVJbmhlcml0YW5jZUNvbW1hOiBmYWxzZQpCcmVha0luaGVyaXRhbmNlTGlzdDogQmVmb3JlQ29sb24KQnJlYWtCZWZvcmVUZXJuYXJ5T3BlcmF0b3JzOiB0cnVlCkJyZWFrQ29uc3RydWN0b3JJbml0aWFsaXplcnNCZWZvcmVDb21tYTogZmFsc2UKQnJlYWtDb25zdHJ1Y3RvckluaXRpYWxpemVyczogQmVmb3JlQ29tbWEKQnJlYWtBZnRlckphdmFGaWVsZEFubm90YXRpb25zOiBmYWxzZQpCcmVha1N0cmluZ0xpdGVyYWxzOiB0cnVlCkNvbHVtbkxpbWl0OiAgICAgMApDb21tZW50UHJhZ21hczogICdeIElXWVUgcHJhZ21hOicKUXVhbGlmaWVyQWxpZ25tZW50OiBMZWF2ZQpDb21wYWN0TmFtZXNwYWNlczogZmFsc2UKQ29uc3RydWN0b3JJbml0aWFsaXplckluZGVudFdpZHRoOiA0CkNvbnRpbnVhdGlvbkluZGVudFdpZHRoOiA0CkNwcDExQnJhY2VkTGlzdFN0eWxlOiBmYWxzZQpEZXJpdmVMaW5lRW5kaW5nOiB0cnVlCkRlcml2ZVBvaW50ZXJBbGlnbm1lbnQ6IGZhbHNlCkRpc2FibGVGb3JtYXQ6ICAgZmFsc2UKRW1wdHlMaW5lQWZ0ZXJBY2Nlc3NNb2RpZmllcjogTmV2ZXIKRW1wdHlMaW5lQmVmb3JlQWNjZXNzTW9kaWZpZXI6IExvZ2ljYWxCbG9jawpFeHBlcmltZW50YWxBdXRvRGV0ZWN0QmluUGFja2luZzogZmFsc2UKUGFja0NvbnN0cnVjdG9ySW5pdGlhbGl6ZXJzOiBCaW5QYWNrCkJhc2VkT25TdHlsZTogICAgJycKQ29uc3RydWN0b3JJbml0aWFsaXplckFsbE9uT25lTGluZU9yT25lUGVyTGluZTogZmFsc2UKQWxsb3dBbGxDb25zdHJ1Y3RvckluaXRpYWxpemVyc09uTmV4dExpbmU6IHRydWUKRml4TmFtZXNwYWNlQ29tbWVudHM6IGZhbHNlCkZvckVhY2hNYWNyb3M6CiAgLSBmb3JlYWNoCiAgLSBRX0ZPUkVBQ0gKICAtIEJPT1NUX0ZPUkVBQ0gKSWZNYWNyb3M6CiAgLSBLSl9JRl9NQVlCRQpJbmNsdWRlQmxvY2tzOiAgIFByZXNlcnZlCkluY2x1ZGVDYXRlZ29yaWVzOgogIC0gUmVnZXg6ICAgICAgICAgICAnXiIobGx2bXxsbHZtLWN8Y2xhbmd8Y2xhbmctYykvJwogICAgUHJpb3JpdHk6ICAgICAgICAyCiAgICBTb3J0UHJpb3JpdHk6ICAgIDAKICAgIENhc2VTZW5zaXRpdmU6ICAgZmFsc2UKICAtIFJlZ2V4OiAgICAgICAgICAgJ14oPHwiKGd0ZXN0fGdtb2NrfGlzbHxqc29uKS8pJwogICAgUHJpb3JpdHk6ICAgICAgICAzCiAgICBTb3J0UHJpb3JpdHk6ICAgIDAKICAgIENhc2VTZW5zaXRpdmU6ICAgZmFsc2UKICAtIFJlZ2V4OiAgICAgICAgICAgJy4qJwogICAgUHJpb3JpdHk6ICAgICAgICAxCiAgICBTb3J0UHJpb3JpdHk6ICAgIDAKICAgIENhc2VTZW5zaXRpdmU6ICAgZmFsc2UKSW5jbHVkZUlzTWFpblJlZ2V4OiAnKFRlc3QpPyQnCkluY2x1ZGVJc01haW5Tb3VyY2VSZWdleDogJycKSW5kZW50QWNjZXNzTW9kaWZpZXJzOiBmYWxzZQpJbmRlbnRDYXNlTGFiZWxzOiBmYWxzZQpJbmRlbnRDYXNlQmxvY2tzOiBmYWxzZQpJbmRlbnRHb3RvTGFiZWxzOiB0cnVlCkluZGVudFBQRGlyZWN0aXZlczogQmVmb3JlSGFzaApJbmRlbnRFeHRlcm5CbG9jazogQWZ0ZXJFeHRlcm5CbG9jawpJbmRlbnRSZXF1aXJlc0NsYXVzZTogdHJ1ZQpJbmRlbnRXaWR0aDogICAgIDQKSW5kZW50V3JhcHBlZEZ1bmN0aW9uTmFtZXM6IGZhbHNlCkluc2VydEJyYWNlczogICAgZmFsc2UKSW5zZXJ0VHJhaWxpbmdDb21tYXM6IE5vbmUKSmF2YVNjcmlwdFF1b3RlczogTGVhdmUKSmF2YVNjcmlwdFdyYXBJbXBvcnRzOiB0cnVlCktlZXBFbXB0eUxpbmVzQXRUaGVTdGFydE9mQmxvY2tzOiB0cnVlCkxhbWJkYUJvZHlJbmRlbnRhdGlvbjogU2lnbmF0dXJlCk1hY3JvQmxvY2tCZWdpbjogJycKTWFjcm9CbG9ja0VuZDogICAnJwpNYXhFbXB0eUxpbmVzVG9LZWVwOiAxCk5hbWVzcGFjZUluZGVudGF0aW9uOiBOb25lCk9iakNCaW5QYWNrUHJvdG9jb2xMaXN0OiBBdXRvCk9iakNCbG9ja0luZGVudFdpZHRoOiA0Ck9iakNCcmVha0JlZm9yZU5lc3RlZEJsb2NrUGFyYW06IHRydWUKT2JqQ1NwYWNlQWZ0ZXJQcm9wZXJ0eTogdHJ1ZQpPYmpDU3BhY2VCZWZvcmVQcm90b2NvbExpc3Q6IHRydWUKUGVuYWx0eUJyZWFrQXNzaWdubWVudDogMgpQZW5hbHR5QnJlYWtCZWZvcmVGaXJzdENhbGxQYXJhbWV0ZXI6IDE5ClBlbmFsdHlCcmVha0NvbW1lbnQ6IDMwMApQZW5hbHR5QnJlYWtGaXJzdExlc3NMZXNzOiAxMjAKUGVuYWx0eUJyZWFrT3BlblBhcmVudGhlc2lzOiAwClBlbmFsdHlCcmVha1N0cmluZzogMTAwMApQZW5hbHR5QnJlYWtUZW1wbGF0ZURlY2xhcmF0aW9uOiAxMApQZW5hbHR5RXhjZXNzQ2hhcmFjdGVyOiAxMDAwMDAwClBlbmFsdHlSZXR1cm5UeXBlT25JdHNPd25MaW5lOiA2MApQZW5hbHR5SW5kZW50ZWRXaGl0ZXNwYWNlOiAwClBvaW50ZXJBbGlnbm1lbnQ6IE1pZGRsZQpQUEluZGVudFdpZHRoOiAgIC0xClJlZmVyZW5jZUFsaWdubWVudDogUG9pbnRlcgpSZWZsb3dDb21tZW50czogIGZhbHNlClJlbW92ZUJyYWNlc0xMVk06IGZhbHNlClJlcXVpcmVzQ2xhdXNlUG9zaXRpb246IE93bkxpbmUKU2VwYXJhdGVEZWZpbml0aW9uQmxvY2tzOiBMZWF2ZQpTaG9ydE5hbWVzcGFjZUxpbmVzOiAxClNvcnRJbmNsdWRlczogICAgQ2FzZVNlbnNpdGl2ZQpTb3J0SmF2YVN0YXRpY0ltcG9ydDogQmVmb3JlClNvcnRVc2luZ0RlY2xhcmF0aW9uczogdHJ1ZQpTcGFjZUFmdGVyQ1N0eWxlQ2FzdDogZmFsc2UKU3BhY2VBZnRlckxvZ2ljYWxOb3Q6IGZhbHNlClNwYWNlQWZ0ZXJUZW1wbGF0ZUtleXdvcmQ6IHRydWUKU3BhY2VCZWZvcmVBc3NpZ25tZW50T3BlcmF0b3JzOiB0cnVlClNwYWNlQmVmb3JlQ2FzZUNvbG9uOiBmYWxzZQpTcGFjZUJlZm9yZUNwcDExQnJhY2VkTGlzdDogdHJ1ZQpTcGFjZUJlZm9yZUN0b3JJbml0aWFsaXplckNvbG9uOiB0cnVlClNwYWNlQmVmb3JlSW5oZXJpdGFuY2VDb2xvbjogdHJ1ZQpTcGFjZUJlZm9yZVBhcmVuczogQ29udHJvbFN0YXRlbWVudHMKU3BhY2VCZWZvcmVQYXJlbnNPcHRpb25zOgogIEFmdGVyQ29udHJvbFN0YXRlbWVudHM6IHRydWUKICBBZnRlckZvcmVhY2hNYWNyb3M6IHRydWUKICBBZnRlckZ1bmN0aW9uRGVmaW5pdGlvbk5hbWU6IGZhbHNlCiAgQWZ0ZXJGdW5jdGlvbkRlY2xhcmF0aW9uTmFtZTogZmFsc2UKICBBZnRlcklmTWFjcm9zOiAgIHRydWUKICBBZnRlck92ZXJsb2FkZWRPcGVyYXRvcjogZmFsc2UKICBBZnRlclJlcXVpcmVzSW5DbGF1c2U6IGZhbHNlCiAgQWZ0ZXJSZXF1aXJlc0luRXhwcmVzc2lvbjogZmFsc2UKICBCZWZvcmVOb25FbXB0eVBhcmVudGhlc2VzOiBmYWxzZQpTcGFjZUFyb3VuZFBvaW50ZXJRdWFsaWZpZXJzOiBEZWZhdWx0ClNwYWNlQmVmb3JlUmFuZ2VCYXNlZEZvckxvb3BDb2xvbjogdHJ1ZQpTcGFjZUluRW1wdHlCbG9jazogdHJ1ZQpTcGFjZUluRW1wdHlQYXJlbnRoZXNlczogZmFsc2UKU3BhY2VzQmVmb3JlVHJhaWxpbmdDb21tZW50czogMQpTcGFjZXNJbkFuZ2xlczogIE5ldmVyClNwYWNlc0luQ29uZGl0aW9uYWxTdGF0ZW1lbnQ6IGZhbHNlClNwYWNlc0luQ29udGFpbmVyTGl0ZXJhbHM6IHRydWUKU3BhY2VzSW5DU3R5bGVDYXN0UGFyZW50aGVzZXM6IGZhbHNlClNwYWNlc0luTGluZUNvbW1lbnRQcmVmaXg6CiAgTWluaW11bTogICAgICAgICAxCiAgTWF4aW11bTogICAgICAgICAtMQpTcGFjZXNJblBhcmVudGhlc2VzOiBmYWxzZQpTcGFjZXNJblNxdWFyZUJyYWNrZXRzOiBmYWxzZQpTcGFjZUJlZm9yZVNxdWFyZUJyYWNrZXRzOiBmYWxzZQpCaXRGaWVsZENvbG9uU3BhY2luZzogQm90aApTdGFuZGFyZDogICAgICAgIExhdGVzdApTdGF0ZW1lbnRBdHRyaWJ1dGVMaWtlTWFjcm9zOgogIC0gUV9FTUlUClN0YXRlbWVudE1hY3JvczoKICAtIFFfVU5VU0VECiAgLSBRVF9SRVFVSVJFX1ZFUlNJT04KVGFiV2lkdGg6ICAgICAgICAyClVzZUNSTEY6ICAgICAgICAgZmFsc2UKVXNlVGFiOiAgICAgICAgICBBbHdheXMKV2hpdGVzcGFjZVNlbnNpdGl2ZU1hY3JvczoKICAtIFNUUklOR0laRQogIC0gU1RSSU5HSUZZCiAgLSBQUF9TVFJJTkdJWkUKICAtIEJPT1NUX1BQX1NUUklOR0laRQogIC0gTlNfU1dJRlRfTkFNRQogIC0gQ0ZfU1dJRlRfTkFNRQouLi4KCg",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAC0FwAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "preload.js",
+			"redo_stack":
+			[
+				[
+					416,
+					1,
+					"paste",
+					null,
+					"AQAAAE4AAAAAAAAATgAAAAAAAADiAAAAY29uc3QgeyBjb250ZXh0QnJpZGdlIH0gPSByZXF1aXJlKCdlbGVjdHJvbi9yZW5kZXJlcicpCgpjb250ZXh0QnJpZGdlLmV4cG9zZUluTWFpbldvcmxkKCd2ZXJzaW9ucycsIHsKICBub2RlOiAoKSA9PiBwcm9jZXNzLnZlcnNpb25zLm5vZGUsCiAgY2hyb21lOiAoKSA9PiBwcm9jZXNzLnZlcnNpb25zLmNocm9tZSwKICBlbGVjdHJvbjogKCkgPT4gcHJvY2Vzcy52ZXJzaW9ucy5lbGVjdHJvbgp9KQ",
+					"AQAAAAAAAAABAAAAMAEAAAAAAAAwAQAAAAAAAAAAAAAAAPC/"
+				]
+			],
+			"settings":
+			{
+				"buffer_size": 1771,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					9,
+					1,
+					"insert",
+					{
+						"characters": "\n\n"
+					},
+					"AgAAAHQAAAAAAAAAdQAAAAAAAAAAAAAAdQAAAAAAAAB2AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAdAAAAAAAAAB0AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					10,
+					1,
+					"paste",
+					null,
+					"AQAAAHYAAAAAAAAA1wAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAdgAAAAAAAAB2AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					11,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AgAAANcAAAAAAAAA2AAAAAAAAAAAAAAA2AAAAAAAAADcAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA1wAAAAAAAADXAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					16,
+					2,
+					"left_delete",
+					null,
+					"AwAAAKAAAAAAAAAAoAAAAAAAAAACAAAAICDWAAAAAAAAANYAAAAAAAAABAAAACAgICCeAAAAAAAAAJ4AAAAAAAAAAgAAACAg",
+					"AQAAAAAAAAABAAAAogAAAAAAAACiAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					29,
+					1,
+					"left_delete",
+					null,
+					"AQAAACIAAAAAAAAAIgAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAIwAAAAAAAAAjAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					30,
+					1,
+					"insert",
+					{
+						"characters": ","
+					},
+					"AQAAACIAAAAAAAAAIwAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAIgAAAAAAAAAiAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					31,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAACMAAAAAAAAAJAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAIwAAAAAAAAAjAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					32,
+					1,
+					"paste",
+					null,
+					"AQAAACQAAAAAAAAANgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAJAAAAAAAAAAkAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					48,
+					2,
+					"left_delete",
+					null,
+					"AgAAAIkAAAAAAAAAiQAAAAAAAAAnAAAAY29uc3QgeyByZW1vdGUgfSA9IHJlcXVpcmUoJ2VsZWN0cm9uJyk7iAAAAAAAAACIAAAAAAAAAAEAAAAK",
+					"AQAAAAAAAAABAAAAsAAAAAAAAACJAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					56,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAL4AAAAAAAAAvwAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvgAAAAAAAAC+AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					57,
+					1,
+					"paste",
+					null,
+					"AQAAAL8AAAAAAAAA9AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvwAAAAAAAAC/AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					67,
+					1,
+					"paste",
+					null,
+					"AgAAAMYAAAAAAAAAygAAAAAAAAAAAAAAygAAAAAAAADKAAAAAAAAAAsAAABpcGNSZW5kZXJlcg",
+					"AQAAAAAAAAABAAAAxgAAAAAAAADRAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					73,
+					2,
+					"left_delete",
+					null,
+					"AgAAAOEAAAAAAAAA4QAAAAAAAAALAAAAaXBjUmVuZGVyZXLgAAAAAAAAAOAAAAAAAAAAAQAAAC4",
+					"AQAAAAAAAAABAAAA4QAAAAAAAADsAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					85,
+					1,
+					"paste",
+					null,
+					"AgAAAM0AAAAAAAAA0QAAAAAAAAAAAAAA0QAAAAAAAADRAAAAAAAAABQAAAByZXF1aXJlKCdlbGVjdHJvbicpOw",
+					"AQAAAAAAAAABAAAA4QAAAAAAAADNAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					86,
+					1,
+					"insert",
+					{
+						"characters": ";"
+					},
+					"AQAAANEAAAAAAAAA0gAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA0QAAAAAAAADRAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					91,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAANIAAAAAAAAA0wAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA0gAAAAAAAADSAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					92,
+					1,
+					"paste",
+					null,
+					"AQAAANMAAAAAAAAA5gAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA0wAAAAAAAADTAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					97,
+					1,
+					"insert",
+					{
+						"characters": "fs"
+					},
+					"AwAAANoAAAAAAAAA2wAAAAAAAAAAAAAA2wAAAAAAAADbAAAAAAAAAAQAAABwYXRo2wAAAAAAAADcAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA2gAAAAAAAADeAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					104,
+					1,
+					"insert",
+					{
+						"characters": "fs"
+					},
+					"AwAAAN8AAAAAAAAA4AAAAAAAAAAAAAAA4AAAAAAAAADgAAAAAAAAAAQAAABwYXRo4AAAAAAAAADhAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA3wAAAAAAAADjAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					137,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAL4AAAAAAAAAvwAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvgAAAAAAAAC+AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					138,
+					1,
+					"paste",
+					null,
+					"AQAAAL8AAAAAAAAAzgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvwAAAAAAAAC/AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					152,
+					1,
+					"paste",
+					null,
+					"AgAAAMYAAAAAAAAA2AAAAAAAAAAAAAAA2AAAAAAAAADYAAAAAAAAAAIAAABmcw",
+					"AQAAAAAAAAABAAAAxgAAAAAAAADIAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					164,
+					1,
+					"paste",
+					null,
+					"AgAAANkAAAAAAAAA+wAAAAAAAAAAAAAA+wAAAAAAAAD7AAAAAAAAAAUAAAA9IGZzOw",
+					"AQAAAAAAAAABAAAA3gAAAAAAAADZAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					178,
+					1,
+					"paste",
+					null,
+					"AgAAAO8AAAAAAAAAAQEAAAAAAAAAAAAAAQEAAAAAAAABAQAAAAAAAAsAAABpcGNSZW5kZXJlcg",
+					"AQAAAAAAAAABAAAA7wAAAAAAAAD6AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					185,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAAIBAAAAAAAAAwEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAgEAAAAAAAACAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					186,
+					1,
+					"paste",
+					null,
+					"AQAAAAMBAAAAAAAARgEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAwEAAAAAAAADAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					196,
+					1,
+					"paste",
+					null,
+					"AgAAAAoBAAAAAAAAFwEAAAAAAAAAAAAAFwEAAAAAAAAXAQAAAAAAABIAAABNZXNzYWdlQ2hhbm5lbE1haW4",
+					"AQAAAAAAAAABAAAACgEAAAAAAAAcAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					203,
+					1,
+					"paste",
+					null,
+					"AgAAAC4BAAAAAAAAOwEAAAAAAAAAAAAAOwEAAAAAAAA7AQAAAAAAABIAAABNZXNzYWdlQ2hhbm5lbE1haW4",
+					"AQAAAAAAAAABAAAALgEAAAAAAABAAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					221,
+					1,
+					"toggle_comment",
+					{
+						"block": false
+					},
+					"BAAAAAEGAAAAAAAAAQYAAAAAAAADAAAALy8gxAUAAAAAAADEBQAAAAAAAAMAAAAvLyCABQAAAAAAAIAFAAAAAAAAAwAAAC8vIFIFAAAAAAAAUgUAAAAAAAADAAAALy8g",
+					"AQAAAAAAAAABAAAALAYAAAAAAABSBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					225,
+					1,
+					"insert",
+					{
+						"characters": "srx/"
+					},
+					"BAAAAHAFAAAAAAAAcQUAAAAAAAAAAAAAcQUAAAAAAAByBQAAAAAAAAAAAAByBQAAAAAAAHMFAAAAAAAAAAAAAHMFAAAAAAAAdAUAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAcAUAAAAAAABwBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					226,
+					2,
+					"left_delete",
+					null,
+					"AgAAAHMFAAAAAAAAcwUAAAAAAAABAAAAL3IFAAAAAAAAcgUAAAAAAAABAAAAeA",
+					"AQAAAAAAAAABAAAAdAUAAAAAAAB0BQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					227,
+					1,
+					"insert",
+					{
+						"characters": "x"
+					},
+					"AQAAAHIFAAAAAAAAcwUAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAcgUAAAAAAAByBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					228,
+					1,
+					"left_delete",
+					null,
+					"AQAAAHIFAAAAAAAAcgUAAAAAAAABAAAAeA",
+					"AQAAAAAAAAABAAAAcwUAAAAAAABzBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					229,
+					1,
+					"insert",
+					{
+						"characters": "c/"
+					},
+					"AgAAAHIFAAAAAAAAcwUAAAAAAAAAAAAAcwUAAAAAAAB0BQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAcgUAAAAAAAByBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					237,
+					1,
+					"insert",
+					{
+						"characters": "/"
+					},
+					"AQAAAJ8FAAAAAAAAoAUAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAnwUAAAAAAACfBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					241,
+					1,
+					"insert",
+					{
+						"characters": "/"
+					},
+					"AQAAAOEFAAAAAAAA4gUAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA4QUAAAAAAADhBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					244,
+					1,
+					"insert",
+					{
+						"characters": "/"
+					},
+					"AQAAAHAFAAAAAAAAcQUAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAcAUAAAAAAABwBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					247,
+					1,
+					"insert",
+					{
+						"characters": "/"
+					},
+					"AQAAAB0GAAAAAAAAHgYAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAHQYAAAAAAAAdBgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					252,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAP4FAAAAAAAA/wUAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA/gUAAAAAAAD+BQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					259,
+					1,
+					"paste",
+					null,
+					"AQAAAP8FAAAAAAAAOQYAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA/wUAAAAAAAD/BQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					262,
+					1,
+					"paste",
+					null,
+					"AgAAACgGAAAAAAAANwYAAAAAAAAAAAAANwYAAAAAAAA3BgAAAAAAAA0AAABqcXVlcnkubWluLmpz",
+					"AQAAAAAAAAABAAAANQYAAAAAAAAoBgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					300,
+					1,
+					"paste",
+					null,
+					"AQAAAFsGAAAAAAAAXgYAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAWwYAAAAAAABbBgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					301,
+					1,
+					"insert",
+					{
+						"characters": "/"
+					},
+					"AQAAAF4GAAAAAAAAXwYAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAXgYAAAAAAABeBgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					308,
+					1,
+					"left_delete",
+					null,
+					"AQAAAHAFAAAAAAAAcAUAAAAAAAAFAAAAL3NyYy8",
+					"AQAAAAAAAAABAAAAdQUAAAAAAABwBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					311,
+					1,
+					"left_delete",
+					null,
+					"AQAAAFUGAAAAAAAAVQYAAAAAAAAFAAAAL3NyYy8",
+					"AQAAAAAAAAABAAAAVQYAAAAAAABaBgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					318,
+					1,
+					"left_delete",
+					null,
+					"AQAAABgGAAAAAAAAGAYAAAAAAAABAAAALw",
+					"AQAAAAAAAAABAAAAGQYAAAAAAAAZBgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					321,
+					1,
+					"left_delete",
+					null,
+					"AQAAAN0FAAAAAAAA3QUAAAAAAAABAAAALw",
+					"AQAAAAAAAAABAAAA3gUAAAAAAADeBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					324,
+					1,
+					"left_delete",
+					null,
+					"AQAAAJsFAAAAAAAAmwUAAAAAAAABAAAALw",
+					"AQAAAAAAAAABAAAAnAUAAAAAAACcBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					361,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AgAAAJIBAAAAAAAAkwEAAAAAAAAAAAAAkwEAAAAAAACVAQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAkgEAAAAAAACSAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					362,
+					1,
+					"paste",
+					null,
+					"AQAAAJUBAAAAAAAADAIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAlQEAAAAAAACVAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					363,
+					1,
+					"insert",
+					{
+						"characters": ","
+					},
+					"AQAAAAwCAAAAAAAADQIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADAIAAAAAAAAMAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					373,
+					1,
+					"insert",
+					{
+						"characters": "main"
+					},
+					"BQAAAOsFAAAAAAAA7AUAAAAAAAAAAAAA7AUAAAAAAADsBQAAAAAAAAUAAABpbmRleOwFAAAAAAAA7QUAAAAAAAAAAAAA7QUAAAAAAADuBQAAAAAAAAAAAADuBQAAAAAAAO8FAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA6wUAAAAAAADwBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					386,
+					1,
+					"insert",
+					{
+						"characters": "src/"
+					},
+					"BAAAAOsFAAAAAAAA7AUAAAAAAAAAAAAA7AUAAAAAAADtBQAAAAAAAAAAAADtBQAAAAAAAO4FAAAAAAAAAAAAAO4FAAAAAAAA7wUAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA6wUAAAAAAADrBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					389,
+					1,
+					"insert",
+					{
+						"characters": "src/"
+					},
+					"BAAAABkGAAAAAAAAGgYAAAAAAAAAAAAAGgYAAAAAAAAbBgAAAAAAAAAAAAAbBgAAAAAAABwGAAAAAAAAAAAAABwGAAAAAAAAHQYAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAGQYAAAAAAAAZBgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					392,
+					1,
+					"insert",
+					{
+						"characters": "src/"
+					},
+					"BAAAAF4GAAAAAAAAXwYAAAAAAAAAAAAAXwYAAAAAAABgBgAAAAAAAAAAAABgBgAAAAAAAGEGAAAAAAAAAAAAAGEGAAAAAAAAYgYAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAXgYAAAAAAABeBgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					396,
+					1,
+					"insert",
+					{
+						"characters": "src/"
+					},
+					"BAAAAJwGAAAAAAAAnQYAAAAAAAAAAAAAnQYAAAAAAACeBgAAAAAAAAAAAACeBgAAAAAAAJ8GAAAAAAAAAAAAAJ8GAAAAAAAAoAYAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAnAYAAAAAAACcBgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					401,
+					1,
+					"insert",
+					{
+						"characters": "sr/"
+					},
+					"AwAAANwGAAAAAAAA3QYAAAAAAAAAAAAA3QYAAAAAAADeBgAAAAAAAAAAAADeBgAAAAAAAN8GAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA3AYAAAAAAADcBgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					402,
+					1,
+					"left_delete",
+					null,
+					"AQAAAN4GAAAAAAAA3gYAAAAAAAABAAAALw",
+					"AQAAAAAAAAABAAAA3wYAAAAAAADfBgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					403,
+					1,
+					"insert",
+					{
+						"characters": "c/"
+					},
+					"AgAAAN4GAAAAAAAA3wYAAAAAAAAAAAAA3wYAAAAAAADgBgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA3gYAAAAAAADeBgAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/scripts/osx/audit_frontend_arm64.sh",
+			"settings":
+			{
+				"buffer_size": 3144,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					7,
+					1,
+					"toggle_comment",
+					{
+						"block": false
+					},
+					"AQAAAK0LAAAAAAAArwsAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAzAsAAAAAAADMCwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					10,
+					1,
+					"toggle_comment",
+					{
+						"block": false
+					},
+					"AQAAAM8LAAAAAAAA0QsAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA9AsAAAAAAAD0CwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					17,
+					1,
+					"revert",
+					null,
+					"AgAAAAAAAAAAAAAAAAAAAAAAAAD4CwAAIyEvdXNyL2Jpbi9lbnYgYmFzaAoKQ1VSUkVOVF9ESVI9IiQoIGNkICIkKCBkaXJuYW1lICIke0JBU0hfU09VUkNFWzBdfSIgKSIgJiYgcHdkICkiClNDUklQVF9ESVI9IiQoIGNkICIkKCBkaXJuYW1lICIke0NVUlJFTlRfRElSfSIvLi4vLi4vICkiICYmIHB3ZCApIgpQR19ESVI9IiQoIGNkICIkKCBkaXJuYW1lICIke1NDUklQVF9ESVJ9Ly4uLy4uLyIgKSIgJiYgcHdkICkiCkZST05URU5EX0RJUj0iJCggY2QgIiQoIGRpcm5hbWUgIiR7UEdfRElSfSIgKSIgJiYgcHdkICkiCgplY2hvICJDVVJSRU5UX0RJUjogICR7Q1VSUkVOVF9ESVJ9IgplY2hvICJTQ1JJUFRfRElSOiAgJHtTQ1JJUFRfRElSfSIKZWNobyAiUEdfRElSOiAgJHtQR19ESVJ9IgplY2hvICJGUk9OVEVORF9ESVI6ICAke0ZST05URU5EX0RJUn0iCgppZiBbIC16ICIke0ZST05URU5EX1RBUkdFVCt4fSIgXTsgdGhlbgogICAgRlJPTlRFTkRfVEFSR0VUPW1hYzp1bml2ZXJzYWwKZmkKCmNkICIke1BHX0RJUn0vZnJvbnRlbmQiCgppZiBbIC16ICIke0JVSUxEX1RFU1QreH0iIF07IHRoZW4KICAgQlVJTERfVEVTVD0wCmZpCgppZiBbIC16ICIke0JVSUxEX1RFU1QreH0iIF07IHRoZW4KICAgQlVJTERfVEVTVD0wCmZpCgojIEFzc3VtaW5nIENNRExJTkVfRElSIGlzIGFscmVhZHkgc2V0IHRvIHRoZSBjb3JyZWN0IGRpcmVjdG9yeSBwYXRoClNPVVJDRV9GSUxFPSIke1BHX0RJUn0vY29tbWFuZExpbmUvYmluL3Byb2plY3RHZW5lcmF0b3IiCgojIFJlcGxhY2UgW2Rlc3RpbmF0aW9uX3BhdGhdIHdpdGggdGhlIGFjdHVhbCBwYXRoIHdoZXJlIHlvdSB3YW50IHRvIGNvcHkgdGhlIGZpbGUKREVTVElOQVRJT05fUEFUSD0iYXBwIgplY2hvICJTT1VSQ0VfRklMRTokU09VUkNFX0ZJTEUiOwoKIyBpZiBbICEgLWYgIiRTT1VSQ0VfRklMRSIgXTsgdGhlbgogICBTT1VSQ0VfRklMRT0iJHtQR19ESVJ9L2NvbW1hbmRMaW5lL2Jpbi9jb21tYW5kTGluZS5hcHAvY29udGVudHMvTWFjT1MvY29tbWFuZExpbmUiCiMgZmkKCgojIENoZWNrIGlmIHRoZSBzb3VyY2UgZmlsZSBleGlzdHMKaWYgWyAtZiAiJFNPVVJDRV9GSUxFIiBdOyB0aGVuCiAgIGVjaG8gIkZpbGUgZXhpc3RzLCBwcm9jZWVkIHdpdGggY29weWluZyIKICAgZWNobyAiY2hlY2sgZGVzdGluYXRpb246WyRERVNUSU5BVElPTl9QQVRIL3Byb2plY3RHZW5lcmF0b3JdIgogICBpZiBbIC1mICIke0RFU1RJTkFUSU9OX1BBVEh9L3Byb2plY3RHZW5lcmF0b3IiIF07IHRoZW4KICAgICAgZWNobyAicHJvamVjdEdlbmVyYXRvciBGaWxlIGV4aXN0cyBhdCBERVNUSU5BVElPTl9QQVRIIC0gcm0gb2xkIgogICAgICBybSAtZiAiJHtERVNUSU5BVElPTl9QQVRIfS9wcm9qZWN0R2VuZXJhdG9yIgogICBmaQogICBta2RpciAtcCAiJERFU1RJTkFUSU9OX1BBVEgiICMgQ3JlYXRlIGRlc3RpbmF0aW9uIGRpcmVjdG9yeSBpZiBpdCBkb2Vzbid0IGV4aXN0CiAgIGlmIGNvbW1hbmQgLXYgcnN5bmMgJj4gL2Rldi9udWxsOyB0aGVuCiAgICAgIHJzeW5jIC1hdnpwICIkU09VUkNFX0ZJTEUiICIkREVTVElOQVRJT05fUEFUSC9wcm9qZWN0R2VuZXJhdG9yIgogICBlbHNlCiAgICAgIGNwIC1hWCAiJFNPVVJDRV9GSUxFIiAiJERFU1RJTkFUSU9OX1BBVEgvcHJvamVjdEdlbmVyYXRvciIKICAgZmkKICAgLiAiJHtTQ1JJUFRfRElSfS9zZWN1cmUuc2giCiAgIHNlY3VyZSAiJERFU1RJTkFUSU9OX1BBVEgvcHJvamVjdEdlbmVyYXRvciIgcHJvamVjdEdlbmVyYXRvci5wa2wKICAgZWNobyAiRmlsZSBjb3BpZWQgc3VjY2Vzc2Z1bGx5LiIKZWxzZQogICAgIyBGaWxlIGRvZXMgbm90IGV4aXN0CiAgICBlY2hvICJFcnJvcjogU291cmNlIGZpbGUgZG9lcyBub3QgZXhpc3QuIgpmaQoKaWYgWyAteiAiJHtJREVOVElUWSt4fSIgXTsgdGhlbgogICBJREVOVElUWT0iLSIKZmkKY29kZXNpZ24gLS12ZXJpZnkgLS1kZWVwIC0tdmVyYm9zZT0yICIkREVTVElOQVRJT05fUEFUSC9wcm9qZWN0R2VuZXJhdG9yIgpTSUdOX1NUQVRVUz0kPwppZiBbICRTSUdOX1NUQVRVUyAtbmUgMCBdOyB0aGVuCiAgICBlY2hvICJDb2RlIHNpZ25pbmcgaXMgcmVxdWlyZWQuIFNpZ25pbmcgdGhlIGFwcGxpY2F0aW9uLi4uIgogICAgY29kZXNpZ24gLS1zaWduICIkSURFTlRJVFkiIC0tZGVlcCAtLWZvcmNlIC0tdmVyYm9zZSAtLWVudGl0bGVtZW50cyAkUEdfRElSL3NjcmlwdHMvb3N4L1BHLmVudGl0bGVtZW50cyAiJERFU1RJTkFUSU9OX1BBVEgvcHJvamVjdEdlbmVyYXRvciIKICAgIGVjaG8gIlZlcmlmeWluZyB0aGUgbmV3IGNvZGUgc2lnbmF0dXJlLi4uIgogICAgY29kZXNpZ24gLS12ZXJpZnkgLS1kZWVwIC0tdmVyYm9zZT0yICIkREVTVElOQVRJT05fUEFUSC9wcm9qZWN0R2VuZXJhdG9yIgplbHNlCiAgICBlY2hvICJBcHBsaWNhdGlvbiBpcyBhbHJlYWR5IGNvZGUtc2lnbmVkIGFuZCB2YWxpZCIKZmkKCgplY2hvICI9PT09PT0gIgpjZCAiJHtQR19ESVJ9L2Zyb250ZW5kIgpwd2QgCmVjaG8gIk5QTSBhdWRpdCBwcm9qZWN0IgpucG0gYXVkaXQgZml4CgplY2hvICJOUE0gdnVuZXJhYmlsaXR5IHNjYW4iCm5wbSBpbnN0YWxsIEBkb3llbnNlYy9lbGVjdHJvbmVnYXRpdml0eSAtZwplbGVjdHJvbmVnYXRpdml0eSAtaSAuLwoKbnBtIGluc3RhbGwgLWcgZWxlY3Ryb24KCm5wbSBzdGFydAoKIyBlY2hvICJCdWlsZGluZyBvcGVuRnJhbWV3b3JrcyBGcm9udGVuZCBbJHtGUk9OVEVORF9UQVJHRVR9XSIKIyBucG0gaW5zdGFsbAojIGVjaG8gIj09PT09PSBpbnN0YWxsIgojIG5wbSB1cGRhdGUgCiMgZWNobyAiPT09PT09IHVwZGF0ZSIKIyBucG0gaW5zdGFsbCAtZyBjbGVhbi1tb2R1bGVzCiMgY2xlYW4tbW9kdWxlcyAteQojIGVjaG8gIj09PT09PSBjbGVhbiIKIyBucG0gcnVuCiMgZWNobyAiPT09PT09IHJ1biIKCgojIGlmIFsgIiR7QlVJTERfVEVTVH0iID09IDEgXTsgdGhlbgojICAgIG5wbSBydW4gc3RhcnQ6cHJvZAojICAgIGVjaG8gIj09PT09PSBzdGFydDpwcm9kIgojIGZpCgoKCiMgbnBtIHJ1biBkaXN0OiR7RlJPTlRFTkRfVEFSR0VUfQojIGVjaG8gIj09PT09PSBkaXN0OiR7RlJPTlRFTkRfVEFSR0VUfSIKCgAAAAAAAAAARQwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAfgkAAAAAAAB+CQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					42,
+					1,
+					"toggle_comment",
+					{
+						"block": false
+					},
+					"AgAAAOoJAAAAAAAA7AkAAAAAAAAAAAAArgkAAAAAAACwCQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA+AkAAAAAAACuCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					46,
+					1,
+					"left_delete",
+					null,
+					"AQAAAKUJAAAAAAAApQkAAAAAAAABAAAAMg",
+					"AQAAAAAAAAABAAAApgkAAAAAAACmCQAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/frontend/package.json",
+			"settings":
+			{
+				"buffer_size": 2938,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					11,
+					1,
+					"insert",
+					{
+						"characters": "src."
+					},
+					"BAAAADEJAAAAAAAAMgkAAAAAAAAAAAAAMgkAAAAAAAAzCQAAAAAAAAAAAAAzCQAAAAAAADQJAAAAAAAAAAAAADQJAAAAAAAANQkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAMQkAAAAAAAAxCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					12,
+					1,
+					"left_delete",
+					null,
+					"AQAAADQJAAAAAAAANAkAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAANQkAAAAAAAA1CQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					13,
+					1,
+					"insert",
+					{
+						"characters": "/"
+					},
+					"AQAAADQJAAAAAAAANQkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAANAkAAAAAAAA0CQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					19,
+					1,
+					"paste",
+					null,
+					"AQAAAEcJAAAAAAAASwkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAARwkAAAAAAABHCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					22,
+					1,
+					"paste",
+					null,
+					"AQAAAFsJAAAAAAAAXwkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAWwkAAAAAAABbCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					56,
+					1,
+					"insert",
+					{
+						"characters": "src/"
+					},
+					"BAAAAMIAAAAAAAAAwwAAAAAAAAAAAAAAwwAAAAAAAADEAAAAAAAAAAAAAADEAAAAAAAAAMUAAAAAAAAAAAAAAMUAAAAAAAAAxgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAwgAAAAAAAADCAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					111,
+					1,
+					"insert",
+					{
+						"characters": "src/"
+					},
+					"BAAAACAJAAAAAAAAIQkAAAAAAAAAAAAAIQkAAAAAAAAiCQAAAAAAAAAAAAAiCQAAAAAAACMJAAAAAAAAAAAAACMJAAAAAAAAJAkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAIAkAAAAAAAAgCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					126,
+					1,
+					"insert",
+					{
+						"characters": "src/"
+					},
+					"BAAAAPoIAAAAAAAA+wgAAAAAAAAAAAAA+wgAAAAAAAD8CAAAAAAAAAAAAAD8CAAAAAAAAP0IAAAAAAAAAAAAAP0IAAAAAAAA/ggAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA+ggAAAAAAAD6CAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					127,
+					1,
+					"left_delete",
+					null,
+					"AQAAAP0IAAAAAAAA/QgAAAAAAAABAAAALw",
+					"AQAAAAAAAAABAAAA/ggAAAAAAAD+CAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					128,
+					1,
+					"insert",
+					{
+						"characters": "x/"
+					},
+					"AgAAAP0IAAAAAAAA/ggAAAAAAAAAAAAA/ggAAAAAAAD/CAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA/QgAAAAAAAD9CAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					129,
+					2,
+					"left_delete",
+					null,
+					"AgAAAP4IAAAAAAAA/ggAAAAAAAABAAAAL/0IAAAAAAAA/QgAAAAAAAABAAAAeA",
+					"AQAAAAAAAAABAAAA/wgAAAAAAAD/CAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					130,
+					1,
+					"insert",
+					{
+						"characters": "c/"
+					},
+					"AgAAAP0IAAAAAAAA/ggAAAAAAAAAAAAA/ggAAAAAAAD/CAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA/QgAAAAAAAD9CAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					131,
+					1,
+					"left_delete",
+					null,
+					"AQAAAP4IAAAAAAAA/ggAAAAAAAABAAAALw",
+					"AQAAAAAAAAABAAAA/wgAAAAAAAD/CAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					132,
+					1,
+					"insert",
+					{
+						"characters": "/"
+					},
+					"AQAAAP4IAAAAAAAA/wgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA/ggAAAAAAAD+CAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					133,
+					2,
+					"left_delete",
+					null,
+					"AgAAAP4IAAAAAAAA/ggAAAAAAAABAAAAL/0IAAAAAAAA/QgAAAAAAAABAAAAYw",
+					"AQAAAAAAAAABAAAA/wgAAAAAAAD/CAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					134,
+					1,
+					"insert",
+					{
+						"characters": "/"
+					},
+					"AQAAAP0IAAAAAAAA/ggAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA/QgAAAAAAAD9CAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					198,
+					1,
+					"insert",
+					{
+						"characters": "main"
+					},
+					"BQAAAEEJAAAAAAAAQgkAAAAAAAAAAAAAQgkAAAAAAABCCQAAAAAAAAUAAABpbmRleEIJAAAAAAAAQwkAAAAAAAAAAAAAQwkAAAAAAABECQAAAAAAAAAAAABECQAAAAAAAEUJAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAQQkAAAAAAABGCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					205,
+					1,
+					"insert",
+					{
+						"characters": "main"
+					},
+					"BQAAAMYAAAAAAAAAxwAAAAAAAAAAAAAAxwAAAAAAAADHAAAAAAAAAAUAAABpbmRleMcAAAAAAAAAyAAAAAAAAAAAAAAAyAAAAAAAAADJAAAAAAAAAAAAAADJAAAAAAAAAMoAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxgAAAAAAAADLAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/frontend/src",
+		"/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/frontend/src/static",
+		"/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/frontend/src/static/css"
+	],
+	"file_history":
+	[
+		"/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/frontend/src/index.js",
+		"/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/frontend/npm-shrinkwrap.json",
+		"/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/frontend/preload.js",
+		"/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/frontend/app.js",
+		"/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/frontend/index.html",
+		"/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/frontend/settings.json",
+		"/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/frontend/license",
+		"/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/frontend/.jshintrc",
+		"/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/frontend/.editorconfig",
+		"/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/frontend/package.json",
+		"/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/scripts/osx/audit_frontend_arm64.sh",
+		"/Users/one/SOURCE/openFrameworksEm/addons/ofxMagicCast/README.md",
+		"/Users/one/SOURCE/openFrameworksEm/addons/ofxMagicCast/addon_config.mk",
+		"/Users/one/SOURCE/apothecary/scripts/osx/build_xcframework.sh",
+		"/Users/one/SOURCE/apothecary/scripts/ios/build_xcframework.sh",
+		"/Users/one/SOURCE/apothecary/.github/workflows/build-macos.yml",
+		"/Users/one/SOURCE/openFrameworksEm/libs/openFrameworksCompiled/project/makefileCommon/compile.core.mk",
+		"/Users/one/SOURCE/openFrameworksEm/libs/openFrameworksCompiled/project/makefileCommon/compile.project.mk",
+		"/Users/one/SOURCE/apothecary/apothecary/build/FreeImage/CMakeLists.txt",
+		"/Users/one/SOURCE/apothecary/scripts/build.sh",
+		"/Users/one/SOURCE/apothecary/apothecary/formulas/FreeImage/FreeImage.sh",
+		"/Users/one/SOURCE/apothecary/apothecary/apothecary",
+		"/Users/one/SOURCE/apothecary/apothecary/formulas/assimp.sh",
+		"/Users/one/SOURCE/openFrameworksEm/apps/myApps/Apothecarist/Makefile",
+		"/Users/one/SOURCE/openFrameworksEm/libs/openFrameworksCompiled/project/emscripten/config.emscripten.default.mk",
+		"/Users/one/SOURCE/openFrameworksEm/apps/myApps/emscripten/addons.make",
+		"/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/scripts/osx/ci_build_pg.sh",
+		"/Users/one/SOURCE/openFrameworksEm/addons/ofxAssimp/addon_config.mk",
+		"/Users/one/SOURCE/openFrameworksEm/addons/ofxAssimpModelLoader/addon_config.mk",
+		"/Users/one/SOURCE/openFrameworksEm/libs/openFrameworksCompiled/project/makefileCommon/config.addons.mk",
+		"/Users/one/SOURCE/apothecary/apothecary/formulas/openssl/openssl.sh",
+		"/Users/one/SOURCE/apothecary/apothecary/build/brotli/CMakeLists.txt",
+		"/Users/one/SOURCE/apothecary/apothecary/formulas/_depends/brotli.sh",
+		"/Users/one/SOURCE/apothecary/apothecary/build/freetype/CMakeLists.txt",
+		"/Users/one/SOURCE/apothecary/scripts/secure.sh",
+		"/Users/one/SOURCE/apothecary/apothecary/formulas/freetype/freetype.sh",
+		"/Users/one/SOURCE/apothecary/apothecary/formulas/opencv/opencv.sh",
+		"/Users/one/SOURCE/apothecary/.github/workflows/build-tvos.yml",
+		"/Users/one/SOURCE/apothecary/.github/workflows/build-ios.yml",
+		"/Users/one/SOURCE/apothecary/.github/workflows/build-vs2022-x64.yml",
+		"/Users/one/SOURCE/apothecary/.github/workflows/build-vs2022-arm64ec.yml",
+		"/Users/one/SOURCE/apothecary/.github/workflows/build-vs2022-arm64.yml",
+		"/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/commandLine/Project.xcconfig",
+		"/Users/one/SOURCE/apothecary/apothecary/formulas/libusb/libusb.sh",
+		"/Users/one/SOURCE/openFrameworkstvOS/.github/workflows/of.yml",
+		"/Users/one/SOURCE/openFrameworksEm/apps/myApps/Apothecarist/src/main.cpp",
+		"/Users/one/SOURCE/openFrameworksEm/apps/myApps/emscripten/src/main.cpp",
+		"/Users/one/SOURCE/openFrameworksEm/scripts/templates/emscripten/src/main.cpp",
+		"/Users/one/SOURCE/openFrameworksEm/addons/ofxKinect/addon_config.mk",
+		"/Users/one/SOURCE/openFrameworksEm/addons/ofxOpenCv/addon_config.mk",
+		"/Users/one/SOURCE/openFrameworksEm/apps/myApps/Apothecarist/config.make",
+		"/Users/one/SOURCE/openFrameworksEm/libs/openFrameworksCompiled/project/emscripten/template.html",
+		"/Users/one/SOURCE/openFrameworksEm/addons/ofxiOS/src/events/ofxiOSAlerts.mm",
+		"/Users/one/SOURCE/apothecary/apothecary/formulas/zlib/zlib.sh",
+		"/Volumes/[C] Windows 11.hidden/srx/openFrameworks/examples/templates/allAddonsExample/allAddonsExample.vcxproj",
+		"/Users/one/SOURCE/apothecary/.github/workflows/build-emscripten.yml",
+		"/Users/one/SOURCE/openFrameworksmacOS/libs/openFrameworksCompiled/project/Makefile",
+		"/Users/one/SOURCE/openFrameworksmacOS/libs/openFrameworksCompiled/project/makefileCommon/config.addons.mk",
+		"/Users/one/SOURCE/openFrameworksmacOS/libs/openFrameworksCompiled/project/makefileCommon/config.project.mk",
+		"/Users/one/SOURCE/openFrameworksmacOS/libs/openFrameworksCompiled/project/makefileCommon/config.shared.mk",
+		"/Users/one/SOURCE/openFrameworksmacOS/libs/openFrameworksCompiled/project/makefileCommon/compile.core.mk",
+		"/Users/one/SOURCE/openFrameworksmacOS/libs/openFrameworksCompiled/project/makefileCommon/compile.project.mk",
+		"/Users/one/SOURCE/openFrameworksmacOS/libs/openFrameworksCompiled/project/emscripten/config.emscripten.default.mk",
+		"/Users/one/SOURCE/openFrameworksEm/libs/openFrameworksCompiled/project/osx/config.osx.default.mk",
+		"/Users/one/SOURCE/apothecary/scripts/calculate_formulas.sh",
+		"/Users/one/SOURCE/apothecary/apothecary/build/FreeImage/build_emscripten/build/CMakeCache.txt",
+		"/Users/one/SOURCE/apothecary/apothecary/formulas/curl/curl.sh",
+		"/Users/one/SOURCE/apothecary/apothecary/formulas/libpng/libpng.sh",
+		"/Users/one/Downloads/lame-3.100/libmp3lame/quantize.h",
+		"/Users/one/Downloads/lame-3.100/libmp3lame/encoder.c",
+		"/Users/one/SOURCE/apothecary/scripts/emscripten/build_and_deploy_all.sh",
+		"/Users/one/SOURCE/apothecary/scripts/emscripten/install.sh",
+		"/Users/one/SOURCE/apothecary/scripts/package.sh",
+		"/Users/one/SOURCE/apothecary/scripts/emscripten/build_emscripten_64.sh",
+		"/Users/one/SOURCE/apothecary/scripts/emscripten/build_emscripten.sh",
+		"/Users/one/SOURCE/apothecary/apothecary/formulas/freetype/CMakeLists.txt",
+		"/Users/one/SOURCE/openFrameworksmacOS/scripts/templates/osx/Project.xcconfig",
+		"/Users/one/SOURCE/apothecary/apothecary/formulas/libxml2/libxml2.sh",
+		"/Users/one/SOURCE/openFrameworksmacOS/scripts/templates/vs/emptyExample.vcxproj.filters",
+		"/Users/one/SOURCE/openFrameworksmacOS/scripts/templates/vs/emptyExample.vcxproj",
+		"/Users/one/SOURCE/openFrameworksmacOS/libs/openFrameworksCompiled/project/vs/openFrameworksDebug.props",
+		"/Users/one/SOURCE/openFrameworksmacOS/libs/openFrameworksCompiled/project/vs/openframeworksLib.vcxproj",
+		"/Users/one/SOURCE/apothecary/.github/workflows/build-linux64.yml",
+		"/Users/one/SOURCE/apothecary/apothecary/formulas/rtAudio/rtAudio.sh",
+		"/Users/one/SOURCE/apothecary/scripts/linuxaarch64/install.sh",
+		"/Users/one/SOURCE/apothecary/scripts/linux/install.sh",
+		"/Users/one/SOURCE/apothecary/apothecary/formulas/json.sh",
+		"/Users/one/SOURCE/apothecary/scripts/macos/install.sh",
+		"/Users/one/SOURCE/openFrameworksmacOS/.github/workflows/of.yml",
+		"/Users/one/SOURCE/openFrameworksmacOS/scripts/linux/ubuntu/install_dependencies.sh",
+		"/Users/one/SOURCE/openFrameworksmacOS/scripts/linux/download_libs.sh",
+		"/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/.github/workflows/build-linux.yml",
+		"/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/frontend/index.js",
+		"/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/scripts/osx/test_cmdline.sh",
+		"/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/scripts/osx/build_cmdline.sh",
+		"/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/scripts/linux/build_frontend.sh",
+		"/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/scripts/vs/build_dev_frontend.sh",
+		"/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/scripts/osx/ci_install_core.sh",
+		"/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/scripts/vs/ci_install.sh",
+		"/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/scripts/vs/ci_cmd_package.sh",
+		"/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/scripts/vs/ci_frontend_package.sh",
+		"/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/commandLine/src/projects/baseProject.h",
+		"/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/commandLine/src/main.cpp",
+		"/Users/one/SOURCE/openFrameworksmacOS/examples/ios/assimpExample/openFrameworks-Info.plist",
+		"/Users/one/SOURCE/openFrameworksmacOS/examples/ios/assimpExample/ofxiOS-Info.plist",
+		"/Users/one/SOURCE/openFrameworksmacOS/examples/ios/dirListExample/ofxiOS-Info.plist",
+		"/Users/one/SOURCE/openFrameworksmacOS/addons/ofxNetwork/src/ofxTCPManager.cpp",
+		"/Users/one/SOURCE/apothecary/.github/workflows/build-msys2.yml",
+		"/Users/one/SOURCE/apothecary/scripts/downloader.sh",
+		"/Users/one/SOURCE/apothecary/apothecary/formulas/videoInput.sh",
+		"/Users/one/Downloads/of_v20240709_macos_release/libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj/project.pbxproj",
+		"/Users/one/SOURCE/openFrameworksmacOS/scripts/msys2/install_dependencies.sh",
+		"/Users/one/SOURCE/openFrameworksmacOS/scripts/dev/download_libs.sh",
+		"/Volumes/[C] Windows 11.hidden/srx/openFrameworks/scripts/msys2/install_dependencies.sh",
+		"/Users/one/SOURCE/openFrameworksmacOS/scripts/dev/download_pg.sh",
+		"/Users/one/SOURCE/apothecary/scripts/msys2/build_msys2.sh",
+		"/Users/one/SOURCE/apothecary/apothecary/build/opencv/CMakeLists.txt",
+		"/Users/one/SOURCE/apothecary/apothecary/build/opencv/opencv_contrib/modules/README.md",
+		"/Users/one/SOURCE/apothecary/apothecary/build/FreeImage2/.github/workflows/cmake.yml",
+		"/Users/one/Desktop/buildarm64ec.log",
+		"/Users/one/SOURCE/apothecary/apothecary/build/FreeImage2/CMakeLists.txt",
+		"/Users/one/SOURCE/apothecary/apothecary/build/FreeImage2/TestAPI/CMakeLists.txt",
+		"/Users/one/SOURCE/apothecary/apothecary/build/FreeImage/TestAPI/CMakeLists.txt",
+		"/Volumes/[C] Windows 11.hidden/srx/apothecary/apothecary/formulas/FreeImage/FreeImage.sh",
+		"/Users/one/SOURCE/ISP/space-princess/Assets/Narrative/2021/CH01/TheHouse.yarn",
+		"/Users/one/SOURCE/openFrameworksmacOS/scripts/dev/release.sh",
+		"/Users/one/SOURCE/openFrameworksmacOS/scripts/dev/nightlybuilds.sh",
+		"/Users/one/SOURCE/openFrameworksmacOS/scripts/templates/macos/template.config"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 98.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"png",
+			"showDeveloperTools",
+			"html",
+			"process-gone",
+			"crashed",
+			".css",
+			"index.js",
+			"app.js",
+			"__dirname",
+			"web-contents-created",
+			"prelo",
+			"')\n",
+			"openExternal",
+			"openE",
+			"window-all-closed",
+			"window.require",
+			"window.nodeRequire = require",
+			"getVer",
+			"refres",
+			"useDictionaryNameGenerator",
+			"bUseMoniker",
+			"getGoodSketchName",
+			"nodeRe",
+			"preload"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13778,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								33,
+								33
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "static/css/index.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3835,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								930,
+								930
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 112.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "static/css/semantic.css",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 752081,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								117013,
+								117060
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 89865.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 50822,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								203,
+								207
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "static/js/index.static.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 133,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								104,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 44932,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								411,
+								411
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/.clang-format",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6628,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6514,
+								6514
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3323.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "preload.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1771,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								23,
+								34
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/scripts/osx/audit_frontend_arm64.sh",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3144,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2469,
+								2469
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ShellScript/Bash.sublime-syntax",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1027.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/Users/one/SOURCE/openFrameworksmacOS/apps/projectGenerator/frontend/package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2938,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1,
+								1
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JSON/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 120.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 120.0
+	},
+	"pinned_build_system": "",
+	"project": "frontend.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 284.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

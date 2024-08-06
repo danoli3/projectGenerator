@@ -1,3 +1,72 @@
+body {
+      background-color: #ddd;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+    /* enable some text to be selectable */
+    .selectable, .selectable * {
+      -webkit-user-select: text;
+      user-select: text;
+    }
+
+    .draggable {
+      -webkit-app-region: drag;
+    }
+
+    .undraggable {
+      -webkit-app-region: no-drag !important;
+    }
+
+    .menuItem {
+      -webkit-app-region: no-drag !important;
+      border-top-right-radius: 0.0em !important;
+      border-top-left-radius: 0.0em !important;
+    }
+
+    #addonsList {
+      max-height: 18em !important;
+    }
+    #addonsDropdown .sizer {
+      display: none;
+    }
+
+
+    .ui.dimmer > .content {
+      -webkit-user-select: none !important;
+      user-select: none !important;
+    }
+
+    #uiModal {
+      word-wrap: break-word;
+    }
+
+    .monospace{
+      word-wrap: break-word !important;
+    }
+
+    .topBar{
+      background-image: url("./../img/topbar.png");
+    }
+
+    .fixedElement {
+      position: fixed;
+        z-index: 101;
+        margin: 0em;
+        width: 100%;
+    }
+
+    #fullConsoleOutput textarea {
+      border:0px;
+      background-color: #333;
+      width:100%;
+      min-height:10em;
+      color:#dfdfdf;
+      font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+      font-size: 9px;
+      white-space: pre;
+      word-wrap: break-word;
+    }
+
 
 /* - - - - - - - - - -  CONSOLE STYLING - - - - - - - - - - - - - - - - - - - */
 #consoleContainer {
@@ -5,7 +74,7 @@
   width: 100%;
   background-color: #333;
   color: #FFF;
-  height: 100px;
+  height: 174px;
   position: fixed;
   bottom: 0;
   box-shadow: inset 0px 0px 9px 0px rgba(0,0,0,0.75);

@@ -203,7 +203,7 @@ StatementAttributeLikeMacros:
 StatementMacros:
   - Q_UNUSED
   - QT_REQUIRE_VERSION
-TabWidth:        4
+TabWidth:        2
 UseCRLF:         false
 UseTab:          Always
 WhitespaceSensitiveMacros:
@@ -214,4 +214,32 @@ WhitespaceSensitiveMacros:
   - NS_SWIFT_NAME
   - CF_SWIFT_NAME
 ...
-
+---
+Language:        JavaScript
+AlignAfterOpenBracket: DontAlign
+AlignOperands:   DontAlign
+AlignTrailingComments: false
+AllowShortFunctionsOnASingleLine: All
+BreakBeforeBraces: Attach
+BraceWrapping:
+  AfterFunction:   false
+  BeforeElse:      true
+ColumnLimit:     0
+IndentWidth:     2
+TabWidth:        2
+UseTab:          Always
+...
+---
+Language:        HTML
+IndentWidth:     2
+TabWidth:        2
+UseTab:          Always
+SelfClosingTag:  true
+...
+---
+Language:        Shell
+IndentWidth:     2
+TabWidth:        2
+UseTab:          Always
+ColumnLimit:     80
+...

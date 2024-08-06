@@ -1,82 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
+		<meta charset="UTF-8" />
 		<title>openFrameworks Project Generator</title>
-		<link rel="stylesheet" href="static/css/semantic.css">
+		<link rel="stylesheet" href="static/css/semantic.min.css">
 		<link rel="stylesheet" href="static/css/index.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<style>
-		body {
-			background-color: #ddd;
-			-webkit-user-select: none;
-			user-select: none;
-		}
-		/* enable some text to be selectable */
-		.selectable, .selectable * {
-			-webkit-user-select: text;
-			user-select: text;
-		}
-
-		.draggable {
-			-webkit-app-region: drag;
-		}
-
-		.undraggable {
-			-webkit-app-region: no-drag !important;
-		}
-
-		.menuItem {
-			-webkit-app-region: no-drag !important;
-			border-top-right-radius: 0.0em !important;
-			border-top-left-radius: 0.0em !important;
-		}
-
-		#addonsList {
-			max-height: 18em !important;
-		}
-		#addonsDropdown .sizer {
-			display: none;
-		}
-
-
-		.ui.dimmer > .content {
-			-webkit-user-select: none !important;
-			user-select: none !important;
-		}
-
-		#uiModal {
-			word-wrap: break-word;
-		}
-
-		.monospace{
-			word-wrap: break-word !important;
-		}
-
-		.topBar{
-			background-image: url("static/img/topbar.png");
-		}
-
-		.fixedElement {
-			position: fixed;
-  			z-index: 101;
-  			margin: 0em;
-  			width: 100%;
-		}
-
-		#fullConsoleOutput textarea {
-			border:0px;
-			background-color: #333;
-			width:100%;
-			min-height:10em;
-			color:#dfdfdf;
-			font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
-			font-size: 9px;
-			white-space: pre;
- 			word-wrap: break-word;
-		}
-
-		</style>
+		<script type="text/javascript" src="static/js/index.static.js"></script>
+		<script type="text/javascript" src="static/js/jquery.min.js"></script>
 	</head>
 	<body>
 		<!-- there is a little bit of wonkiness here to make the window draggable but also make the top bar clickable.  I basically enable drag for the menu, but disable it in divs around the text.  from a UI perspective, it's kind of weird cause the highlight is happening, but you need to click closer to the text to trigger the tab change.  I'm still thinking about how to do this well -->
@@ -405,21 +336,8 @@
 				<p>Console:</p>
 			</div>
 		</section>
-
-                <script>
-                window.nodeRequire = require;
-				delete window.require;
-				delete window.exports;
-				delete window.module;
-
-                </script>
-
-
-
-		<script type="text/javascript" src="static/js/jquery.min.js"></script>
+		<script type="text/javascript" src="app.js"></script>
 		<script type="text/javascript" src="static/js/semantic.min.js"></script>
 		<script type="text/javascript" src="static/js/jquery.dragbetter.js"></script>
-		<script type="text/javascript" src="app.js"></script>
-
 	</body>
 </html>

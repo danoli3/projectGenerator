@@ -1,8 +1,18 @@
-const { contextBridge, ipcRenderer } = require('electron');
-const path = require('path'); // Correctly import the path module
-const fs = require('fs'); // Import the fs module if needed
+const { contextBridge, ipcRenderer, MessageChannelMain} = require('electron');
+const path = require('path');
+const fs = require('fs'); 
+
+window.ipcRenderer = require('electron').ipcRenderer;
+window.MessageChannelMain = require('electron').MessageChannelMain;
+window.contextBridge = require('electron').contextBridge;
+window.path = path;
+window.fs = fs;
+
 
 contextBridge.exposeInMainWorld('ipcWrapper', {
+  node: () => process.versions.node,
+  chrome: () => process.versions.chrome,
+  electron: () => process.versions.electron,
   send: (channel, data) => ipcRenderer.send(channel, data),
   sendSync: (channel, data) => ipcRenderer.sendSync(channel, data),
   on: (channel, func) => ipcRenderer.on(channel, (event, ...args) => func(...args)),
@@ -28,7 +38,8 @@ contextBridge.exposeInMainWorld('ipcWrapper', {
 });
 
 // Include additional scripts
-// require(path.join(__dirname, 'index.js'));
-// require(path.join(__dirname, 'static/js/jquery.dragbetter.js'));
-// require(path.join(__dirname, 'static/js/jquery.min.js'));
-// require(path.join(__dirname, 'app.js'));
+// require(path.join(__dirname, 'src/main.js'));
+require(path.join(__dirname, 'static/js/jquery.dragbetter.js'));
+require(path.join(__dirname, 'static/js/jquery.min.js'));
+require(path.join(__dirname, 'static/js/semantic.min.js'));
+// require(path.join(__dirname, 'src/app.js'));

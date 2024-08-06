@@ -4,7 +4,7 @@
   "version": "0.68.0",
   "description": "Build electron GUI openFrameworks projectGenerator",
   "license": "MIT",
-  "main": "index.js",
+  "main": "src/main.js",
   "repository": "github:openframeworks/projectGenerator",
   "author": {
     "name": "zach lieberman",
@@ -70,12 +70,12 @@
       }
     },
     "files": [
-      "index.html",
+      "src/index.html",
       "app/**/*",
-      "static/**/*",
-      "index.js",
-      "app.js",
-      "preload.js",
+      "src/static/**/*",
+      "src/main.js",
+      "src/app.js",
+      "src/preload.js",
       "!**/*.ts",
       "!*.map",
       "!package.json",

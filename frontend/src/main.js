@@ -1,19 +1,22 @@
 const {
-    app,
-    BrowserWindow,
     dialog,
-    ipcMain,
     Menu,
+    MessageChannelMain,
     crashReporter,
     shell,
-    session
+    session,
+    Tray
 } = require('electron');
-const fs = require('fs');
+
+const { app, BrowserWindow, ipcMain } = require('electron/main')
 const path = require('node:path')
+const fs = require('fs');
+// const path = require('path');
 const moniker = require('moniker');
 const process = require('process');
 const os = require("os");
 const exec = require('child_process').exec;
+const { URL } = require('url');
 
 
 
@@ -27,7 +30,6 @@ crashReporter.start({
 // Debugging: start the Electron PG from the terminal to see the messages from console.log()
 // Example: /path/to/PG/Contents/MacOS/Electron /path/to/PG/Contents/Ressources/app
 // Note: app.js's console.log is also visible from the WebKit inspector. (look for mainWindow.openDevTools() below )
-
 
 
 //--------------------------------------------------------- load settings
@@ -46,7 +48,7 @@ crashReporter.start({
 
 /** @type Settings */
 let settings = {};
-
+let tray = null;
 
 
 /** @type Settings */
@@ -55,10 +57,13 @@ const templateSettings = {
     advancedMode: false,
     defaultPlatform: '',
     showConsole: false,
-    showDeveloperTools: false,
+    showDeveloperTools: true,
     defaultRelativeProjectPath: "apps/myApps",
     useDictionaryNameGenerator: true
 };
+
+const darkBackgroundColor = 'black';
+const lightBackgroundColor = 'white';
 
 
 
@@ -160,7 +165,7 @@ try {
         advancedMode: false,
         defaultPlatform: getCurrentPlatform(),
         showConsole: false,
-        showDeveloperTools: false,
+        showDeveloperTools: true,
         defaultRelativeProjectPath: "apps/myApps",
         useDictionaryNameGenerator: true,
     };
@@ -274,9 +279,31 @@ let mainWindow = null;
 
 // Quit when all windows are closed.
 app.on('window-all-closed', () => {
+	console.log("window-all-closed");
     app.quit();
     process.exit();
 });
+
+app.on('render-process-gone', (event, webContents, details) => { 
+	console.log("render-process-gone");
+});
+
+app.on('web-contents-created', (event, contents) => {
+  contents.on('will-navigate', (event, navigationUrl) => {
+    const parsedUrl = new URL(navigationUrl)
+
+    if (parsedUrl.origin !== 'index.html') {
+      event.preventDefault()
+    }
+
+    if (isSafeForExternalOpen(navigationUrl)) {
+      setImmediate(() => {
+        shell.openExternal(navigationUrl)
+      })
+    }
+    return { action: 'deny' }
+  })
+})
 
 /**
  * @param {Date} date 
@@ -316,16 +343,31 @@ app.on('ready', () => {
         height: 900,
         resizable: true,
         frame: false,
+        show: false,
         webPreferences: {
             webSecurity: true,
             nodeIntegration: true,
             "nodeIntegrationInWorker": 1,
             contextIsolation: true,
-            preload: path.join(__dirname, 'preload.js'),
+            preload: path.join(app.getAppPath(), '/src/preload.js'),
 
         }
 
     });
+
+    // tray = new Tray(path.join(app.getAppPath(), '/static/icon/icon.png'));
+  	// tray.setTitle('oF projectGenerator');
+
+    mainWindow.once('ready-to-show', () => {
+        mainWindow.show();
+    });
+
+    mainWindow.webContents.on('render-process-gone', (event, details) => { 
+    	console.log("mainWindow::render-process-gone");
+	});
+	// mainWindow.addEventListener('render-process-gone', (event) => {
+	// 	console.log("webview::render-process-gone");
+	// });
 
     // const nonce = 'random-generated-nonce'; // Generate a secure random nonce
 	//   mainWindow.webContents.session.webRequest.onHeadersReceived((details, callback) => {
@@ -339,7 +381,7 @@ app.on('ready', () => {
 
 	 // mainWindow.loadFile('index.html');
     // and load the index.html of the app.
-    mainWindow.loadFile(path.join(__dirname, 'index.html'));
+    mainWindow.loadFile(path.join(app.getAppPath(), '/src/index.html'));
 
     // Open the devtools.
     if (settings["showDeveloperTools"]) {

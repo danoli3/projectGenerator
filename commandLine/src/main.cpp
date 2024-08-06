@@ -158,9 +158,9 @@ bool printTemplates() {
 
 void handleCommand(const std::string& args) {
     if (args == "ping") {
-        std::cout << "pong" << args << std::endl;
+		messageReturn("ofResult", "pong");
     } else {
-        std::cout << "Unknown custom command: " << args << std::endl;
+		messageReturn("ofResult", "Unknown");
     }
 }
 

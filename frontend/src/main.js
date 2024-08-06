@@ -391,78 +391,86 @@ function setupPorts() {
 }
 
 function handleMessageFromRenderer(type, data) {
-    switch (type) {
-        console.log('from renderer world:', event.data)
+        console.log(`[from renderer world] Type: ${type}, Data:`, data);
         switch (type) {
           case 'setOfPath':
-            handleSetOfPath(data);
-            break;
-        case 'isOFProjectFolder':
-            handleIsOFProjectFolder(data);
-            break;
-        case 'isOFProjectFolder':
-            handleIsOFProjectFolder(data);
-            break;
-        case 'refreshAddonList':
-            refreshAddonList(data);
-            break;
-        case 'refreshPlatformList':
-            refreshPlatformList(data);
-            break;
-        case 'refreshTemplateList':
-            refreshTemplateList(data);
-            break;
-        case 'getRandomSketchName':
-            const result = getRandomSketchName(data);
-            sendMessageToRenderer('getRandomSketchNameResponse', result);
-            break;
-        case 'update':
-            updateFunction(data);
-            break;
-        case 'generate':
-            generateFunction(data);
-            break;
-        case 'pickOfPath':
-            pickOfPath(data);
-            break;
-        case 'pickUpdatePath':
-            pickUpdatePath(data);
-            break;
-        case 'pickProjectPath':
-            pickProjectPath(data);
-            break;
-        case 'pickSourcePath':
-            pickSourcePath(data);
-            break;
-        case 'launchFolder':
-            await handleLaunchFolder(data);
-            break;
-        case 'launchProject':
-            launchProject(data);
-            break;
-        case 'getOSInfo':
-            const osInfo = getOSInfo();
-            sendMessageToRenderer('osInfoResponse', data: osInfo);
-            break;
-        case 'saveDefaultSettings':
-            handleSaveDefaultSettings(data);
-            break;
-        case 'openExternal':
-            handleOpenExternal(data);
-            break;
-        case 'showItemInFolder':
-            handleShowItemInFolder(data);
-            break;
-        case 'firstTimeSierra':
-            handleFirstTimeSierra(data);
-            break;
+                handleSetOfPath(data);
+                break;
+            case 'isOFProjectFolder':
+                handleIsOFProjectFolder(data);
+                break;
+            case 'isOFProjectFolder':
+                handleIsOFProjectFolder(data);
+                break;
+            case 'refreshAddonList':
+                refreshAddonList(data);
+                break;
+            case 'refreshPlatformList':
+                refreshPlatformList(data);
+                break;
+            case 'refreshTemplateList':
+                refreshTemplateList(data);
+                break;
+            case 'getRandomSketchName':
+                const result = getRandomSketchName(data);
+                sendMessageToRenderer('getRandomSketchNameResponse', result);
+                break;
+            case 'update':
+                updateFunction(data);
+                break;
+            case 'generate':
+                generateFunction(data);
+                break;
+            case 'pickOfPath':
+                pickOfPath(data);
+                break;
+            case 'pickUpdatePath':
+                pickUpdatePath(data);
+                break;
+            case 'pickProjectPath':
+                pickProjectPath(data);
+                break;
+            case 'pickSourcePath':
+                pickSourcePath(data);
+                break;
+            case 'launchFolder':
+                handleLaunchFolder(data);
+                break;
+            case 'launchProject':
+                launchProject(data);
+                break;
+            case 'getOSInfo':
+                const osInfo = getOSInfo();
+                sendMessageToRenderer('osInfoResponse', osInfo);
+                break;
+            case 'saveDefaultSettings':
+                handleSaveDefaultSettings(data);
+                break;
+            case 'openExternal':
+                handleOpenExternal(data);
+                break;
+            case 'showItemInFolder':
+                handleShowItemInFolder(data);
+                break;
+            case 'firstTimeSierra':
+                handleFirstTimeSierra(data);
+                break;
             case 'getOFPath':
-            getopenFrameworks();
-            break;
+                getopenFrameworks();
+                break;
+            case 'getHostType':
+                getHostPlatform();
+                break;
+            case 'getVersion':
+                getCMDVersion();
+                break;
+            case 'command':
+                getCommandResult();
+                break;
             
           // Add more cases here to handle other types of messages
-          default:
-            console.warn('Unknown message type:', type);
+            default:
+                console.warn('Unknown message type:', type);
         }
 }
 
@@ -1435,21 +1443,21 @@ function executeCommand(command) {
 
 // Function to handle getting the OF path
 async function getOFPath() {
-    return new Promise((resolve, reject) => {
-        const pgApp = getPgPath();
-        const command = `${pgApp} --getofpath`;
-        try {
-            const result = await executeCommand(command);
-            if (result.success) {
-                return { success: true, message: result.data.ofPath };
-            } else {
-                throw new Error(result.message);
-            }
-        } catch (error) {
-            console.log('getOFPath error', error);
-            return { success: false, message: error.message };
+    const pgApp = getPgPath();
+    const command = `${pgApp} --getofpath`;
+    try {
+        const result = await executeCommand(command);
+        if (result.success) {
+            return { success: true, message: result.data.ofPath };
+        } else {
+            throw new Error(result.message);
         }
+    } catch (error) {
+        console.log('getOFPath error', error);
+        return { success: false, message: error.message };
+    }
 }
+
 
 async function getopenFrameworks(){
     try {

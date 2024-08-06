@@ -47,7 +47,7 @@ function setupPorts() {
     if(!portRenderer) return;
     portRenderer.onmessage = (event) => {
         const { type, data } = event.data;
-        console.log('from main world:', event.data);
+        console.log(`[from main port] Type: ${type}, Data:`, data);
         if(type === "setup") {
             setup();
         } else if (type === 'setOfPath') {
@@ -85,6 +85,10 @@ function setupPorts() {
             handleSelectAddons(data);
         } else if (type === 'showUIMessage') {
             displayUIMessage(data);
+        } else if (type === 'launchFolderCompleted') {
+            //displayUIMessage(data);
+        } else if (type === 'projectLaunchCompleted') {
+            //displayUIMessage(data);
         } 
 
         

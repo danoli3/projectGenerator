@@ -80,20 +80,24 @@ function getCurrentPlatform() {
         platform = 'osx';
     } else if (process.platform === "linux") {
         if (process.arch === 'ia32') {
-            platform = 'linux';
-        } else if (process.arch === 'arm') {
-            if (os.cpus()[0].model.indexOf('ARMv6') === 0) {
-                platform = 'linuxarmv6l';
-            } else {
-                platform = 'linuxaarch64';
-            }
+            platform = 'linux'; // Linux 32-bit
         } else if (process.arch === 'x64') {
-            platform = 'linux64';
+            platform = 'linux64'; // Linux 64-bit
+        } else if (process.arch === 'arm' || process.arch === 'arm64') {
+            const cpuModel = os.cpus()[0].model.toLowerCase();
+            if (cpuModel.includes('armv6')) {
+                platform = 'linuxarmv6l'; // ARMv6
+            } else if (cpuModel.includes('armv7')) {
+                platform = 'linuxarmv7'; // ARMv7
+            } else if (process.arch === 'arm64') {
+                platform = 'linuxaarch64'; // ARM 64-bit
+            } else {
+                platform = 'linuxarm';
+            }
         } else {
             platform = 'linux';
         }
     }
-
     return platform;
 }
 const hostplatform = getCurrentPlatform();
@@ -142,24 +146,9 @@ try {
     if (/^win/.test(process.platform)) {
         myPlatform = 'vs';
     }
-    // TODO: make the difference between osx and ios
-    else if (process.platform === "darwin") {
-        myPlatform = 'osx';
-    } else if (process.platform === "linux") {
-        myPlatform = 'linux';
-        if (process.arch === 'ia32') {
-            myPlatform = 'linux';
-        } else if (process.arch === 'arm') {
-            if (os.cpus()[0].model.indexOf('ARMv6') == 0) {
-                myPlatform = 'linuxarmv6l';
-            } else {
-                myPlatform = 'linuxaarch64';
-            }
-        } else if (process.arch === 'x64') {
-            myPlatform = 'linux64';
-        }
+    else {
+        myPlatform = getCurrentPlatform();
     }
-
     settings = {
         defaultOfPath: "",
         advancedMode: false,
@@ -192,17 +181,17 @@ const platform = os.platform();
 console.log(`Operating system platform: ${platform}`);
 
 // Execute a shell command using exec
-exec('ls', (error, stdout, stderr) => {
-    if (error) {
-        console.error(`Error executing command: ${error.message}`);
-        return;
-    }
-    if (stderr) {
-        console.error(`Error in command output: ${stderr}`);
-        return;
-    }
-    console.log(`Command output: ${stdout}`);
-});
+// exec('ls', (error, stdout, stderr) => {
+//     if (error) {
+//         console.error(`Error executing command: ${error.message}`);
+//         return;
+//     }
+//     if (stderr) {
+//         console.error(`Error in command output: ${stderr}`);
+//         return;
+//     }
+//     console.log(`Command output: ${stdout}`);
+// });
 // hide some addons, per https://github.com/openframeworks/projectGenerator/issues/62
 
 const addonsToSkip = [
@@ -332,85 +321,72 @@ function toLetters(num) {
 }
 
 
+function createWindow() {
+    if(!mainWindow) {
+        console.log("[mainWindow::createWindow]");
+        mainWindow = new BrowserWindow({
+            width: 800,
+            height: 900,
+            resizable: true,
+            frame: false,
+            show: false,
+            webPreferences: {
+                preload: path.join(app.getAppPath(), '/src/preload.js'),
+                webSecurity: true,
+                nodeIntegration: true,
+                "nodeIntegrationInWorker": 1,
+                contextIsolation: true,
+                enableRemoteModule: false,
+            }
+
+        });
+
+        mainWindow.once('ready-to-show', () => {
+            mainWindow.show();
+        });
+
+        mainWindow.webContents.on('render-process-gone', (event, details) => { 
+            console.log("[mainWindow::render-process-gone]");
+        });
+
+        mainWindow.loadFile(path.join(app.getAppPath(), '/src/index.html'));
+
+        if (settings["showDeveloperTools"]) {
+            mainWindow.webContents.openDevTools();
+        }
+        
+        //when the window is loaded send the defaults
+        mainWindow.webContents.on('did-finish-load', () => {
+            mainWindow.webContents.send('cwd', app.getAppPath());
+            mainWindow.webContents.send('cwd', __dirname);
+            mainWindow.webContents.send('cwd', process.resourcesPath);
+            mainWindow.webContents.send('setStartingProject', getStartingProjectName());
+            mainWindow.webContents.send('setDefaults', settings);
+            mainWindow.webContents.send('setup', '');
+            mainWindow.webContents.send('checkOfPathAfterSetup', '');
+        });
+
+
+        // Emitted when the window is closed.
+        mainWindow.on('closed', () => {
+            console.log("[mainWindow::closed]");
+            mainWindow = null;
+            app.quit();
+            process.exit();
+            // Dereference the window object, usually you would store windows
+            // in an array if your app supports multi windows, this is the time
+            // when you should delete the corresponding element.
+        });
+    } 
+}
 
 //-------------------------------------------------------- window
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 app.on('ready', () => {
-    // Create the browser window.
-    mainWindow = new BrowserWindow({
-        width: 800,
-        height: 900,
-        resizable: true,
-        frame: false,
-        show: false,
-        webPreferences: {
-            webSecurity: true,
-            nodeIntegration: true,
-            "nodeIntegrationInWorker": 1,
-            contextIsolation: true,
-            preload: path.join(app.getAppPath(), '/src/preload.js'),
-
-        }
-
-    });
-
-    // tray = new Tray(path.join(app.getAppPath(), '/static/icon/icon.png'));
-  	// tray.setTitle('oF projectGenerator');
-
-    mainWindow.once('ready-to-show', () => {
-        mainWindow.show();
-    });
-
-    mainWindow.webContents.on('render-process-gone', (event, details) => { 
-    	console.log("mainWindow::render-process-gone");
-	});
-	// mainWindow.addEventListener('render-process-gone', (event) => {
-	// 	console.log("webview::render-process-gone");
-	// });
-
-    // const nonce = 'random-generated-nonce'; // Generate a secure random nonce
-	//   mainWindow.webContents.session.webRequest.onHeadersReceived((details, callback) => {
-	//     callback({
-	//       responseHeaders: {
-	//         ...details.responseHeaders,
-	//         'Content-Security-Policy': [`default-src 'self'; style-src 'self' 'nonce-${nonce}'`]
-	//       }
-	//     });
-	//   });
-
-	 // mainWindow.loadFile('index.html');
-    // and load the index.html of the app.
-    mainWindow.loadFile(path.join(app.getAppPath(), '/src/index.html'));
-
-    // Open the devtools.
-    if (settings["showDeveloperTools"]) {
-        mainWindow.webContents.openDevTools();
-    }
     
-    //when the window is loaded send the defaults
-    mainWindow.webContents.on('did-finish-load', () => {
-        //refreshAddonList();
-        
-        mainWindow.webContents.send('cwd', app.getAppPath());
-        mainWindow.webContents.send('cwd', __dirname);
-        mainWindow.webContents.send('cwd', process.resourcesPath);
-        mainWindow.webContents.send('setStartingProject', getStartingProjectName());
-        mainWindow.webContents.send('setDefaults', settings);
-        mainWindow.webContents.send('setup', '');
-        mainWindow.webContents.send('checkOfPathAfterSetup', '');
-    });
-
-
-    // Emitted when the window is closed.
-    mainWindow.on('closed', () => {
-        mainWindow = null;
-        app.quit();
-        process.exit();
-        // Dereference the window object, usually you would store windows
-        // in an array if your app supports multi windows, this is the time
-        // when you should delete the corresponding element.
-    });
+    // Create the browser window.
+    createWindow();
 
     const isMac = process.platform === 'darwin'
     const menuTemplate = [
@@ -493,23 +469,6 @@ app.on('ready', () => {
     const menuV = Menu.buildFromTemplate(menuTemplate); // TODO: correct this
     Menu.setApplicationMenu(menuV);
 
-    // session.setPermissionRequestHandler((webContents, permission, callback) => {
-    //     if (webContents.getURL() !== 'https:' && permission === 'openExternal') {
-    //         return callback(false)
-    //     } else {
-    //         return callback(true)
-    //     }
-    // })
-    // session.defaultSession.webRequest.onHeadersReceived((details, callback) => {
-    //   callback({
-    //     responseHeaders: {
-    //       ...details.responseHeaders,
-    //       'Content-Security-Policy': ['default-src \'none\'']
-    //     }
-    //   })
-    // })
-
-
     session.fromPartition('some-partition')
       .setPermissionRequestHandler((webContents, permission, callback) => {
         const parsedUrl = new URL(webContents.getURL())
@@ -526,6 +485,13 @@ app.on('ready', () => {
         }
     })
 });
+
+app.on('activate', () => { // fix window bugs
+  if (mainWindow === null) {
+    createWindow();
+  }
+});
+
 
 /**
  * @returns {{path: string, name: string}}
@@ -1157,7 +1123,7 @@ ipcMain.on('generate', generateFunction);
 
 let dialogIsOpen = false;
 
-ipcMain.on('pickOfPath', async (event, arg) => {
+ipcMain.on('pickOfPath', async () => {
     if(dialogIsOpen){
         return;
     }
@@ -1414,6 +1380,8 @@ const allowedUrls = [
     'https://github.com/openFrameworks/openFrameworks',
     'https://github.com/openFrameworks/projectGenerator',
     'https://ofxaddons.com',
+    'https://localhost',
+    'http://localhost',
 ];
 
 ipcMain.on('openExternal', (event, url) => {
@@ -1425,10 +1393,6 @@ ipcMain.on('openExternal', (event, url) => {
 });
 
 
-ipcMain.on('openExternalShell', (event, url) => {
-    shell.openExternal(url);
-});
-
 ipcMain.on('showItemInFolder', (event, p) => {
     shell.showItemInFolder(p);
 });
@@ -1439,26 +1403,29 @@ ipcMain.on('firstTimeSierra', (event, command) => {
     });
 });
 
-ipcMain.on('command', (event, customArg) => {
-    const pgApp = getPgPath();
-    const command = `${pgApp} -c "${customArg}"`;
+ipcMain.handle('command', async (event, customArg) => {
+  const pgApp = getPgPath();
+  const command = `${pgApp} -c "${customArg}"`;
 
+  return new Promise((resolve, reject) => {
     exec(command, { maxBuffer: Infinity }, (error, stdout, stderr) => {
-        if (error) {
-            event.sender.send('commandResult', {
-                success: false,
-                message: error.message
-            });
-        } else {
-            event.sender.send('commandResult', {
-                success: true,
-                message: stdout
-            });
-        }
+      if (error) {
+        resolve({
+          success: false,
+          message: error.message
+        });
+      } else {
+        resolve({
+          success: true,
+          message: stdout
+        });
+      }
     });
+  });
 });
 
-ipcMain.on('getOFPath', (event) => {
+
+ipcMain.handle('getOFPath', async () => {
     const pgApp = getPgPath();
     const command = `${pgApp} --getofpath`;
 
@@ -1495,7 +1462,7 @@ ipcMain.on('getOFPath', (event) => {
     });
 });
 
-ipcMain.on('getHostType', (event) => {
+ipcMain.handle('getHostType', async () => {
     const pgApp = getPgPath();
     const command = `${pgApp} -i`;
 
@@ -1531,7 +1498,7 @@ ipcMain.on('getHostType', (event) => {
     });
 });
 
-ipcMain.on('getVersion', (event) => {
+ipcMain.handle('getVersion', async () => {
     const pgApp = getPgPath();
     const command = `${pgApp} -w`;
 

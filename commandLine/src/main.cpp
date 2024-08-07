@@ -538,8 +538,8 @@ int main(int argc, char ** argv) {
 	
 #ifndef DEBUG_NO_OPTIONS
 	if (options[HELP] || argc == 0) {
-		messageError("No arguments");
 		printHelp();
+		messageError("No arguments");
 		return EXIT_OK;
 	}
 #endif

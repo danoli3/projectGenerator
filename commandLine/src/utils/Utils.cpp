@@ -598,6 +598,42 @@ EmscriptenSDK resolveEmscriptenSDK() {
 }
 
 
+#ifdef TARGET_WIN32
+// of.sh is a bash script - Windows has no bash on PATH by default even with a full
+// Visual Studio + emsdk setup, so check PATH first, then the common places a Windows
+// OF dev machine actually has bash from (Git for Windows - system or per-user install
+// - or MSYS2), since Git for Windows doesn't always put bash.exe on PATH itself.
+static fs::path resolveBash() {
+	for (const auto & dir : ofSplitString(ofGetEnv("PATH"), ";", true, true)) {
+		std::error_code ec;
+		fs::path candidate = fs::path(dir) / "bash.exe";
+		if (fs::exists(candidate, ec)) return candidate;
+	}
+	for (const auto & candidate : {
+		fs::path("C:/Program Files/Git/bin/bash.exe"),
+		fs::path("C:/Program Files/Git/usr/bin/bash.exe"),
+		fs::path("C:/Program Files (x86)/Git/bin/bash.exe"),
+		fs::path("C:/msys64/usr/bin/bash.exe"),
+	}) {
+		std::error_code ec;
+		if (fs::exists(candidate, ec)) return candidate;
+	}
+	// Git for Windows also offers a "current user only" install, which lands
+	// under the user's own profile rather than Program Files
+	auto localAppData = ofGetEnv("LOCALAPPDATA");
+	if (!localAppData.empty()) {
+		for (const auto & candidate : {
+			fs::path(localAppData) / "Programs" / "Git" / "bin" / "bash.exe",
+			fs::path(localAppData) / "Programs" / "Git" / "usr" / "bin" / "bash.exe",
+		}) {
+			std::error_code ec;
+			if (fs::exists(candidate, ec)) return candidate;
+		}
+	}
+	return {};
+}
+#endif
+
 int runOfMenu(const string & subcommand) {
 	fs::path ofMenuScript = getOFRoot() / "scripts" / "of.sh";
 	if (!fs::exists(ofMenuScript)) {
@@ -618,7 +654,17 @@ int runOfMenu(const string & subcommand) {
 	// of.sh (scripts/ui.sh) disables colour and interactive prompts on its own once
 	// it detects stdout isn't a tty, so this passes straight through as plain text
 	// to whatever spawned us - no capturing/parsing needed here.
-	string cmdLine = "bash \"" + ofMenuScript.string() + "\" " + args;
+	string cmdLine;
+#ifdef TARGET_WIN32
+	fs::path bashPath = resolveBash();
+	if (bashPath.empty()) {
+		ofLogError() << "{ \"errorMessage\": \"bash not found - oF Menu needs Git for Windows or MSYS2 installed (bash on PATH, or in Git's default install location)\" }";
+		return 65; // EXIT_DATAERR
+	}
+	cmdLine = "\"" + bashPath.string() + "\" \"" + ofMenuScript.string() + "\" " + args;
+#else
+	cmdLine = "bash \"" + ofMenuScript.string() + "\" " + args;
+#endif
 	int ret = std::system(cmdLine.c_str());
 #ifdef TARGET_WIN32
 	return ret;

@@ -63,6 +63,8 @@ const string ADDON_LDFLAGS = "ADDON_LDFLAGS";
 const string ADDON_LIBS = "ADDON_LIBS";
 const string ADDON_DEFINES = "ADDON_DEFINES";
 const string ADDON_ADDITIONAL_LIBS = "ADDON_ADDITIONAL_LIBS";
+// Xcode-only post-compile script, e.g. copying+install_name_tool-ing a dylib (#217, roymacdonald)
+const string ADDON_AFTER_COMPILE_SCRIPT = "ADDON_AFTER_COMPILE_SCRIPT";
 
 // About Source Codes
 const string ADDON_SOURCES = "ADDON_SOURCES";
@@ -110,6 +112,7 @@ const vector<string> AddonProjectVariables = {
 	ADDON_LDFLAGS,
 	ADDON_LIBS,
 	ADDON_DEFINES,
+	ADDON_AFTER_COMPILE_SCRIPT,
 
 	ADDON_SOURCES,
 	ADDON_HEADER_SOURCES,
@@ -176,6 +179,7 @@ public:
 	vector < string > xcframeworks;		// osx only
 	vector < string > data;
 	vector < string > defines;
+	string afterCompileScript; // Xcode-only post-compile script (#217, roymacdonald)
 
 	vector < string > definesCMAKE;
 
@@ -211,6 +215,7 @@ private:
 	void parseVariableValue(const string & variable, const string & value, bool addToValue, const string & line, int lineNum);
 
 	void addReplaceString(std::string &variable, const std::string &value, bool addToVariable);
+	void appendString(std::string &variable, const std::string &value, const std::string &delimiter, bool addToVariable);
 //	void addReplaceStringPath(fs::path &variable, const std::string & value, bool addToVariable);
 	void addReplaceStringVector(std::vector<std::string> &variable, const std::string &value, const std::string &prefix, bool addToVariable);
 //	void addReplaceStringVectorPre(std::vector<std::string> &variable, const std::string &value, fs::path &prefix, bool addToVariable);

@@ -577,6 +577,14 @@ void baseProject::addAddon(ofAddon & addon){
 	addAddonFrameworks(addon);
     copyAddonData(addon);
     addAddonProps(addon);
+
+	// Xcode-only post-compile script, e.g. copying+install_name_tool-ing a dylib -
+	// addAfterRule is a no-op on every other platform (cherry-picked from
+	// openframeworks/projectGenerator#217, roymacdonald)
+	if (!addon.afterCompileScript.empty()) {
+		ofLogVerbose() << "adding addon after compile script: " << addon.afterCompileScript;
+		addAfterRule(addon.afterCompileScript);
+	}
 }
 
 

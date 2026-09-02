@@ -167,6 +167,11 @@ void ofAddon::addReplaceString(std::string &variable, const std::string &value, 
 	if (addToVariable) variable += value;
 	else variable = value;
 }
+
+void ofAddon::appendString(std::string &variable, const std::string &value, const std::string &delimiter, bool addToVariable) {
+	if (addToVariable && !variable.empty()) variable += delimiter + value;
+	else variable = value;
+}
 //
 //void ofAddon::addReplaceStringPath(fs::path & variable, const std::string & value, bool addToVariable) {
 //	if (addToVariable)
@@ -527,6 +532,12 @@ void ofAddon::parseVariableValue(const string & variable, const string & value, 
 
 	else if (variable == ADDON_DEFINES) {
 		addReplaceStringVector(defines, value, emptyString, addToValue);
+	}
+
+	// Xcode-only post-compile script, e.g. copying+install_name_tool-ing a dylib
+	// (cherry-picked from openframeworks/projectGenerator#217, roymacdonald)
+	else if (variable == ADDON_AFTER_COMPILE_SCRIPT) {
+		appendString(afterCompileScript, value, "; ", addToValue);
 	}
 }
 

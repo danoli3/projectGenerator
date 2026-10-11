@@ -121,6 +121,17 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           tag_name: ${{ env.RELEASE }}
           files: projectGenerator-linux-gui.gz
+      - name: Refresh nightly date
+        if: github.repository == 'openframeworks/projectGenerator' && github.event_name == 'push' && github.ref == 'refs/heads/master'
+        continue-on-error: true
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # re-publishing resets published_at, which is the date the releases page shows
+          id=$(gh api repos/${{ github.repository }}/releases/tags/nightly --jq .id)
+          gh api -X PATCH repos/${{ github.repository }}/releases/$id -F draft=true > /dev/null
+          gh api -X PATCH repos/${{ github.repository }}/releases/$id -F draft=false -f make_latest=true > /dev/null
 
       - name: Update Latest Tag - DateTime
         uses: EndBug/latest-tag@latest
@@ -203,6 +214,17 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           tag_name: ${{ env.RELEASE }}
           files: projectGenerator-linux-ubuntu22-gui.gz
+      - name: Refresh nightly date
+        if: github.repository == 'openframeworks/projectGenerator' && github.event_name == 'push' && github.ref == 'refs/heads/master'
+        continue-on-error: true
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # re-publishing resets published_at, which is the date the releases page shows
+          id=$(gh api repos/${{ github.repository }}/releases/tags/nightly --jq .id)
+          gh api -X PATCH repos/${{ github.repository }}/releases/$id -F draft=true > /dev/null
+          gh api -X PATCH repos/${{ github.repository }}/releases/$id -F draft=false -f make_latest=true > /dev/null
 
   # Native arm64 build for Raspberry Pi (64-bit Raspberry Pi OS / Ubuntu on Pi 3+).
   # Runs on a real arm64 runner so the commandLine binary is actually arm64 -
@@ -279,3 +301,14 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           tag_name: ${{ env.RELEASE }}
           files: projectGenerator-linux-arm64-gui.gz
+      - name: Refresh nightly date
+        if: github.repository == 'openframeworks/projectGenerator' && github.event_name == 'push' && github.ref == 'refs/heads/master'
+        continue-on-error: true
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # re-publishing resets published_at, which is the date the releases page shows
+          id=$(gh api repos/${{ github.repository }}/releases/tags/nightly --jq .id)
+          gh api -X PATCH repos/${{ github.repository }}/releases/$id -F draft=true > /dev/null
+          gh api -X PATCH repos/${{ github.repository }}/releases/$id -F draft=false -f make_latest=true > /dev/null

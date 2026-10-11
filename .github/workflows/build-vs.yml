@@ -110,3 +110,14 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           tag_name: ${{ env.RELEASE }}
           files: ../openFrameworks/apps/projectGenerator/frontend/dist/projectGenerator-vs-gui.zip
+      - name: Refresh nightly date
+        if: github.repository == 'openframeworks/projectGenerator' && github.event_name == 'push' && github.ref == 'refs/heads/master'
+        continue-on-error: true
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # re-publishing resets published_at, which is the date the releases page shows
+          id=$(gh api repos/${{ github.repository }}/releases/tags/nightly --jq .id)
+          gh api -X PATCH repos/${{ github.repository }}/releases/$id -F draft=true > /dev/null
+          gh api -X PATCH repos/${{ github.repository }}/releases/$id -F draft=false -f make_latest=true > /dev/null

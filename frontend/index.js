@@ -1426,6 +1426,9 @@ function modularLibDest(ofPath, lib) {
     return addon ? path.join(ofPath, 'addons', addon, 'libs') : path.join(ofPath, 'libs');
 }
 
+// lib/vs/<arch> folder -> modular target label arch (vs_64 / vs_arm64 / vs_arm64ec)
+const VS_ARCH_LABELS = { x64: 'x64', arm64: 'arm64', arm64ec: 'arm64ec' };
+
 const LIB_DIR_PLATFORMS = {
     osx: 'macOS',
     ios: 'iOS',
@@ -1469,6 +1472,20 @@ function installedPlatforms(libDir) {
                 }
             }
             if (!xcframeworks.length) found.add('macOS');
+        } else if (dir.toLowerCase() === 'vs') {
+            // one entry per arch, lib/vs/<arch> or (DLL only, e.g. glon12) bin/vs/<arch>
+            const archDirs = [full, path.join(libDir, '..', 'bin', dir)].filter(nonEmptyDir);
+            let arches = 0;
+            for (const archParent of archDirs) {
+                for (const arch of fs.readdirSync(archParent)) {
+                    const label = VS_ARCH_LABELS[arch.toLowerCase()];
+                    if (label && nonEmptyDir(path.join(archParent, arch))) {
+                        found.add(`Windows (${label})`);
+                        arches++;
+                    }
+                }
+            }
+            if (!arches) found.add('Windows');
         } else {
             found.add(LIB_DIR_PLATFORMS[dir.toLowerCase()] || dir);
         }

@@ -1935,7 +1935,7 @@ function modularTargetPlatform(target) {
     if (target.startsWith('ios')) return 'iOS';
     if (target.startsWith('tvos')) return 'tvOS';
     if (target.startsWith('emscripten')) return 'Emscripten';
-    if (target.startsWith('vs')) return 'Windows';
+    if (target.startsWith('vs')) return 'Windows (' + ({ vs_64: 'x64', vs_arm64: 'arm64', vs_arm64ec: 'arm64ec' }[target] || target.slice(3)) + ')';
     const linux = /^linux_([^_]+)/.exec(target);
     if (linux) return { '64': 'Linux', aarch64: 'Linux arm64', arm64: 'Linux arm64' }[linux[1]] || 'Linux ' + linux[1];
     return target;
